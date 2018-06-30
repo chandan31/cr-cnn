@@ -1,0 +1,296 @@
+test_label_path: ./Nets/4channel_4rnn_5pool/e200_h200_POSe50_WNe50_GRe50_Hid100/join/proposed_test_labelfile.txt
+cv_lael_path: ./Nets/4channel_4rnn_5pool/e200_h200_POSe50_WNe50_GRe50_Hid100/join/proposed_valid_labelfile.txt
+Drop emd:0.6 Drop POS:0.35 Drop WN:0.35 Drop GR:0.3 Drop lastHid:0.15 batch:20 lr:0.3 de_lr:0.9
+./Nets/4channel_4rnn_5pool/e200_h200_POSe50_WNe50_GRe50_Hid100/join/paras_800_13913_0_800_0_2717.paras
+num_weights 874400
+num_biases 5298469
+Info: Parameters loaded
+
+Info: Labels loaded
+
+./Nets/4channel_4rnn_5pool/e200_h200_POSe50_WNe50_GRe50_Hid100/join/train_800_13913.nets
+./Nets/4channel_4rnn_5pool/e200_h200_POSe50_WNe50_GRe50_Hid100/join/valid_0_800.nets
+./Nets/4channel_4rnn_5pool/e200_h200_POSe50_WNe50_GRe50_Hid100/join/test_0_2717.nets
+Info: Data loaded
+
+Epoch = 1; Training J = 171.776 learning rate: 0.27
+  average target output 0.704652  Cost 7988.68; Acc 0.808129
+  average target output 0.701623  Cost 543.811; Acc 0.78125
+  average target output 0.670713  Cost 2036.62; Acc 0.759661
+<<< Valid F1 = 79.65 >>>
+<<< Test  F1 = 77.53 >>>
+
+Epoch = 2; Training J = 115.346 learning rate: 0.243
+  average target output 0.759066  Cost 7834.74; Acc 0.813544
+  average target output 0.748965  Cost 576.638; Acc 0.785
+  average target output 0.723254  Cost 2142.84; Acc 0.768127
+<<< Valid F1 = 80.83 >>>
+<<< Test  F1 = 79.09 >>>
+
+Epoch = 3; Training J = 98.7102 learning rate: 0.2187
+  average target output 0.79394  Cost 5971.82; Acc 0.851598
+  average target output 0.777794  Cost 492.459; Acc 0.81875
+  average target output 0.760365  Cost 1761.44; Acc 0.80714
+<<< Valid F1 = 83.08 >>>
+<<< Test  F1 = 82.40 >>>
+
+Epoch = 4; Training J = 84.7026 learning rate: 0.19683
+  average target output 0.821319  Cost 5266.41; Acc 0.871425
+  average target output 0.78541  Cost 487.565; Acc 0.825
+  average target output 0.769231  Cost 1810.53; Acc 0.806404
+<<< Valid F1 = 84.34 >>>
+<<< Test  F1 = 82.53 >>>
+
+Epoch = 5; Training J = 76.2458 learning rate: 0.177147
+  average target output 0.839087  Cost 4542.96; Acc 0.885228
+  average target output 0.795931  Cost 502.345; Acc 0.8225
+  average target output 0.777135  Cost 1789.64; Acc 0.814869
+<<< Valid F1 = 83.68 >>>
+<<< Test  F1 = 83.24 >>>
+
+Epoch = 6; Training J = 69.358 learning rate: 0.159432
+  average target output 0.855947  Cost 4203.72; Acc 0.894303
+  average target output 0.798353  Cost 507.671; Acc 0.8175
+  average target output 0.77968  Cost 1857.78; Acc 0.810453
+<<< Valid F1 = 83.12 >>>
+<<< Test  F1 = 82.82 >>>
+
+Epoch = 7; Training J = 63.4294 learning rate: 0.143489
+  average target output 0.869607  Cost 3479.14; Acc 0.910928
+  average target output 0.814483  Cost 469.733; Acc 0.8475
+  average target output 0.794013  Cost 1680.8; Acc 0.827015
+<<< Valid F1 = 85.52 >>>
+<<< Test  F1 = 84.23 >>>
+
+Epoch = 8; Training J = 57.4996 learning rate: 0.12914
+  average target output 0.878427  Cost 3236.12; Acc 0.916038
+  average target output 0.811574  Cost 493.625; Acc 0.83875
+  average target output 0.795736  Cost 1754.54; Acc 0.821126
+<<< Valid F1 = 85.19 >>>
+<<< Test  F1 = 83.93 >>>
+
+Epoch = 9; Training J = 54.1972 learning rate: 0.116226
+  average target output 0.893486  Cost 2686.73; Acc 0.929231
+  average target output 0.820155  Cost 484.097; Acc 0.84625
+  average target output 0.802619  Cost 1721.89; Acc 0.824807
+<<< Valid F1 = 85.70 >>>
+<<< Test  F1 = 84.13 >>>
+
+Epoch = 10; Training J = 49.3819 learning rate: 0.104604
+  average target output 0.906311  Cost 2425.6; Acc 0.936399
+  average target output 0.820334  Cost 520.616; Acc 0.8425
+  average target output 0.800385  Cost 1827.57; Acc 0.821494
+<<< Valid F1 = 85.49 >>>
+<<< Test  F1 = 83.99 >>>
+
+Epoch = 11; Training J = 46.476 learning rate: 0.0941432
+  average target output 0.905259  Cost 2473.28; Acc 0.935865
+  average target output 0.810263  Cost 534.059; Acc 0.8275
+  average target output 0.797452  Cost 1881.6; Acc 0.82223
+<<< Valid F1 = 84.23 >>>
+<<< Test  F1 = 83.92 >>>
+
+Epoch = 12; Training J = 42.7306 learning rate: 0.0847288
+  average target output 0.910406  Cost 2292.85; Acc 0.938916
+  average target output 0.822941  Cost 526.41; Acc 0.84375
+  average target output 0.806941  Cost 1877.18; Acc 0.827751
+<<< Valid F1 = 85.29 >>>
+<<< Test  F1 = 84.37 >>>
+
+Epoch = 13; Training J = 40.8597 learning rate: 0.076256
+  average target output 0.923858  Cost 1916.54; Acc 0.949973
+  average target output 0.829617  Cost 523.214; Acc 0.845
+  average target output 0.814168  Cost 1828.78; Acc 0.834008
+<<< Valid F1 = 85.51 >>>
+<<< Test  F1 = 84.92 >>>
+
+Epoch = 14; Training J = 39.9474 learning rate: 0.0686304
+  average target output 0.925302  Cost 1785.6; Acc 0.953939
+  average target output 0.824238  Cost 539.161; Acc 0.84
+  average target output 0.810846  Cost 1825.03; Acc 0.831432
+<<< Valid F1 = 85.30 >>>
+<<< Test  F1 = 84.78 >>>
+
+Epoch = 15; Training J = 37.6392 learning rate: 0.0617673
+  average target output 0.93236  Cost 1566.33; Acc 0.958896
+  average target output 0.82553  Cost 547.839; Acc 0.84625
+  average target output 0.812702  Cost 1826.92; Acc 0.831064
+<<< Valid F1 = 85.60 >>>
+<<< Test  F1 = 84.65 >>>
+
+Epoch = 16; Training J = 35.7755 learning rate: 0.0555906
+  average target output 0.93759  Cost 1409.85; Acc 0.96187
+  average target output 0.832728  Cost 538.018; Acc 0.85375
+  average target output 0.818612  Cost 1805.09; Acc 0.841001
+<<< Valid F1 = 86.23 >>>
+<<< Test  F1 = 85.46 >>>
+
+Epoch = 17; Training J = 33.7003 learning rate: 0.0500315
+  average target output 0.941708  Cost 1294.18; Acc 0.966674
+  average target output 0.833832  Cost 543.307; Acc 0.8525
+  average target output 0.821614  Cost 1822.24; Acc 0.840265
+<<< Valid F1 = 86.02 >>>
+<<< Test  F1 = 85.30 >>>
+
+Epoch = 18; Training J = 32.9864 learning rate: 0.0450284
+  average target output 0.943746  Cost 1272.67; Acc 0.96614
+  average target output 0.834871  Cost 544.633; Acc 0.8575
+  average target output 0.822861  Cost 1815.97; Acc 0.841737
+<<< Valid F1 = 86.39 >>>
+<<< Test  F1 = 85.53 >>>
+
+Epoch = 19; Training J = 31.2137 learning rate: 0.0405255
+  average target output 0.944648  Cost 1237.38; Acc 0.967666
+  average target output 0.842091  Cost 532.766; Acc 0.85625
+  average target output 0.832328  Cost 1738.33; Acc 0.849466
+<<< Valid F1 = 86.34 >>>
+<<< Test  F1 = 86.19 >>>
+
+Epoch = 20; Training J = 31.4684 learning rate: 0.036473
+  average target output 0.949704  Cost 1094.22; Acc 0.970716
+  average target output 0.839997  Cost 536.15; Acc 0.8575
+  average target output 0.825894  Cost 1795.12; Acc 0.843946
+<<< Valid F1 = 86.47 >>>
+<<< Test  F1 = 85.60 >>>
+
+Epoch = 21; Training J = 29.7756 learning rate: 0.0328257
+  average target output 0.953439  Cost 995.365; Acc 0.974987
+  average target output 0.835217  Cost 548.15; Acc 0.8475
+  average target output 0.824787  Cost 1820.5; Acc 0.843209
+<<< Valid F1 = 85.63 >>>
+<<< Test  F1 = 85.71 >>>
+
+Epoch = 22; Training J = 28.4785 learning rate: 0.0295431
+  average target output 0.955809  Cost 946.304; Acc 0.975978
+  average target output 0.833617  Cost 569.385; Acc 0.84875
+  average target output 0.823368  Cost 1871.15; Acc 0.839529
+<<< Valid F1 = 85.80 >>>
+<<< Test  F1 = 85.53 >>>
+
+Epoch = 23; Training J = 29.3949 learning rate: 0.0265888
+  average target output 0.955467  Cost 926.648; Acc 0.977122
+  average target output 0.84142  Cost 549.143; Acc 0.85375
+  average target output 0.828278  Cost 1801.14; Acc 0.843946
+<<< Valid F1 = 86.01 >>>
+<<< Test  F1 = 85.55 >>>
+
+Epoch = 24; Training J = 27.8008 learning rate: 0.0239299
+  average target output 0.959985  Cost 836.823; Acc 0.978571
+  average target output 0.83592  Cost 566.568; Acc 0.85125
+  average target output 0.825891  Cost 1851.38; Acc 0.840633
+<<< Valid F1 = 85.95 >>>
+<<< Test  F1 = 85.44 >>>
+
+Epoch = 25; Training J = 26.6959 learning rate: 0.0215369
+  average target output 0.960336  Cost 810.058; Acc 0.980096
+  average target output 0.838143  Cost 557.768; Acc 0.855
+  average target output 0.827579  Cost 1845.54; Acc 0.843209
+<<< Valid F1 = 86.23 >>>
+<<< Test  F1 = 85.77 >>>
+
+Epoch = 26; Training J = 26.7779 learning rate: 0.0193832
+  average target output 0.960319  Cost 818.229; Acc 0.979867
+  average target output 0.839119  Cost 561.245; Acc 0.855
+  average target output 0.830294  Cost 1833.27; Acc 0.846522
+<<< Valid F1 = 86.08 >>>
+<<< Test  F1 = 86.09 >>>
+
+Epoch = 27; Training J = 26.3993 learning rate: 0.0174449
+  average target output 0.961499  Cost 788.027; Acc 0.981164
+  average target output 0.83751  Cost 565.812; Acc 0.855
+  average target output 0.827046  Cost 1879.74; Acc 0.84505
+<<< Valid F1 = 86.15 >>>
+<<< Test  F1 = 85.95 >>>
+
+Epoch = 28; Training J = 25.9242 learning rate: 0.0157004
+  average target output 0.962421  Cost 752.541; Acc 0.982155
+  average target output 0.835716  Cost 567.496; Acc 0.8525
+  average target output 0.825719  Cost 1886.49; Acc 0.843946
+<<< Valid F1 = 86.00 >>>
+<<< Test  F1 = 85.91 >>>
+
+Epoch = 29; Training J = 25.2991 learning rate: 0.0141304
+  average target output 0.963415  Cost 731.836; Acc 0.982384
+  average target output 0.836162  Cost 573.09; Acc 0.85125
+  average target output 0.826379  Cost 1886.04; Acc 0.841001
+<<< Valid F1 = 85.80 >>>
+<<< Test  F1 = 85.60 >>>
+
+Epoch = 30; Training J = 25.3558 learning rate: 0.0127173
+  average target output 0.964134  Cost 712.883; Acc 0.98307
+  average target output 0.839593  Cost 569.939; Acc 0.85375
+  average target output 0.826645  Cost 1897.82; Acc 0.843209
+<<< Valid F1 = 86.24 >>>
+<<< Test  F1 = 85.71 >>>
+
+Epoch = 31; Training J = 24.1441 learning rate: 0.0114456
+  average target output 0.963809  Cost 706.456; Acc 0.983757
+  average target output 0.843999  Cost 560.652; Acc 0.865
+  average target output 0.831526  Cost 1837.41; Acc 0.846154
+<<< Valid F1 = 87.17 >>>
+<<< Test  F1 = 85.85 >>>
+
+Epoch = 32; Training J = 24.271 learning rate: 0.010301
+  average target output 0.965034  Cost 683.482; Acc 0.983985
+  average target output 0.84105  Cost 566.784; Acc 0.86
+  average target output 0.829044  Cost 1872.28; Acc 0.846154
+<<< Valid F1 = 86.66 >>>
+<<< Test  F1 = 86.09 >>>
+
+Epoch = 33; Training J = 24.268 learning rate: 0.00927094
+  average target output 0.966402  Cost 652.998; Acc 0.985053
+  average target output 0.840945  Cost 569.721; Acc 0.8575
+  average target output 0.82816  Cost 1887.8; Acc 0.843209
+<<< Valid F1 = 86.45 >>>
+<<< Test  F1 = 85.76 >>>
+
+Epoch = 34; Training J = 24.368 learning rate: 0.00834385
+  average target output 0.966947  Cost 649.306; Acc 0.983757
+  average target output 0.840292  Cost 570.725; Acc 0.85875
+  average target output 0.828829  Cost 1889.23; Acc 0.844682
+<<< Valid F1 = 86.53 >>>
+<<< Test  F1 = 85.82 >>>
+
+Epoch = 35; Training J = 23.5403 learning rate: 0.00750946
+  average target output 0.967755  Cost 635.362; Acc 0.983833
+  average target output 0.838171  Cost 582.307; Acc 0.8525
+  average target output 0.826683  Cost 1927.1; Acc 0.840633
+<<< Valid F1 = 86.01 >>>
+<<< Test  F1 = 85.50 >>>
+
+Epoch = 36; Training J = 22.3485 learning rate: 0.00675852
+  average target output 0.968318  Cost 624.914; Acc 0.984595
+  average target output 0.838022  Cost 584.736; Acc 0.8525
+  average target output 0.82749  Cost 1921.28; Acc 0.842105
+<<< Valid F1 = 85.93 >>>
+<<< Test  F1 = 85.66 >>>
+
+Epoch = 37; Training J = 23.8243 learning rate: 0.00608266
+  average target output 0.968192  Cost 624.769; Acc 0.984519
+  average target output 0.838234  Cost 586.266; Acc 0.85
+  average target output 0.828488  Cost 1914.22; Acc 0.844314
+<<< Valid F1 = 85.71 >>>
+<<< Test  F1 = 85.82 >>>
+
+Epoch = 38; Training J = 22.5783 learning rate: 0.0054744
+  average target output 0.968904  Cost 609.186; Acc 0.985206
+  average target output 0.837747  Cost 587.11; Acc 0.84875
+  average target output 0.828393  Cost 1924.1; Acc 0.843577
+<<< Valid F1 = 85.70 >>>
+<<< Test  F1 = 85.74 >>>
+
+Epoch = 39; Training J = 23.2083 learning rate: 0.00492696
+  average target output 0.969138  Cost 599.073; Acc 0.985511
+  average target output 0.840245  Cost 585.279; Acc 0.8575
+  average target output 0.829651  Cost 1914.03; Acc 0.844314
+<<< Valid F1 = 86.41 >>>
+<<< Test  F1 = 85.88 >>>
+
+Epoch = 40; Training J = 23.2602 learning rate: 0.00443426
+  average target output 0.969201  Cost 596.702; Acc 0.985358
+  average target output 0.837843  Cost 585.979; Acc 0.85125
+  average target output 0.828771  Cost 1910.82; Acc 0.843946
+<<< Valid F1 = 85.85 >>>
+<<< Test  F1 = 85.94 >>>
+
+done

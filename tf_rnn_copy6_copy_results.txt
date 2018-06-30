@@ -1,0 +1,707 @@
+New epoch 0
+epoch loss 426.970127344
+Epoch Accuracy 0.547841727586
+Test Loss:  0.930538
+test accuracy : 0.70887
+(2717,)
+tf_rnn_copy6_copy_predictions F1_score: 74.35% >>>
+New epoch 1
+epoch loss 255.933911562
+Epoch Accuracy 0.706906477753
+Test Loss:  0.817586
+test accuracy : 0.732794
+(2717,)
+tf_rnn_copy6_copy_predictions F1_score: 76.40% >>>
+New epoch 2
+epoch loss 218.177522093
+Epoch Accuracy 0.748705035062
+Test Loss:  0.711454
+test accuracy : 0.770703
+(2717,)
+tf_rnn_copy6_copy_predictions F1_score: 79.30% >>>
+New epoch 3
+epoch loss 193.729861766
+Epoch Accuracy 0.770863309181
+Test Loss:  0.733382
+test accuracy : 0.758557
+(2717,)
+tf_rnn_copy6_copy_predictions F1_score: 79.51% >>>
+New epoch 4
+epoch loss 175.512506932
+Epoch Accuracy 0.792733807572
+Test Loss:  0.695181
+test accuracy : 0.779904
+(2717,)
+tf_rnn_copy6_copy_predictions F1_score: 81.27% >>>
+New epoch 5
+epoch loss 158.918790698
+Epoch Accuracy 0.812158269848
+Test Loss:  0.667344
+test accuracy : 0.784321
+(2717,)
+tf_rnn_copy6_copy_predictions F1_score: 81.01% >>>
+New epoch 6
+epoch loss 145.600046471
+Epoch Accuracy 0.828705028664
+Test Loss:  0.689771
+test accuracy : 0.784689
+(2717,)
+tf_rnn_copy6_copy_predictions F1_score: 81.46% >>>
+New epoch 7
+epoch loss 134.968736187
+Epoch Accuracy 0.837050351951
+Test Loss:  0.647947
+test accuracy : 0.801987
+(2717,)
+tf_rnn_copy6_copy_predictions F1_score: 82.49% >>>
+New epoch 8
+epoch loss 124.830958277
+Epoch Accuracy 0.855755390452
+Test Loss:  0.67672
+test accuracy : 0.787633
+(2717,)
+tf_rnn_copy6_copy_predictions F1_score: 81.65% >>>
+New epoch 9
+epoch loss 115.036636472
+Epoch Accuracy 0.861294959732
+Test Loss:  0.670187
+test accuracy : 0.794626
+(2717,)
+tf_rnn_copy6_copy_predictions F1_score: 81.98% >>>
+New epoch 10
+epoch loss 110.125134662
+Epoch Accuracy 0.868633088877
+Test Loss:  0.670228
+test accuracy : 0.794626
+(2717,)
+tf_rnn_copy6_copy_predictions F1_score: 82.04% >>>
+New epoch 11
+epoch loss 105.4925448
+Epoch Accuracy 0.871798553055
+Test Loss:  0.670224
+test accuracy : 0.794994
+(2717,)
+tf_rnn_copy6_copy_predictions F1_score: 82.12% >>>
+New epoch 12
+epoch loss 100.338232204
+Epoch Accuracy 0.882302154097
+Test Loss:  0.619366
+test accuracy : 0.815237
+(2717,)
+tf_rnn_copy6_copy_predictions F1_score: 83.37% >>>
+New epoch 13
+epoch loss 93.2323747426
+Epoch Accuracy 0.887050356153
+Test Loss:  0.658575
+test accuracy : 0.800147
+(2717,)
+tf_rnn_copy6_copy_predictions F1_score: 82.42% >>>
+New epoch 14
+epoch loss 91.4551451951
+Epoch Accuracy 0.889496397843
+Test Loss:  0.687464
+test accuracy : 0.797571
+(2717,)
+tf_rnn_copy6_copy_predictions F1_score: 82.55% >>>
+New epoch 15
+epoch loss 85.6836634129
+Epoch Accuracy 0.897841722416
+Test Loss:  0.643441
+test accuracy : 0.815605
+(2717,)
+tf_rnn_copy6_copy_predictions F1_score: 83.78% >>>
+New epoch 16
+epoch loss 82.0231845751
+Epoch Accuracy 0.903453234717
+Test Loss:  0.650696
+test accuracy : 0.808612
+(2717,)
+tf_rnn_copy6_copy_predictions F1_score: 82.97% >>>
+New epoch 17
+epoch loss 80.385497354
+Epoch Accuracy 0.903525174951
+Test Loss:  0.649681
+test accuracy : 0.813029
+(2717,)
+tf_rnn_copy6_copy_predictions F1_score: 83.35% >>>
+New epoch 18
+epoch loss 78.2617243305
+Epoch Accuracy 0.906978413141
+Test Loss:  0.678187
+test accuracy : 0.80714
+(2717,)
+tf_rnn_copy6_copy_predictions F1_score: 83.03% >>>
+New epoch 19
+epoch loss 77.6908371672
+Epoch Accuracy 0.906043161162
+Test Loss:  0.6705
+test accuracy : 0.807508
+(2717,)
+tf_rnn_copy6_copy_predictions F1_score: 83.05% >>>
+New epoch 20
+epoch loss 73.6862781048
+Epoch Accuracy 0.910287766362
+Test Loss:  0.661263
+test accuracy : 0.811557
+(2717,)
+tf_rnn_copy6_copy_predictions F1_score: 83.40% >>>
+New epoch 21
+epoch loss 72.9431904256
+Epoch Accuracy 0.912446039186
+Test Loss:  0.694234
+test accuracy : 0.801987
+(2717,)
+tf_rnn_copy6_copy_predictions F1_score: 82.70% >>>
+New epoch 22
+epoch loss 72.724145595
+Epoch Accuracy 0.913525176348
+Test Loss:  0.670087
+test accuracy : 0.811189
+(2717,)
+tf_rnn_copy6_copy_predictions F1_score: 83.37% >>>
+New epoch 23
+epoch loss 71.4134970978
+Epoch Accuracy 0.911654673034
+Test Loss:  0.669239
+test accuracy : 0.80714
+(2717,)
+tf_rnn_copy6_copy_predictions F1_score: 83.10% >>>
+New epoch 24
+epoch loss 68.6750313044
+Epoch Accuracy 0.917194242314
+Test Loss:  0.670938
+test accuracy : 0.810085
+(2717,)
+tf_rnn_copy6_copy_predictions F1_score: 83.20% >>>
+New epoch 25
+epoch loss 67.9418918118
+Epoch Accuracy 0.919784169832
+Test Loss:  0.672173
+test accuracy : 0.80898
+(2717,)
+tf_rnn_copy6_copy_predictions F1_score: 83.25% >>>
+New epoch 26
+epoch loss 68.6806227118
+Epoch Accuracy 0.9166906431
+Test Loss:  0.680501
+test accuracy : 0.806404
+(2717,)
+tf_rnn_copy6_copy_predictions F1_score: 83.00% >>>
+New epoch 27
+epoch loss 67.1907006428
+Epoch Accuracy 0.919712226382
+Test Loss:  0.678769
+test accuracy : 0.80714
+(2717,)
+tf_rnn_copy6_copy_predictions F1_score: 82.97% >>>
+New epoch 28
+epoch loss 66.2601061985
+Epoch Accuracy 0.918848917424
+Test Loss:  0.679931
+test accuracy : 0.806036
+(2717,)
+tf_rnn_copy6_copy_predictions F1_score: 82.97% >>>
+New epoch 29
+epoch loss 68.6723946631
+Epoch Accuracy 0.91561150851
+Test Loss:  0.682374
+test accuracy : 0.806772
+(2717,)
+tf_rnn_copy6_copy_predictions F1_score: 82.97% >>>
+New epoch 30
+epoch loss 66.0002404302
+Epoch Accuracy 0.918417264017
+Test Loss:  0.683789
+test accuracy : 0.80898
+(2717,)
+tf_rnn_copy6_copy_predictions F1_score: 83.24% >>>
+New epoch 31
+epoch loss 64.9743400961
+Epoch Accuracy 0.921151075861
+Test Loss:  0.669584
+test accuracy : 0.812661
+(2717,)
+tf_rnn_copy6_copy_predictions F1_score: 83.36% >>>
+New epoch 32
+epoch loss 64.095041424
+Epoch Accuracy 0.922158270217
+Test Loss:  0.673476
+test accuracy : 0.80898
+(2717,)
+tf_rnn_copy6_copy_predictions F1_score: 83.13% >>>
+New epoch 33
+epoch loss 63.6328552663
+Epoch Accuracy 0.92395683244
+Test Loss:  0.685885
+test accuracy : 0.808244
+(2717,)
+tf_rnn_copy6_copy_predictions F1_score: 83.09% >>>
+New epoch 34
+epoch loss 63.9931058437
+Epoch Accuracy 0.923741002735
+Test Loss:  0.672671
+test accuracy : 0.810085
+(2717,)
+tf_rnn_copy6_copy_predictions F1_score: 83.21% >>>
+New epoch 35
+epoch loss 63.7764241397
+Epoch Accuracy 0.922661867073
+Test Loss:  0.681233
+test accuracy : 0.80714
+(2717,)
+tf_rnn_copy6_copy_predictions F1_score: 83.00% >>>
+New epoch 36
+epoch loss 63.944282189
+Epoch Accuracy 0.92223021238
+Test Loss:  0.686678
+test accuracy : 0.806772
+(2717,)
+tf_rnn_copy6_copy_predictions F1_score: 83.06% >>>
+New epoch 37
+epoch loss 62.5131198019
+Epoch Accuracy 0.922517983176
+Test Loss:  0.680297
+test accuracy : 0.808612
+(2717,)
+tf_rnn_copy6_copy_predictions F1_score: 83.15% >>>
+New epoch 38
+epoch loss 63.369659394
+Epoch Accuracy 0.924532371459
+Test Loss:  0.681828
+test accuracy : 0.80714
+(2717,)
+tf_rnn_copy6_copy_predictions F1_score: 83.01% >>>
+New epoch 39
+epoch loss 64.0205278248
+Epoch Accuracy 0.919208630383
+Test Loss:  0.680627
+test accuracy : 0.809349
+(2717,)
+tf_rnn_copy6_copy_predictions F1_score: 83.20% >>>
+New epoch 40
+epoch loss 62.3510088921
+Epoch Accuracy 0.926043163744
+Test Loss:  0.679901
+test accuracy : 0.80898
+(2717,)
+tf_rnn_copy6_copy_predictions F1_score: 83.24% >>>
+New epoch 41
+epoch loss 62.1525280699
+Epoch Accuracy 0.923093522195
+Test Loss:  0.681514
+test accuracy : 0.807876
+(2717,)
+tf_rnn_copy6_copy_predictions F1_score: 83.17% >>>
+New epoch 42
+epoch loss 64.3510008082
+Epoch Accuracy 0.921151074789
+Test Loss:  0.683638
+test accuracy : 0.80714
+(2717,)
+tf_rnn_copy6_copy_predictions F1_score: 83.08% >>>
+New epoch 43
+epoch loss 61.4885840155
+Epoch Accuracy 0.924388487348
+Test Loss:  0.68529
+test accuracy : 0.806772
+(2717,)
+tf_rnn_copy6_copy_predictions F1_score: 83.05% >>>
+New epoch 44
+epoch loss 63.2692960761
+Epoch Accuracy 0.923741005736
+Test Loss:  0.679205
+test accuracy : 0.80898
+(2717,)
+tf_rnn_copy6_copy_predictions F1_score: 83.22% >>>
+New epoch 45
+epoch loss 62.6772545874
+Epoch Accuracy 0.922158271289
+Test Loss:  0.683467
+test accuracy : 0.807876
+(2717,)
+tf_rnn_copy6_copy_predictions F1_score: 83.12% >>>
+New epoch 46
+epoch loss 62.2317677066
+Epoch Accuracy 0.925035968101
+Test Loss:  0.682127
+test accuracy : 0.807876
+(2717,)
+tf_rnn_copy6_copy_predictions F1_score: 83.07% >>>
+New epoch 47
+epoch loss 61.681572102
+Epoch Accuracy 0.926978414436
+Test Loss:  0.684088
+test accuracy : 0.80714
+(2717,)
+tf_rnn_copy6_copy_predictions F1_score: 83.04% >>>
+New epoch 48
+epoch loss 61.4517741874
+Epoch Accuracy 0.926474816293
+Test Loss:  0.684004
+test accuracy : 0.80714
+(2717,)
+tf_rnn_copy6_copy_predictions F1_score: 83.04% >>>
+New epoch 49
+epoch loss 60.9438149668
+Epoch Accuracy 0.928705030637
+Test Loss:  0.683291
+test accuracy : 0.806772
+(2717,)
+tf_rnn_copy6_copy_predictions F1_score: 83.02% >>>
+[0.70887005, 0.73279351, 0.77070296, 0.75855726, 0.77990431, 0.78432095, 0.78468901, 0.80198747, 0.78763342, 0.79462641, 0.79462641, 0.79499447, 0.8152374, 0.80014724, 0.79757082, 0.81560546, 0.80861247, 0.81302905, 0.80714023, 0.80750829, 0.81155688, 0.80198747, 0.81118882, 0.80714023, 0.81008464, 0.80898046, 0.80640411, 0.80714023, 0.80603606, 0.80677217, 0.80898046, 0.81266105, 0.80898046, 0.80824441, 0.81008464, 0.80714023, 0.80677217, 0.80861247, 0.80714023, 0.80934852, 0.80898046, 0.80787635, 0.80714023, 0.80677217, 0.80898046, 0.80787635, 0.80787635, 0.80714023, 0.80714023, 0.80677217]
+
+
+2nd run
+
+
+New epoch 0
+epoch loss 426.970127344
+Epoch Accuracy 0.547841727586
+Test Loss:  0.930538
+test accuracy : 0.70887
+(2717,)
+tf_rnn_copy6_copy_predictions F1_score: 74.35% >>>
+New epoch 1
+epoch loss 255.933911562
+Epoch Accuracy 0.706906477753
+Test Loss:  0.817586
+test accuracy : 0.732794
+(2717,)
+tf_rnn_copy6_copy_predictions F1_score: 76.40% >>>
+New epoch 2
+epoch loss 218.177522093
+Epoch Accuracy 0.748705035062
+Test Loss:  0.711454
+test accuracy : 0.770703
+(2717,)
+tf_rnn_copy6_copy_predictions F1_score: 79.30% >>>
+New epoch 3
+epoch loss 193.729861766
+Epoch Accuracy 0.770863309181
+Test Loss:  0.733382
+test accuracy : 0.758557
+(2717,)
+tf_rnn_copy6_copy_predictions F1_score: 79.51% >>>
+New epoch 4
+epoch loss 175.512506932
+Epoch Accuracy 0.792733807572
+Test Loss:  0.695181
+test accuracy : 0.779904
+(2717,)
+tf_rnn_copy6_copy_predictions F1_score: 81.27% >>>
+New epoch 5
+epoch loss 158.918790698
+Epoch Accuracy 0.812158269848
+Test Loss:  0.667344
+test accuracy : 0.784321
+(2717,)
+tf_rnn_copy6_copy_predictions F1_score: 81.01% >>>
+New epoch 6
+epoch loss 145.600046471
+Epoch Accuracy 0.828705028664
+Test Loss:  0.689771
+test accuracy : 0.784689
+(2717,)
+tf_rnn_copy6_copy_predictions F1_score: 81.46% >>>
+New epoch 7
+epoch loss 134.968736187
+Epoch Accuracy 0.837050351951
+Test Loss:  0.647947
+test accuracy : 0.801987
+(2717,)
+tf_rnn_copy6_copy_predictions F1_score: 82.49% >>>
+New epoch 8
+epoch loss 124.830958277
+Epoch Accuracy 0.855755390452
+Test Loss:  0.67672
+test accuracy : 0.787633
+(2717,)
+tf_rnn_copy6_copy_predictions F1_score: 81.65% >>>
+New epoch 9
+epoch loss 115.036636472
+Epoch Accuracy 0.861294959732
+Test Loss:  0.670187
+test accuracy : 0.794626
+(2717,)
+tf_rnn_copy6_copy_predictions F1_score: 81.98% >>>
+New epoch 10
+epoch loss 110.125134662
+Epoch Accuracy 0.868633088877
+Test Loss:  0.670228
+test accuracy : 0.794626
+(2717,)
+tf_rnn_copy6_copy_predictions F1_score: 82.04% >>>
+New epoch 11
+epoch loss 105.4925448
+Epoch Accuracy 0.871798553055
+Test Loss:  0.670224
+test accuracy : 0.794994
+(2717,)
+tf_rnn_copy6_copy_predictions F1_score: 82.12% >>>
+New epoch 12
+epoch loss 100.338232204
+Epoch Accuracy 0.882302154097
+Test Loss:  0.619366
+test accuracy : 0.815237
+(2717,)
+tf_rnn_copy6_copy_predictions F1_score: 83.37% >>>
+New epoch 13
+epoch loss 93.2323747426
+Epoch Accuracy 0.887050356153
+Test Loss:  0.658575
+test accuracy : 0.800147
+(2717,)
+tf_rnn_copy6_copy_predictions F1_score: 82.42% >>>
+New epoch 14
+epoch loss 91.4551451951
+Epoch Accuracy 0.889496397843
+Test Loss:  0.687464
+test accuracy : 0.797571
+(2717,)
+tf_rnn_copy6_copy_predictions F1_score: 82.55% >>>
+New epoch 15
+epoch loss 85.6836634129
+Epoch Accuracy 0.897841722416
+Test Loss:  0.643441
+test accuracy : 0.815605
+(2717,)
+tf_rnn_copy6_copy_predictions F1_score: 83.78% >>>
+New epoch 16
+epoch loss 82.0231845751
+Epoch Accuracy 0.903453234717
+Test Loss:  0.650696
+test accuracy : 0.808612
+(2717,)
+tf_rnn_copy6_copy_predictions F1_score: 82.97% >>>
+New epoch 17
+epoch loss 80.385497354
+Epoch Accuracy 0.903525174951
+Test Loss:  0.649681
+test accuracy : 0.813029
+(2717,)
+tf_rnn_copy6_copy_predictions F1_score: 83.35% >>>
+New epoch 18
+epoch loss 78.2617243305
+Epoch Accuracy 0.906978413141
+Test Loss:  0.678187
+test accuracy : 0.80714
+(2717,)
+tf_rnn_copy6_copy_predictions F1_score: 83.03% >>>
+New epoch 19
+epoch loss 77.6908371672
+Epoch Accuracy 0.906043161162
+Test Loss:  0.6705
+test accuracy : 0.807508
+(2717,)
+tf_rnn_copy6_copy_predictions F1_score: 83.05% >>>
+New epoch 20
+epoch loss 73.6862781048
+Epoch Accuracy 0.910287766362
+Test Loss:  0.661263
+test accuracy : 0.811557
+(2717,)
+tf_rnn_copy6_copy_predictions F1_score: 83.40% >>>
+New epoch 21
+epoch loss 72.9431904256
+Epoch Accuracy 0.912446039186
+Test Loss:  0.694234
+test accuracy : 0.801987
+(2717,)
+tf_rnn_copy6_copy_predictions F1_score: 82.70% >>>
+New epoch 22
+epoch loss 72.724145595
+Epoch Accuracy 0.913525176348
+Test Loss:  0.670087
+test accuracy : 0.811189
+(2717,)
+tf_rnn_copy6_copy_predictions F1_score: 83.37% >>>
+New epoch 23
+epoch loss 71.4134970978
+Epoch Accuracy 0.911654673034
+Test Loss:  0.669239
+test accuracy : 0.80714
+(2717,)
+tf_rnn_copy6_copy_predictions F1_score: 83.10% >>>
+New epoch 24
+epoch loss 68.6750313044
+Epoch Accuracy 0.917194242314
+Test Loss:  0.670938
+test accuracy : 0.810085
+(2717,)
+tf_rnn_copy6_copy_predictions F1_score: 83.20% >>>
+New epoch 25
+epoch loss 67.9418918118
+Epoch Accuracy 0.919784169832
+Test Loss:  0.672173
+test accuracy : 0.80898
+(2717,)
+tf_rnn_copy6_copy_predictions F1_score: 83.25% >>>
+New epoch 26
+epoch loss 68.6806227118
+Epoch Accuracy 0.9166906431
+Test Loss:  0.680501
+test accuracy : 0.806404
+(2717,)
+tf_rnn_copy6_copy_predictions F1_score: 83.00% >>>
+New epoch 27
+epoch loss 67.1907006428
+Epoch Accuracy 0.919712226382
+Test Loss:  0.678769
+test accuracy : 0.80714
+(2717,)
+tf_rnn_copy6_copy_predictions F1_score: 82.97% >>>
+New epoch 28
+epoch loss 66.2601061985
+Epoch Accuracy 0.918848917424
+Test Loss:  0.679931
+test accuracy : 0.806036
+(2717,)
+tf_rnn_copy6_copy_predictions F1_score: 82.97% >>>
+New epoch 29
+epoch loss 68.6723946631
+Epoch Accuracy 0.91561150851
+Test Loss:  0.682374
+test accuracy : 0.806772
+(2717,)
+tf_rnn_copy6_copy_predictions F1_score: 82.97% >>>
+New epoch 30
+epoch loss 66.0002404302
+Epoch Accuracy 0.918417264017
+Test Loss:  0.683789
+test accuracy : 0.80898
+(2717,)
+tf_rnn_copy6_copy_predictions F1_score: 83.24% >>>
+New epoch 31
+epoch loss 64.9743400961
+Epoch Accuracy 0.921151075861
+Test Loss:  0.669584
+test accuracy : 0.812661
+(2717,)
+tf_rnn_copy6_copy_predictions F1_score: 83.36% >>>
+New epoch 32
+epoch loss 64.095041424
+Epoch Accuracy 0.922158270217
+Test Loss:  0.673476
+test accuracy : 0.80898
+(2717,)
+tf_rnn_copy6_copy_predictions F1_score: 83.13% >>>
+New epoch 33
+epoch loss 63.6328552663
+Epoch Accuracy 0.92395683244
+Test Loss:  0.685885
+test accuracy : 0.808244
+(2717,)
+tf_rnn_copy6_copy_predictions F1_score: 83.09% >>>
+New epoch 34
+epoch loss 63.9931058437
+Epoch Accuracy 0.923741002735
+Test Loss:  0.672671
+test accuracy : 0.810085
+(2717,)
+tf_rnn_copy6_copy_predictions F1_score: 83.21% >>>
+New epoch 35
+epoch loss 63.7764241397
+Epoch Accuracy 0.922661867073
+Test Loss:  0.681233
+test accuracy : 0.80714
+(2717,)
+tf_rnn_copy6_copy_predictions F1_score: 83.00% >>>
+New epoch 36
+epoch loss 63.944282189
+Epoch Accuracy 0.92223021238
+Test Loss:  0.686678
+test accuracy : 0.806772
+(2717,)
+tf_rnn_copy6_copy_predictions F1_score: 83.06% >>>
+New epoch 37
+epoch loss 62.5131198019
+Epoch Accuracy 0.922517983176
+Test Loss:  0.680297
+test accuracy : 0.808612
+(2717,)
+tf_rnn_copy6_copy_predictions F1_score: 83.15% >>>
+New epoch 38
+epoch loss 63.369659394
+Epoch Accuracy 0.924532371459
+Test Loss:  0.681828
+test accuracy : 0.80714
+(2717,)
+tf_rnn_copy6_copy_predictions F1_score: 83.01% >>>
+New epoch 39
+epoch loss 64.0205278248
+Epoch Accuracy 0.919208630383
+Test Loss:  0.680627
+test accuracy : 0.809349
+(2717,)
+tf_rnn_copy6_copy_predictions F1_score: 83.20% >>>
+New epoch 40
+epoch loss 62.3510088921
+Epoch Accuracy 0.926043163744
+Test Loss:  0.679901
+test accuracy : 0.80898
+(2717,)
+tf_rnn_copy6_copy_predictions F1_score: 83.24% >>>
+New epoch 41
+epoch loss 62.1525280699
+Epoch Accuracy 0.923093522195
+Test Loss:  0.681514
+test accuracy : 0.807876
+(2717,)
+tf_rnn_copy6_copy_predictions F1_score: 83.17% >>>
+New epoch 42
+epoch loss 64.3510008082
+Epoch Accuracy 0.921151074789
+Test Loss:  0.683638
+test accuracy : 0.80714
+(2717,)
+tf_rnn_copy6_copy_predictions F1_score: 83.08% >>>
+New epoch 43
+epoch loss 61.4885840155
+Epoch Accuracy 0.924388487348
+Test Loss:  0.68529
+test accuracy : 0.806772
+(2717,)
+tf_rnn_copy6_copy_predictions F1_score: 83.05% >>>
+New epoch 44
+epoch loss 63.2692960761
+Epoch Accuracy 0.923741005736
+Test Loss:  0.679205
+test accuracy : 0.80898
+(2717,)
+tf_rnn_copy6_copy_predictions F1_score: 83.22% >>>
+New epoch 45
+epoch loss 62.6772545874
+Epoch Accuracy 0.922158271289
+Test Loss:  0.683467
+test accuracy : 0.807876
+(2717,)
+tf_rnn_copy6_copy_predictions F1_score: 83.12% >>>
+New epoch 46
+epoch loss 62.2317677066
+Epoch Accuracy 0.925035968101
+Test Loss:  0.682127
+test accuracy : 0.807876
+(2717,)
+tf_rnn_copy6_copy_predictions F1_score: 83.07% >>>
+New epoch 47
+epoch loss 61.681572102
+Epoch Accuracy 0.926978414436
+Test Loss:  0.684088
+test accuracy : 0.80714
+(2717,)
+tf_rnn_copy6_copy_predictions F1_score: 83.04% >>>
+New epoch 48
+epoch loss 61.4517741874
+Epoch Accuracy 0.926474816293
+Test Loss:  0.684004
+test accuracy : 0.80714
+(2717,)
+tf_rnn_copy6_copy_predictions F1_score: 83.04% >>>
+New epoch 49
+epoch loss 60.9438149668
+Epoch Accuracy 0.928705030637
+Test Loss:  0.683291
+test accuracy : 0.806772
+(2717,)
+tf_rnn_copy6_copy_predictions F1_score: 83.02% >>>
+[0.70887005, 0.73279351, 0.77070296, 0.75855726, 0.77990431, 0.78432095, 0.78468901, 0.80198747, 0.78763342, 0.79462641, 0.79462641, 0.79499447, 0.8152374, 0.80014724, 0.79757082, 0.81560546, 0.80861247, 0.81302905, 0.80714023, 0.80750829, 0.81155688, 0.80198747, 0.81118882, 0.80714023, 0.81008464, 0.80898046, 0.80640411, 0.80714023, 0.80603606, 0.80677217, 0.80898046, 0.81266105, 0.80898046, 0.80824441, 0.81008464, 0.80714023, 0.80677217, 0.80861247, 0.80714023, 0.80934852, 0.80898046, 0.80787635, 0.80714023, 0.80677217, 0.80898046, 0.80787635, 0.80787635, 0.80714023, 0.80714023, 0.80677217]

@@ -1,0 +1,4209 @@
+
+only change to cnn.py is wordvecs are trainable. See How the test acc drops due to overfitting. It doesn't happen when the wordvecs are non trainable.
+
+Start training
+Epoch 1/1
+8000/8000 [==============================] - 3s 404us/step - loss: 1.6487 - acc: 0.5045
+Epoch No: 0
+Accuracy: 0.7214 (max: 0.7214)
+cnn_predictions F1_score: 76.18% >>>
+Non-other Macro-Averaged F1: 0.6800 (max: 0.6800)
+
+Epoch 1/1
+8000/8000 [==============================] - 2s 299us/step - loss: 0.6757 - acc: 0.8043
+Epoch No: 1
+Accuracy: 0.7740 (max: 0.7740)
+cnn_predictions F1_score: 81.42% >>>
+Non-other Macro-Averaged F1: 0.7340 (max: 0.7340)
+
+Epoch 1/1
+8000/8000 [==============================] - 2s 297us/step - loss: 0.3381 - acc: 0.9251
+Epoch No: 2
+Accuracy: 0.7902 (max: 0.7902)
+cnn_predictions F1_score: 83.06% >>>
+Non-other Macro-Averaged F1: 0.7630 (max: 0.7630)
+
+Epoch 1/1
+8000/8000 [==============================] - 2s 296us/step - loss: 0.1679 - acc: 0.9799
+Epoch No: 3
+Accuracy: 0.7777 (max: 0.7902)
+cnn_predictions F1_score: 81.79% >>>
+Non-other Macro-Averaged F1: 0.7500 (max: 0.7630)
+
+Epoch 1/1
+8000/8000 [==============================] - 2s 299us/step - loss: 0.1028 - acc: 0.9968
+Epoch No: 4
+Accuracy: 0.7917 (max: 0.7917)
+cnn_predictions F1_score: 83.20% >>>
+Non-other Macro-Averaged F1: 0.7678 (max: 0.7678)
+
+Epoch 1/1
+8000/8000 [==============================] - 2s 293us/step - loss: 0.0791 - acc: 0.9996
+Epoch No: 5
+Accuracy: 0.7880 (max: 0.7917)
+cnn_predictions F1_score: 82.91% >>>
+Non-other Macro-Averaged F1: 0.7644 (max: 0.7678)
+
+Epoch 1/1
+8000/8000 [==============================] - 2s 296us/step - loss: 0.0688 - acc: 0.9998
+Epoch No: 6
+Accuracy: 0.7932 (max: 0.7932)
+cnn_predictions F1_score: 83.22% >>>
+Non-other Macro-Averaged F1: 0.7688 (max: 0.7688)
+
+Epoch 1/1
+8000/8000 [==============================] - 2s 294us/step - loss: 0.0618 - acc: 1.0000
+Epoch No: 7
+Accuracy: 0.7950 (max: 0.7950)
+cnn_predictions F1_score: 83.44% >>>
+Non-other Macro-Averaged F1: 0.7714 (max: 0.7714)
+
+Epoch 1/1
+8000/8000 [==============================] - 2s 294us/step - loss: 0.0565 - acc: 0.9999
+Epoch No: 8
+Accuracy: 0.7921 (max: 0.7950)
+cnn_predictions F1_score: 83.31% >>>
+Non-other Macro-Averaged F1: 0.7715 (max: 0.7715)
+
+Epoch 1/1
+8000/8000 [==============================] - 2s 296us/step - loss: 0.0517 - acc: 1.0000
+Epoch No: 9
+Accuracy: 0.7898 (max: 0.7950)
+cnn_predictions F1_score: 83.04% >>>
+Non-other Macro-Averaged F1: 0.7693 (max: 0.7715)
+
+Epoch 1/1
+8000/8000 [==============================] - 2s 294us/step - loss: 0.0477 - acc: 1.0000
+Epoch No: 10
+Accuracy: 0.7946 (max: 0.7950)
+cnn_predictions F1_score: 83.51% >>>
+Non-other Macro-Averaged F1: 0.7701 (max: 0.7715)
+
+Epoch 1/1
+8000/8000 [==============================] - 2s 298us/step - loss: 0.0438 - acc: 1.0000
+Epoch No: 11
+Accuracy: 0.7880 (max: 0.7950)
+cnn_predictions F1_score: 83.07% >>>
+Non-other Macro-Averaged F1: 0.7683 (max: 0.7715)
+
+Epoch 1/1
+8000/8000 [==============================] - 2s 301us/step - loss: 0.0409 - acc: 1.0000
+Epoch No: 12
+Accuracy: 0.7876 (max: 0.7950)
+cnn_predictions F1_score: 82.89% >>>
+Non-other Macro-Averaged F1: 0.7680 (max: 0.7715)
+
+Epoch 1/1
+8000/8000 [==============================] - 2s 297us/step - loss: 0.0380 - acc: 1.0000
+Epoch No: 13
+Accuracy: 0.7898 (max: 0.7950)
+cnn_predictions F1_score: 83.12% >>>
+Non-other Macro-Averaged F1: 0.7710 (max: 0.7715)
+
+Epoch 1/1
+8000/8000 [==============================] - 2s 295us/step - loss: 0.0352 - acc: 1.0000
+Epoch No: 14
+Accuracy: 0.7957 (max: 0.7957)
+cnn_predictions F1_score: 83.59% >>>
+Non-other Macro-Averaged F1: 0.7767 (max: 0.7767)
+
+Epoch 1/1
+8000/8000 [==============================] - 2s 295us/step - loss: 0.0329 - acc: 1.0000
+Epoch No: 15
+Accuracy: 0.7928 (max: 0.7957)
+cnn_predictions F1_score: 83.41% >>>
+Non-other Macro-Averaged F1: 0.7737 (max: 0.7767)
+
+Epoch 1/1
+8000/8000 [==============================] - 2s 297us/step - loss: 0.0309 - acc: 0.9999
+Epoch No: 16
+Accuracy: 0.7891 (max: 0.7957)
+cnn_predictions F1_score: 82.98% >>>
+Non-other Macro-Averaged F1: 0.7704 (max: 0.7767)
+
+Epoch 1/1
+8000/8000 [==============================] - 2s 296us/step - loss: 0.0286 - acc: 1.0000
+Epoch No: 17
+Accuracy: 0.7840 (max: 0.7957)
+cnn_predictions F1_score: 82.70% >>>
+Non-other Macro-Averaged F1: 0.7633 (max: 0.7767)
+
+Epoch 1/1
+8000/8000 [==============================] - 2s 294us/step - loss: 0.0271 - acc: 1.0000
+Epoch No: 18
+Accuracy: 0.7876 (max: 0.7957)
+cnn_predictions F1_score: 82.96% >>>
+Non-other Macro-Averaged F1: 0.7678 (max: 0.7767)
+
+Epoch 1/1
+8000/8000 [==============================] - 2s 297us/step - loss: 0.0254 - acc: 1.0000
+Epoch No: 19
+Accuracy: 0.7840 (max: 0.7957)
+cnn_predictions F1_score: 82.68% >>>
+Non-other Macro-Averaged F1: 0.7671 (max: 0.7767)
+
+Epoch 1/1
+8000/8000 [==============================] - 2s 299us/step - loss: 0.0239 - acc: 1.0000
+Epoch No: 20
+Accuracy: 0.7851 (max: 0.7957)
+cnn_predictions F1_score: 82.84% >>>
+Non-other Macro-Averaged F1: 0.7689 (max: 0.7767)
+
+Epoch 1/1
+8000/8000 [==============================] - 2s 298us/step - loss: 0.0225 - acc: 1.0000
+Epoch No: 21
+Accuracy: 0.7828 (max: 0.7957)
+cnn_predictions F1_score: 82.53% >>>
+Non-other Macro-Averaged F1: 0.7646 (max: 0.7767)
+
+Epoch 1/1
+8000/8000 [==============================] - 2s 297us/step - loss: 0.0215 - acc: 1.0000
+Epoch No: 22
+Accuracy: 0.7825 (max: 0.7957)
+cnn_predictions F1_score: 82.68% >>>
+Non-other Macro-Averaged F1: 0.7654 (max: 0.7767)
+
+Epoch 1/1
+8000/8000 [==============================] - 2s 296us/step - loss: 0.0203 - acc: 1.0000
+Epoch No: 23
+Accuracy: 0.7843 (max: 0.7957)
+cnn_predictions F1_score: 82.66% >>>
+Non-other Macro-Averaged F1: 0.7685 (max: 0.7767)
+
+Epoch 1/1
+8000/8000 [==============================] - 2s 295us/step - loss: 0.0191 - acc: 1.0000
+Epoch No: 24
+Accuracy: 0.7825 (max: 0.7957)
+cnn_predictions F1_score: 82.63% >>>
+Non-other Macro-Averaged F1: 0.7685 (max: 0.7767)
+
+Epoch 1/1
+8000/8000 [==============================] - 2s 296us/step - loss: 0.0182 - acc: 1.0000
+Epoch No: 25
+Accuracy: 0.7799 (max: 0.7957)
+cnn_predictions F1_score: 82.36% >>>
+Non-other Macro-Averaged F1: 0.7651 (max: 0.7767)
+
+Epoch 1/1
+8000/8000 [==============================] - 2s 298us/step - loss: 0.0171 - acc: 1.0000
+Epoch No: 26
+Accuracy: 0.7788 (max: 0.7957)
+cnn_predictions F1_score: 82.22% >>>
+Non-other Macro-Averaged F1: 0.7645 (max: 0.7767)
+
+Epoch 1/1
+8000/8000 [==============================] - 2s 295us/step - loss: 0.0163 - acc: 1.0000
+Epoch No: 27
+Accuracy: 0.7773 (max: 0.7957)
+cnn_predictions F1_score: 81.99% >>>
+Non-other Macro-Averaged F1: 0.7645 (max: 0.7767)
+
+Epoch 1/1
+8000/8000 [==============================] - 2s 298us/step - loss: 0.0156 - acc: 1.0000
+Epoch No: 28
+Accuracy: 0.7722 (max: 0.7957)
+cnn_predictions F1_score: 81.61% >>>
+Non-other Macro-Averaged F1: 0.7581 (max: 0.7767)
+
+Epoch 1/1
+8000/8000 [==============================] - 2s 295us/step - loss: 0.0148 - acc: 1.0000
+Epoch No: 29
+Accuracy: 0.7751 (max: 0.7957)
+cnn_predictions F1_score: 81.85% >>>
+Non-other Macro-Averaged F1: 0.7589 (max: 0.7767)
+
+Epoch 1/1
+8000/8000 [==============================] - 2s 298us/step - loss: 0.0140 - acc: 1.0000
+Epoch No: 30
+Accuracy: 0.7770 (max: 0.7957)
+cnn_predictions F1_score: 82.07% >>>
+Non-other Macro-Averaged F1: 0.7610 (max: 0.7767)
+
+Epoch 1/1
+8000/8000 [==============================] - 2s 289us/step - loss: 0.0135 - acc: 1.0000
+Epoch No: 31
+Accuracy: 0.7722 (max: 0.7957)
+cnn_predictions F1_score: 81.69% >>>
+Non-other Macro-Averaged F1: 0.7588 (max: 0.7767)
+
+Epoch 1/1
+8000/8000 [==============================] - 2s 291us/step - loss: 0.0128 - acc: 1.0000
+Epoch No: 32
+Accuracy: 0.7711 (max: 0.7957)
+cnn_predictions F1_score: 81.50% >>>
+Non-other Macro-Averaged F1: 0.7553 (max: 0.7767)
+
+Epoch 1/1
+8000/8000 [==============================] - 2s 292us/step - loss: 0.0122 - acc: 1.0000
+Epoch No: 33
+Accuracy: 0.7733 (max: 0.7957)
+cnn_predictions F1_score: 81.93% >>>
+Non-other Macro-Averaged F1: 0.7599 (max: 0.7767)
+
+Epoch 1/1
+8000/8000 [==============================] - 2s 280us/step - loss: 0.0117 - acc: 1.0000
+Epoch No: 34
+Accuracy: 0.7700 (max: 0.7957)
+cnn_predictions F1_score: 81.60% >>>
+Non-other Macro-Averaged F1: 0.7577 (max: 0.7767)
+
+Epoch 1/1
+8000/8000 [==============================] - 2s 295us/step - loss: 0.0113 - acc: 1.0000
+Epoch No: 35
+Accuracy: 0.7622 (max: 0.7957)
+cnn_predictions F1_score: 80.80% >>>
+Non-other Macro-Averaged F1: 0.7494 (max: 0.7767)
+
+Epoch 1/1
+8000/8000 [==============================] - 2s 296us/step - loss: 0.0107 - acc: 1.0000
+Epoch No: 36
+Accuracy: 0.7663 (max: 0.7957)
+cnn_predictions F1_score: 81.13% >>>
+Non-other Macro-Averaged F1: 0.7529 (max: 0.7767)
+
+Epoch 1/1
+8000/8000 [==============================] - 2s 302us/step - loss: 0.0103 - acc: 1.0000
+Epoch No: 37
+Accuracy: 0.7630 (max: 0.7957)
+cnn_predictions F1_score: 80.91% >>>
+Non-other Macro-Averaged F1: 0.7514 (max: 0.7767)
+
+Epoch 1/1
+8000/8000 [==============================] - 2s 296us/step - loss: 0.0098 - acc: 1.0000
+Epoch No: 38
+Accuracy: 0.7648 (max: 0.7957)
+cnn_predictions F1_score: 80.99% >>>
+Non-other Macro-Averaged F1: 0.7518 (max: 0.7767)
+
+Epoch 1/1
+8000/8000 [==============================] - 2s 298us/step - loss: 0.0096 - acc: 1.0000
+Epoch No: 39
+Accuracy: 0.7656 (max: 0.7957)
+cnn_predictions F1_score: 81.15% >>>
+Non-other Macro-Averaged F1: 0.7525 (max: 0.7767)
+
+Epoch 1/1
+8000/8000 [==============================] - 2s 302us/step - loss: 0.0091 - acc: 1.0000
+Epoch No: 40
+Accuracy: 0.7597 (max: 0.7957)
+cnn_predictions F1_score: 80.59% >>>
+Non-other Macro-Averaged F1: 0.7478 (max: 0.7767)
+
+Epoch 1/1
+8000/8000 [==============================] - 2s 303us/step - loss: 0.0087 - acc: 1.0000
+Epoch No: 41
+Accuracy: 0.7619 (max: 0.7957)
+cnn_predictions F1_score: 80.79% >>>
+Non-other Macro-Averaged F1: 0.7489 (max: 0.7767)
+
+Epoch 1/1
+8000/8000 [==============================] - 2s 292us/step - loss: 0.0084 - acc: 1.0000
+Epoch No: 42
+Accuracy: 0.7630 (max: 0.7957)
+cnn_predictions F1_score: 81.04% >>>
+Non-other Macro-Averaged F1: 0.7510 (max: 0.7767)
+
+Epoch 1/1
+8000/8000 [==============================] - 2s 296us/step - loss: 0.0083 - acc: 1.0000
+Epoch No: 43
+Accuracy: 0.7545 (max: 0.7957)
+cnn_predictions F1_score: 80.37% >>>
+Non-other Macro-Averaged F1: 0.7433 (max: 0.7767)
+
+Epoch 1/1
+8000/8000 [==============================] - 2s 297us/step - loss: 0.0078 - acc: 1.0000
+Epoch No: 44
+Accuracy: 0.7527 (max: 0.7957)
+cnn_predictions F1_score: 80.11% >>>
+Non-other Macro-Averaged F1: 0.7417 (max: 0.7767)
+
+Epoch 1/1
+8000/8000 [==============================] - 2s 301us/step - loss: 0.0075 - acc: 1.0000
+Epoch No: 45
+Accuracy: 0.7508 (max: 0.7957)
+cnn_predictions F1_score: 79.86% >>>
+Non-other Macro-Averaged F1: 0.7419 (max: 0.7767)
+
+Epoch 1/1
+8000/8000 [==============================] - 2s 297us/step - loss: 0.0074 - acc: 1.0000
+Epoch No: 46
+Accuracy: 0.7538 (max: 0.7957)
+cnn_predictions F1_score: 80.27% >>>
+Non-other Macro-Averaged F1: 0.7437 (max: 0.7767)
+
+Epoch 1/1
+8000/8000 [==============================] - 2s 298us/step - loss: 0.0070 - acc: 1.0000
+Epoch No: 47
+Accuracy: 0.7464 (max: 0.7957)
+cnn_predictions F1_score: 79.48% >>>
+Non-other Macro-Averaged F1: 0.7355 (max: 0.7767)
+
+Epoch 1/1
+8000/8000 [==============================] - 2s 295us/step - loss: 0.0067 - acc: 1.0000
+Epoch No: 48
+Accuracy: 0.7479 (max: 0.7957)
+cnn_predictions F1_score: 79.68% >>>
+Non-other Macro-Averaged F1: 0.7403 (max: 0.7767)
+
+Epoch 1/1
+8000/8000 [==============================] - 2s 294us/step - loss: 0.0067 - acc: 1.0000
+Epoch No: 49
+Accuracy: 0.7453 (max: 0.7957)
+cnn_predictions F1_score: 79.45% >>>
+Non-other Macro-Averaged F1: 0.7388 (max: 0.7767)
+
+Epoch 1/1
+8000/8000 [==============================] - 2s 295us/step - loss: 0.0065 - acc: 1.0000
+Epoch No: 50
+Accuracy: 0.7405 (max: 0.7957)
+cnn_predictions F1_score: 78.94% >>>
+Non-other Macro-Averaged F1: 0.7302 (max: 0.7767)
+
+Epoch 1/1
+8000/8000 [==============================] - 2s 297us/step - loss: 0.0062 - acc: 1.0000
+Epoch No: 51
+Accuracy: 0.7394 (max: 0.7957)
+cnn_predictions F1_score: 78.97% >>>
+Non-other Macro-Averaged F1: 0.7345 (max: 0.7767)
+
+Epoch 1/1
+8000/8000 [==============================] - 2s 295us/step - loss: 0.0060 - acc: 1.0000
+Epoch No: 52
+Accuracy: 0.7446 (max: 0.7957)
+cnn_predictions F1_score: 79.33% >>>
+Non-other Macro-Averaged F1: 0.7353 (max: 0.7767)
+
+Epoch 1/1
+8000/8000 [==============================] - 2s 295us/step - loss: 0.0062 - acc: 1.0000
+Epoch No: 53
+Accuracy: 0.7391 (max: 0.7957)
+cnn_predictions F1_score: 78.59% >>>
+Non-other Macro-Averaged F1: 0.7303 (max: 0.7767)
+
+Epoch 1/1
+8000/8000 [==============================] - 2s 294us/step - loss: 0.0057 - acc: 1.0000
+Epoch No: 54
+Accuracy: 0.7427 (max: 0.7957)
+cnn_predictions F1_score: 79.08% >>>
+Non-other Macro-Averaged F1: 0.7343 (max: 0.7767)
+
+Epoch 1/1
+8000/8000 [==============================] - 2s 299us/step - loss: 0.0055 - acc: 1.0000
+Epoch No: 55
+Accuracy: 0.7335 (max: 0.7957)
+cnn_predictions F1_score: 78.36% >>>
+Non-other Macro-Averaged F1: 0.7273 (max: 0.7767)
+
+Epoch 1/1
+8000/8000 [==============================] - 2s 302us/step - loss: 0.0053 - acc: 1.0000
+Epoch No: 56
+Accuracy: 0.7361 (max: 0.7957)
+cnn_predictions F1_score: 78.47% >>>
+Non-other Macro-Averaged F1: 0.7289 (max: 0.7767)
+
+Epoch 1/1
+8000/8000 [==============================] - 2s 296us/step - loss: 0.0054 - acc: 1.0000
+Epoch No: 57
+Accuracy: 0.7324 (max: 0.7957)
+cnn_predictions F1_score: 78.09% >>>
+Non-other Macro-Averaged F1: 0.7241 (max: 0.7767)
+
+Epoch 1/1
+8000/8000 [==============================] - 2s 296us/step - loss: 0.0051 - acc: 1.0000
+Epoch No: 58
+Accuracy: 0.7365 (max: 0.7957)
+cnn_predictions F1_score: 78.59% >>>
+Non-other Macro-Averaged F1: 0.7242 (max: 0.7767)
+
+Epoch 1/1
+8000/8000 [==============================] - 2s 303us/step - loss: 0.0050 - acc: 1.0000
+Epoch No: 59
+Accuracy: 0.7339 (max: 0.7957)
+cnn_predictions F1_score: 78.25% >>>
+Non-other Macro-Averaged F1: 0.7233 (max: 0.7767)
+
+Epoch 1/1
+8000/8000 [==============================] - 2s 298us/step - loss: 0.0048 - acc: 1.0000
+Epoch No: 60
+Accuracy: 0.7269 (max: 0.7957)
+cnn_predictions F1_score: 77.65% >>>
+Non-other Macro-Averaged F1: 0.7232 (max: 0.7767)
+
+Epoch 1/1
+8000/8000 [==============================] - 2s 299us/step - loss: 0.0049 - acc: 1.0000
+Epoch No: 61
+Accuracy: 0.7258 (max: 0.7957)
+cnn_predictions F1_score: 77.19% >>>
+Non-other Macro-Averaged F1: 0.7170 (max: 0.7767)
+
+Epoch 1/1
+8000/8000 [==============================] - 2s 297us/step - loss: 0.0046 - acc: 1.0000
+Epoch No: 62
+Accuracy: 0.7192 (max: 0.7957)
+cnn_predictions F1_score: 76.75% >>>
+Non-other Macro-Averaged F1: 0.7151 (max: 0.7767)
+
+Epoch 1/1
+8000/8000 [==============================] - 2s 297us/step - loss: 0.0045 - acc: 1.0000
+Epoch No: 63
+Accuracy: 0.7276 (max: 0.7957)
+cnn_predictions F1_score: 77.67% >>>
+Non-other Macro-Averaged F1: 0.7231 (max: 0.7767)
+
+Epoch 1/1
+8000/8000 [==============================] - 2s 298us/step - loss: 0.0043 - acc: 1.0000
+Epoch No: 64
+Accuracy: 0.7221 (max: 0.7957)
+cnn_predictions F1_score: 77.25% >>>
+Non-other Macro-Averaged F1: 0.7161 (max: 0.7767)
+
+Epoch 1/1
+8000/8000 [==============================] - 2s 299us/step - loss: 0.0045 - acc: 1.0000
+Epoch No: 65
+Accuracy: 0.7206 (max: 0.7957)
+cnn_predictions F1_score: 76.97% >>>
+Non-other Macro-Averaged F1: 0.7155 (max: 0.7767)
+
+Epoch 1/1
+8000/8000 [==============================] - 2s 296us/step - loss: 0.0044 - acc: 1.0000
+Epoch No: 66
+Accuracy: 0.7137 (max: 0.7957)
+cnn_predictions F1_score: 76.29% >>>
+Non-other Macro-Averaged F1: 0.7096 (max: 0.7767)
+
+Epoch 1/1
+8000/8000 [==============================] - 2s 301us/step - loss: 0.0041 - acc: 1.0000
+Epoch No: 67
+Accuracy: 0.7184 (max: 0.7957)
+cnn_predictions F1_score: 76.78% >>>
+Non-other Macro-Averaged F1: 0.7170 (max: 0.7767)
+
+Epoch 1/1
+8000/8000 [==============================] - 2s 298us/step - loss: 0.0040 - acc: 1.0000
+Epoch No: 68
+Accuracy: 0.7126 (max: 0.7957)
+cnn_predictions F1_score: 76.30% >>>
+Non-other Macro-Averaged F1: 0.7088 (max: 0.7767)
+
+Epoch 1/1
+8000/8000 [==============================] - 2s 300us/step - loss: 0.0043 - acc: 1.0000
+Epoch No: 69
+Accuracy: 0.7133 (max: 0.7957)
+cnn_predictions F1_score: 76.32% >>>
+Non-other Macro-Averaged F1: 0.7094 (max: 0.7767)
+
+Epoch 1/1
+8000/8000 [==============================] - 2s 301us/step - loss: 0.0042 - acc: 1.0000
+Epoch No: 70
+Accuracy: 0.7081 (max: 0.7957)
+cnn_predictions F1_score: 75.51% >>>
+Non-other Macro-Averaged F1: 0.7015 (max: 0.7767)
+
+Epoch 1/1
+8000/8000 [==============================] - 2s 299us/step - loss: 0.0038 - acc: 1.0000
+Epoch No: 71
+Accuracy: 0.7089 (max: 0.7957)
+cnn_predictions F1_score: 75.80% >>>
+Non-other Macro-Averaged F1: 0.7074 (max: 0.7767)
+
+Epoch 1/1
+8000/8000 [==============================] - 2s 299us/step - loss: 0.0038 - acc: 1.0000
+Epoch No: 72
+Accuracy: 0.7085 (max: 0.7957)
+cnn_predictions F1_score: 75.49% >>>
+Non-other Macro-Averaged F1: 0.6996 (max: 0.7767)
+
+Epoch 1/1
+8000/8000 [==============================] - 2s 298us/step - loss: 0.0037 - acc: 1.0000
+Epoch No: 73
+Accuracy: 0.7067 (max: 0.7957)
+cnn_predictions F1_score: 75.63% >>>
+Non-other Macro-Averaged F1: 0.7073 (max: 0.7767)
+
+Epoch 1/1
+8000/8000 [==============================] - 2s 296us/step - loss: 0.0037 - acc: 1.0000
+Epoch No: 74
+Accuracy: 0.7030 (max: 0.7957)
+cnn_predictions F1_score: 75.26% >>>
+Non-other Macro-Averaged F1: 0.7032 (max: 0.7767)
+
+Epoch 1/1
+8000/8000 [==============================] - 2s 300us/step - loss: 0.0036 - acc: 1.0000
+Epoch No: 75
+Accuracy: 0.7045 (max: 0.7957)
+cnn_predictions F1_score: 75.15% >>>
+Non-other Macro-Averaged F1: 0.6984 (max: 0.7767)
+
+Epoch 1/1
+8000/8000 [==============================] - 2s 303us/step - loss: 0.0037 - acc: 1.0000
+Epoch No: 76
+Accuracy: 0.7030 (max: 0.7957)
+cnn_predictions F1_score: 75.21% >>>
+Non-other Macro-Averaged F1: 0.6977 (max: 0.7767)
+
+Epoch 1/1
+8000/8000 [==============================] - 2s 297us/step - loss: 0.0036 - acc: 1.0000
+Epoch No: 77
+Accuracy: 0.6989 (max: 0.7957)
+cnn_predictions F1_score: 75.08% >>>
+Non-other Macro-Averaged F1: 0.6997 (max: 0.7767)
+
+Epoch 1/1
+8000/8000 [==============================] - 2s 299us/step - loss: 0.0036 - acc: 1.0000
+Epoch No: 78
+Accuracy: 0.6949 (max: 0.7957)
+cnn_predictions F1_score: 74.48% >>>
+Non-other Macro-Averaged F1: 0.6979 (max: 0.7767)
+
+Epoch 1/1
+8000/8000 [==============================] - 2s 297us/step - loss: 0.0035 - acc: 1.0000
+Epoch No: 79
+Accuracy: 0.6941 (max: 0.7957)
+cnn_predictions F1_score: 74.52% >>>
+Non-other Macro-Averaged F1: 0.6897 (max: 0.7767)
+
+Epoch 1/1
+8000/8000 [==============================] - 2s 298us/step - loss: 0.0034 - acc: 1.0000
+Epoch No: 80
+Accuracy: 0.6872 (max: 0.7957)
+cnn_predictions F1_score: 73.45% >>>
+Non-other Macro-Averaged F1: 0.6814 (max: 0.7767)
+
+Epoch 1/1
+8000/8000 [==============================] - 2s 296us/step - loss: 0.0035 - acc: 1.0000
+Epoch No: 81
+Accuracy: 0.6927 (max: 0.7957)
+cnn_predictions F1_score: 73.95% >>>
+Non-other Macro-Averaged F1: 0.6872 (max: 0.7767)
+
+Epoch 1/1
+8000/8000 [==============================] - 2s 298us/step - loss: 0.0033 - acc: 1.0000
+Epoch No: 82
+Accuracy: 0.6901 (max: 0.7957)
+cnn_predictions F1_score: 73.72% >>>
+Non-other Macro-Averaged F1: 0.6869 (max: 0.7767)
+
+Epoch 1/1
+8000/8000 [==============================] - 2s 298us/step - loss: 0.0034 - acc: 1.0000
+Epoch No: 83
+Accuracy: 0.6861 (max: 0.7957)
+cnn_predictions F1_score: 73.28% >>>
+Non-other Macro-Averaged F1: 0.6806 (max: 0.7767)
+
+Epoch 1/1
+8000/8000 [==============================] - 2s 298us/step - loss: 0.0032 - acc: 1.0000
+Epoch No: 84
+Accuracy: 0.6853 (max: 0.7957)
+cnn_predictions F1_score: 73.50% >>>
+Non-other Macro-Averaged F1: 0.6836 (max: 0.7767)
+
+Epoch 1/1
+8000/8000 [==============================] - 2s 297us/step - loss: 0.0034 - acc: 1.0000
+Epoch No: 85
+Accuracy: 0.6849 (max: 0.7957)
+cnn_predictions F1_score: 73.35% >>>
+Non-other Macro-Averaged F1: 0.6857 (max: 0.7767)
+
+Epoch 1/1
+8000/8000 [==============================] - 2s 299us/step - loss: 0.0032 - acc: 1.0000
+Epoch No: 86
+Accuracy: 0.6857 (max: 0.7957)
+cnn_predictions F1_score: 73.45% >>>
+Non-other Macro-Averaged F1: 0.6834 (max: 0.7767)
+
+Epoch 1/1
+8000/8000 [==============================] - 2s 297us/step - loss: 0.0034 - acc: 1.0000
+Epoch No: 87
+Accuracy: 0.6868 (max: 0.7957)
+cnn_predictions F1_score: 73.33% >>>
+Non-other Macro-Averaged F1: 0.6839 (max: 0.7767)
+
+Epoch 1/1
+8000/8000 [==============================] - 2s 295us/step - loss: 0.0031 - acc: 1.0000
+Epoch No: 88
+Accuracy: 0.6838 (max: 0.7957)
+cnn_predictions F1_score: 73.06% >>>
+Non-other Macro-Averaged F1: 0.6777 (max: 0.7767)
+
+Epoch 1/1
+8000/8000 [==============================] - 2s 299us/step - loss: 0.0031 - acc: 1.0000
+Epoch No: 89
+Accuracy: 0.6787 (max: 0.7957)
+cnn_predictions F1_score: 72.70% >>>
+Non-other Macro-Averaged F1: 0.6766 (max: 0.7767)
+
+Epoch 1/1
+8000/8000 [==============================] - 2s 298us/step - loss: 0.0034 - acc: 1.0000
+Epoch No: 90
+Accuracy: 0.6798 (max: 0.7957)
+cnn_predictions F1_score: 72.39% >>>
+Non-other Macro-Averaged F1: 0.6760 (max: 0.7767)
+
+Epoch 1/1
+8000/8000 [==============================] - 2s 295us/step - loss: 0.0032 - acc: 1.0000
+Epoch No: 91
+Accuracy: 0.6805 (max: 0.7957)
+cnn_predictions F1_score: 72.76% >>>
+Non-other Macro-Averaged F1: 0.6785 (max: 0.7767)
+
+Epoch 1/1
+8000/8000 [==============================] - 2s 298us/step - loss: 0.0031 - acc: 1.0000
+Epoch No: 92
+Accuracy: 0.6816 (max: 0.7957)
+cnn_predictions F1_score: 73.09% >>>
+Non-other Macro-Averaged F1: 0.6811 (max: 0.7767)
+
+Epoch 1/1
+8000/8000 [==============================] - 2s 295us/step - loss: 0.0032 - acc: 1.0000
+Epoch No: 93
+Accuracy: 0.6780 (max: 0.7957)
+cnn_predictions F1_score: 72.42% >>>
+Non-other Macro-Averaged F1: 0.6777 (max: 0.7767)
+
+Epoch 1/1
+8000/8000 [==============================] - 2s 299us/step - loss: 0.0030 - acc: 1.0000
+Epoch No: 94
+Accuracy: 0.6757 (max: 0.7957)
+cnn_predictions F1_score: 72.36% >>>
+Non-other Macro-Averaged F1: 0.6756 (max: 0.7767)
+
+Epoch 1/1
+8000/8000 [==============================] - 2s 295us/step - loss: 0.0032 - acc: 1.0000
+Epoch No: 95
+Accuracy: 0.6794 (max: 0.7957)
+cnn_predictions F1_score: 72.79% >>>
+Non-other Macro-Averaged F1: 0.6814 (max: 0.7767)
+
+Epoch 1/1
+8000/8000 [==============================] - 2s 296us/step - loss: 0.0030 - acc: 1.0000
+Epoch No: 96
+Accuracy: 0.6765 (max: 0.7957)
+cnn_predictions F1_score: 72.32% >>>
+Non-other Macro-Averaged F1: 0.6764 (max: 0.7767)
+
+Epoch 1/1
+8000/8000 [==============================] - 2s 301us/step - loss: 0.0030 - acc: 1.0000
+Epoch No: 97
+Accuracy: 0.6750 (max: 0.7957)
+cnn_predictions F1_score: 72.16% >>>
+Non-other Macro-Averaged F1: 0.6735 (max: 0.7767)
+
+Epoch 1/1
+8000/8000 [==============================] - 2s 300us/step - loss: 0.0033 - acc: 1.0000
+Epoch No: 98
+Accuracy: 0.6780 (max: 0.7957)
+cnn_predictions F1_score: 72.34% >>>
+Non-other Macro-Averaged F1: 0.6779 (max: 0.7767)
+
+Epoch 1/1
+8000/8000 [==============================] - 2s 297us/step - loss: 0.0031 - acc: 1.0000
+Epoch No: 99
+Accuracy: 0.6746 (max: 0.7957)
+cnn_predictions F1_score: 72.16% >>>
+Non-other Macro-Averaged F1: 0.6730 (max: 0.7767)
+
+Epoch 1/1
+8000/8000 [==============================] - 2s 299us/step - loss: 0.0029 - acc: 1.0000
+Epoch No: 100
+Accuracy: 0.6776 (max: 0.7957)
+cnn_predictions F1_score: 72.65% >>>
+Non-other Macro-Averaged F1: 0.6778 (max: 0.7767)
+
+Epoch 1/1
+8000/8000 [==============================] - 2s 296us/step - loss: 0.0031 - acc: 1.0000
+Epoch No: 101
+Accuracy: 0.6776 (max: 0.7957)
+cnn_predictions F1_score: 72.21% >>>
+Non-other Macro-Averaged F1: 0.6732 (max: 0.7767)
+
+Epoch 1/1
+8000/8000 [==============================] - 2s 298us/step - loss: 0.0029 - acc: 1.0000
+Epoch No: 102
+Accuracy: 0.6728 (max: 0.7957)
+cnn_predictions F1_score: 71.98% >>>
+Non-other Macro-Averaged F1: 0.6730 (max: 0.7767)
+
+Epoch 1/1
+8000/8000 [==============================] - 2s 299us/step - loss: 0.0031 - acc: 1.0000
+Epoch No: 103
+Accuracy: 0.6710 (max: 0.7957)
+cnn_predictions F1_score: 71.74% >>>
+Non-other Macro-Averaged F1: 0.6665 (max: 0.7767)
+
+Epoch 1/1
+8000/8000 [==============================] - 2s 293us/step - loss: 0.0029 - acc: 1.0000
+Epoch No: 104
+Accuracy: 0.6743 (max: 0.7957)
+cnn_predictions F1_score: 72.08% >>>
+Non-other Macro-Averaged F1: 0.6712 (max: 0.7767)
+
+Epoch 1/1
+8000/8000 [==============================] - 2s 300us/step - loss: 0.0031 - acc: 1.0000
+Epoch No: 105
+Accuracy: 0.6724 (max: 0.7957)
+cnn_predictions F1_score: 71.83% >>>
+Non-other Macro-Averaged F1: 0.6712 (max: 0.7767)
+
+Epoch 1/1
+8000/8000 [==============================] - 2s 290us/step - loss: 0.0029 - acc: 1.0000
+Epoch No: 106
+Accuracy: 0.6688 (max: 0.7957)
+cnn_predictions F1_score: 71.59% >>>
+Non-other Macro-Averaged F1: 0.6697 (max: 0.7767)
+
+Epoch 1/1
+8000/8000 [==============================] - 2s 296us/step - loss: 0.0030 - acc: 1.0000
+Epoch No: 107
+Accuracy: 0.6732 (max: 0.7957)
+cnn_predictions F1_score: 72.08% >>>
+Non-other Macro-Averaged F1: 0.6684 (max: 0.7767)
+
+Epoch 1/1
+8000/8000 [==============================] - 2s 301us/step - loss: 0.0030 - acc: 1.0000
+Epoch No: 108
+Accuracy: 0.6654 (max: 0.7957)
+cnn_predictions F1_score: 71.08% >>>
+Non-other Macro-Averaged F1: 0.6641 (max: 0.7767)
+
+Epoch 1/1
+8000/8000 [==============================] - 2s 297us/step - loss: 0.0030 - acc: 1.0000
+Epoch No: 109
+Accuracy: 0.6710 (max: 0.7957)
+cnn_predictions F1_score: 71.80% >>>
+Non-other Macro-Averaged F1: 0.6686 (max: 0.7767)
+
+Epoch 1/1
+8000/8000 [==============================] - 2s 298us/step - loss: 0.0029 - acc: 1.0000
+Epoch No: 110
+Accuracy: 0.6673 (max: 0.7957)
+cnn_predictions F1_score: 71.28% >>>
+Non-other Macro-Averaged F1: 0.6650 (max: 0.7767)
+
+Epoch 1/1
+8000/8000 [==============================] - 2s 296us/step - loss: 0.0029 - acc: 1.0000
+Epoch No: 111
+Accuracy: 0.6699 (max: 0.7957)
+cnn_predictions F1_score: 71.62% >>>
+Non-other Macro-Averaged F1: 0.6686 (max: 0.7767)
+
+Epoch 1/1
+8000/8000 [==============================] - 2s 301us/step - loss: 0.0030 - acc: 1.0000
+Epoch No: 112
+Accuracy: 0.6702 (max: 0.7957)
+cnn_predictions F1_score: 71.77% >>>
+Non-other Macro-Averaged F1: 0.6690 (max: 0.7767)
+
+Epoch 1/1
+8000/8000 [==============================] - 2s 297us/step - loss: 0.0029 - acc: 1.0000
+Epoch No: 113
+Accuracy: 0.6688 (max: 0.7957)
+cnn_predictions F1_score: 71.68% >>>
+Non-other Macro-Averaged F1: 0.6704 (max: 0.7767)
+
+Epoch 1/1
+8000/8000 [==============================] - 2s 299us/step - loss: 0.0032 - acc: 1.0000
+Epoch No: 114
+Accuracy: 0.6691 (max: 0.7957)
+cnn_predictions F1_score: 71.66% >>>
+Non-other Macro-Averaged F1: 0.6677 (max: 0.7767)
+
+Epoch 1/1
+8000/8000 [==============================] - 2s 297us/step - loss: 0.0028 - acc: 1.0000
+Epoch No: 115
+Accuracy: 0.6662 (max: 0.7957)
+cnn_predictions F1_score: 71.30% >>>
+Non-other Macro-Averaged F1: 0.6623 (max: 0.7767)
+
+Epoch 1/1
+8000/8000 [==============================] - 2s 294us/step - loss: 0.0031 - acc: 1.0000
+Epoch No: 116
+Accuracy: 0.6654 (max: 0.7957)
+cnn_predictions F1_score: 71.39% >>>
+Non-other Macro-Averaged F1: 0.6650 (max: 0.7767)
+
+Epoch 1/1
+8000/8000 [==============================] - 2s 295us/step - loss: 0.0029 - acc: 1.0000
+Epoch No: 117
+Accuracy: 0.6695 (max: 0.7957)
+cnn_predictions F1_score: 71.65% >>>
+Non-other Macro-Averaged F1: 0.6660 (max: 0.7767)
+
+Epoch 1/1
+8000/8000 [==============================] - 2s 296us/step - loss: 0.0029 - acc: 1.0000
+Epoch No: 118
+Accuracy: 0.6651 (max: 0.7957)
+cnn_predictions F1_score: 71.07% >>>
+Non-other Macro-Averaged F1: 0.6603 (max: 0.7767)
+
+Epoch 1/1
+8000/8000 [==============================] - 2s 298us/step - loss: 0.0028 - acc: 1.0000
+Epoch No: 119
+Accuracy: 0.6673 (max: 0.7957)
+cnn_predictions F1_score: 71.50% >>>
+Non-other Macro-Averaged F1: 0.6650 (max: 0.7767)
+
+Epoch 1/1
+8000/8000 [==============================] - 2s 297us/step - loss: 0.0028 - acc: 1.0000
+Epoch No: 120
+Accuracy: 0.6662 (max: 0.7957)
+cnn_predictions F1_score: 71.30% >>>
+Non-other Macro-Averaged F1: 0.6625 (max: 0.7767)
+
+Epoch 1/1
+8000/8000 [==============================] - 2s 292us/step - loss: 0.0032 - acc: 1.0000
+Epoch No: 121
+Accuracy: 0.6680 (max: 0.7957)
+cnn_predictions F1_score: 71.48% >>>
+Non-other Macro-Averaged F1: 0.6649 (max: 0.7767)
+
+Epoch 1/1
+8000/8000 [==============================] - 2s 294us/step - loss: 0.0029 - acc: 1.0000
+Epoch No: 122
+Accuracy: 0.6680 (max: 0.7957)
+cnn_predictions F1_score: 71.70% >>>
+Non-other Macro-Averaged F1: 0.6686 (max: 0.7767)
+
+Epoch 1/1
+8000/8000 [==============================] - 2s 296us/step - loss: 0.0029 - acc: 1.0000
+Epoch No: 123
+Accuracy: 0.6662 (max: 0.7957)
+cnn_predictions F1_score: 71.18% >>>
+Non-other Macro-Averaged F1: 0.6626 (max: 0.7767)
+
+Epoch 1/1
+8000/8000 [==============================] - 2s 299us/step - loss: 0.0028 - acc: 1.0000
+Epoch No: 124
+Accuracy: 0.6658 (max: 0.7957)
+cnn_predictions F1_score: 71.13% >>>
+Non-other Macro-Averaged F1: 0.6644 (max: 0.7767)
+
+Epoch 1/1
+8000/8000 [==============================] - 2s 296us/step - loss: 0.0029 - acc: 1.0000
+Epoch No: 125
+Accuracy: 0.6658 (max: 0.7957)
+cnn_predictions F1_score: 71.24% >>>
+Non-other Macro-Averaged F1: 0.6678 (max: 0.7767)
+
+Epoch 1/1
+8000/8000 [==============================] - 2s 296us/step - loss: 0.0033 - acc: 1.0000
+Epoch No: 126
+Accuracy: 0.6658 (max: 0.7957)
+cnn_predictions F1_score: 71.38% >>>
+Non-other Macro-Averaged F1: 0.6599 (max: 0.7767)
+
+Epoch 1/1
+8000/8000 [==============================] - 2s 300us/step - loss: 0.0028 - acc: 1.0000
+Epoch No: 127
+Accuracy: 0.6636 (max: 0.7957)
+cnn_predictions F1_score: 71.20% >>>
+Non-other Macro-Averaged F1: 0.6600 (max: 0.7767)
+
+Epoch 1/1
+8000/8000 [==============================] - 2s 298us/step - loss: 0.0028 - acc: 1.0000
+Epoch No: 128
+Accuracy: 0.6665 (max: 0.7957)
+cnn_predictions F1_score: 71.40% >>>
+Non-other Macro-Averaged F1: 0.6637 (max: 0.7767)
+
+Epoch 1/1
+8000/8000 [==============================] - 2s 301us/step - loss: 0.0029 - acc: 1.0000
+Epoch No: 129
+Accuracy: 0.6640 (max: 0.7957)
+cnn_predictions F1_score: 70.84% >>>
+Non-other Macro-Averaged F1: 0.6655 (max: 0.7767)
+
+Epoch 1/1
+8000/8000 [==============================] - 2s 297us/step - loss: 0.0031 - acc: 1.0000
+Epoch No: 130
+Accuracy: 0.6643 (max: 0.7957)
+cnn_predictions F1_score: 70.88% >>>
+Non-other Macro-Averaged F1: 0.6605 (max: 0.7767)
+
+Epoch 1/1
+8000/8000 [==============================] - 2s 296us/step - loss: 0.0028 - acc: 1.0000
+Epoch No: 131
+Accuracy: 0.6669 (max: 0.7957)
+cnn_predictions F1_score: 71.41% >>>
+Non-other Macro-Averaged F1: 0.6642 (max: 0.7767)
+
+Epoch 1/1
+8000/8000 [==============================] - 2s 298us/step - loss: 0.0028 - acc: 1.0000
+Epoch No: 132
+Accuracy: 0.6665 (max: 0.7957)
+cnn_predictions F1_score: 71.25% >>>
+Non-other Macro-Averaged F1: 0.6634 (max: 0.7767)
+
+Epoch 1/1
+8000/8000 [==============================] - 2s 292us/step - loss: 0.0031 - acc: 1.0000
+Epoch No: 133
+Accuracy: 0.6647 (max: 0.7957)
+cnn_predictions F1_score: 71.00% >>>
+Non-other Macro-Averaged F1: 0.6617 (max: 0.7767)
+
+Epoch 1/1
+8000/8000 [==============================] - 2s 296us/step - loss: 0.0030 - acc: 1.0000
+Epoch No: 134
+Accuracy: 0.6647 (max: 0.7957)
+cnn_predictions F1_score: 71.08% >>>
+Non-other Macro-Averaged F1: 0.6619 (max: 0.7767)
+
+Epoch 1/1
+8000/8000 [==============================] - 2s 294us/step - loss: 0.0028 - acc: 1.0000
+Epoch No: 135
+Accuracy: 0.6636 (max: 0.7957)
+cnn_predictions F1_score: 70.87% >>>
+Non-other Macro-Averaged F1: 0.6573 (max: 0.7767)
+
+Epoch 1/1
+8000/8000 [==============================] - 2s 295us/step - loss: 0.0028 - acc: 1.0000
+Epoch No: 136
+Accuracy: 0.6684 (max: 0.7957)
+cnn_predictions F1_score: 71.50% >>>
+Non-other Macro-Averaged F1: 0.6637 (max: 0.7767)
+
+Epoch 1/1
+8000/8000 [==============================] - 2s 296us/step - loss: 0.0027 - acc: 1.0000
+Epoch No: 137
+Accuracy: 0.6665 (max: 0.7957)
+cnn_predictions F1_score: 71.36% >>>
+Non-other Macro-Averaged F1: 0.6632 (max: 0.7767)
+
+Epoch 1/1
+8000/8000 [==============================] - 2s 296us/step - loss: 0.0031 - acc: 1.0000
+Epoch No: 138
+Accuracy: 0.6647 (max: 0.7957)
+cnn_predictions F1_score: 71.06% >>>
+Non-other Macro-Averaged F1: 0.6613 (max: 0.7767)
+
+Epoch 1/1
+8000/8000 [==============================] - 2s 303us/step - loss: 0.0028 - acc: 1.0000
+Epoch No: 139
+Accuracy: 0.6658 (max: 0.7957)
+cnn_predictions F1_score: 71.16% >>>
+Non-other Macro-Averaged F1: 0.6613 (max: 0.7767)
+
+Epoch 1/1
+8000/8000 [==============================] - 2s 296us/step - loss: 0.0031 - acc: 1.0000
+Epoch No: 140
+Accuracy: 0.6669 (max: 0.7957)
+cnn_predictions F1_score: 71.47% >>>
+Non-other Macro-Averaged F1: 0.6627 (max: 0.7767)
+
+Epoch 1/1
+8000/8000 [==============================] - 2s 290us/step - loss: 0.0029 - acc: 1.0000
+Epoch No: 141
+Accuracy: 0.6621 (max: 0.7957)
+cnn_predictions F1_score: 70.90% >>>
+Non-other Macro-Averaged F1: 0.6567 (max: 0.7767)
+
+Epoch 1/1
+8000/8000 [==============================] - 2s 298us/step - loss: 0.0028 - acc: 1.0000
+Epoch No: 142
+Accuracy: 0.6662 (max: 0.7957)
+cnn_predictions F1_score: 71.16% >>>
+Non-other Macro-Averaged F1: 0.6632 (max: 0.7767)
+
+Epoch 1/1
+8000/8000 [==============================] - 3s 328us/step - loss: 0.0029 - acc: 1.0000
+Epoch No: 143
+Accuracy: 0.6629 (max: 0.7957)
+cnn_predictions F1_score: 70.98% >>>
+Non-other Macro-Averaged F1: 0.6557 (max: 0.7767)
+
+Epoch 1/1
+8000/8000 [==============================] - 2s 302us/step - loss: 0.0030 - acc: 1.0000
+Epoch No: 144
+Accuracy: 0.6618 (max: 0.7957)
+cnn_predictions F1_score: 70.78% >>>
+Non-other Macro-Averaged F1: 0.6578 (max: 0.7767)
+
+Epoch 1/1
+8000/8000 [==============================] - 2s 298us/step - loss: 0.0028 - acc: 1.0000
+Epoch No: 145
+Accuracy: 0.6651 (max: 0.7957)
+cnn_predictions F1_score: 71.26% >>>
+Non-other Macro-Averaged F1: 0.6610 (max: 0.7767)
+
+Epoch 1/1
+8000/8000 [==============================] - 2s 298us/step - loss: 0.0028 - acc: 1.0000
+Epoch No: 146
+Accuracy: 0.6647 (max: 0.7957)
+cnn_predictions F1_score: 71.15% >>>
+Non-other Macro-Averaged F1: 0.6599 (max: 0.7767)
+
+Epoch 1/1
+8000/8000 [==============================] - 2s 298us/step - loss: 0.0031 - acc: 1.0000
+Epoch No: 147
+Accuracy: 0.6640 (max: 0.7957)
+cnn_predictions F1_score: 71.11% >>>
+Non-other Macro-Averaged F1: 0.6601 (max: 0.7767)
+
+Epoch 1/1
+8000/8000 [==============================] - 2s 300us/step - loss: 0.0028 - acc: 1.0000
+Epoch No: 148
+Accuracy: 0.6647 (max: 0.7957)
+cnn_predictions F1_score: 71.26% >>>
+Non-other Macro-Averaged F1: 0.6598 (max: 0.7767)
+
+Epoch 1/1
+8000/8000 [==============================] - 2s 300us/step - loss: 0.0027 - acc: 1.0000
+Epoch No: 149
+Accuracy: 0.6629 (max: 0.7957)
+cnn_predictions F1_score: 71.07% >>>
+Non-other Macro-Averaged F1: 0.6552 (max: 0.7767)
+
+Epoch 1/1
+8000/8000 [==============================] - 2s 301us/step - loss: 0.0031 - acc: 1.0000
+Epoch No: 150
+Accuracy: 0.6647 (max: 0.7957)
+cnn_predictions F1_score: 71.17% >>>
+Non-other Macro-Averaged F1: 0.6587 (max: 0.7767)
+
+Epoch 1/1
+8000/8000 [==============================] - 2s 297us/step - loss: 0.0028 - acc: 1.0000
+Epoch No: 151
+Accuracy: 0.6651 (max: 0.7957)
+cnn_predictions F1_score: 71.18% >>>
+Non-other Macro-Averaged F1: 0.6622 (max: 0.7767)
+
+Epoch 1/1
+8000/8000 [==============================] - 2s 297us/step - loss: 0.0028 - acc: 1.0000
+Epoch No: 152
+Accuracy: 0.6636 (max: 0.7957)
+cnn_predictions F1_score: 71.08% >>>
+Non-other Macro-Averaged F1: 0.6613 (max: 0.7767)
+
+Epoch 1/1
+8000/8000 [==============================] - 2s 300us/step - loss: 0.0033 - acc: 1.0000
+Epoch No: 153
+Accuracy: 0.6651 (max: 0.7957)
+cnn_predictions F1_score: 71.19% >>>
+Non-other Macro-Averaged F1: 0.6616 (max: 0.7767)
+
+Epoch 1/1
+8000/8000 [==============================] - 2s 296us/step - loss: 0.0030 - acc: 1.0000
+Epoch No: 154
+Accuracy: 0.6647 (max: 0.7957)
+cnn_predictions F1_score: 71.22% >>>
+Non-other Macro-Averaged F1: 0.6607 (max: 0.7767)
+
+Epoch 1/1
+8000/8000 [==============================] - 2s 297us/step - loss: 0.0028 - acc: 1.0000
+Epoch No: 155
+Accuracy: 0.6632 (max: 0.7957)
+cnn_predictions F1_score: 71.03% >>>
+Non-other Macro-Averaged F1: 0.6580 (max: 0.7767)
+
+Epoch 1/1
+8000/8000 [==============================] - 2s 294us/step - loss: 0.0028 - acc: 1.0000
+Epoch No: 156
+Accuracy: 0.6618 (max: 0.7957)
+cnn_predictions F1_score: 70.95% >>>
+Non-other Macro-Averaged F1: 0.6594 (max: 0.7767)
+
+Epoch 1/1
+8000/8000 [==============================] - 2s 296us/step - loss: 0.0028 - acc: 1.0000
+Epoch No: 157
+Accuracy: 0.6629 (max: 0.7957)
+cnn_predictions F1_score: 71.14% >>>
+Non-other Macro-Averaged F1: 0.6616 (max: 0.7767)
+
+Epoch 1/1
+8000/8000 [==============================] - 2s 296us/step - loss: 0.0030 - acc: 1.0000
+Epoch No: 158
+Accuracy: 0.6658 (max: 0.7957)
+cnn_predictions F1_score: 71.19% >>>
+Non-other Macro-Averaged F1: 0.6616 (max: 0.7767)
+
+Epoch 1/1
+8000/8000 [==============================] - 2s 301us/step - loss: 0.0028 - acc: 1.0000
+Epoch No: 159
+Accuracy: 0.6636 (max: 0.7957)
+cnn_predictions F1_score: 71.12% >>>
+Non-other Macro-Averaged F1: 0.6564 (max: 0.7767)
+
+Epoch 1/1
+8000/8000 [==============================] - 2s 297us/step - loss: 0.0028 - acc: 1.0000
+Epoch No: 160
+Accuracy: 0.6618 (max: 0.7957)
+cnn_predictions F1_score: 70.78% >>>
+Non-other Macro-Averaged F1: 0.6579 (max: 0.7767)
+
+Epoch 1/1
+8000/8000 [==============================] - 2s 296us/step - loss: 0.0030 - acc: 1.0000
+Epoch No: 161
+Accuracy: 0.6629 (max: 0.7957)
+cnn_predictions F1_score: 71.06% >>>
+Non-other Macro-Averaged F1: 0.6623 (max: 0.7767)
+
+Epoch 1/1
+8000/8000 [==============================] - 2s 298us/step - loss: 0.0028 - acc: 1.0000
+Epoch No: 162
+Accuracy: 0.6625 (max: 0.7957)
+cnn_predictions F1_score: 70.98% >>>
+Non-other Macro-Averaged F1: 0.6592 (max: 0.7767)
+
+Epoch 1/1
+8000/8000 [==============================] - 2s 297us/step - loss: 0.0030 - acc: 1.0000
+Epoch No: 163
+Accuracy: 0.6636 (max: 0.7957)
+cnn_predictions F1_score: 71.15% >>>
+Non-other Macro-Averaged F1: 0.6623 (max: 0.7767)
+
+Epoch 1/1
+8000/8000 [==============================] - 2s 285us/step - loss: 0.0029 - acc: 1.0000
+Epoch No: 164
+Accuracy: 0.6658 (max: 0.7957)
+cnn_predictions F1_score: 71.27% >>>
+Non-other Macro-Averaged F1: 0.6605 (max: 0.7767)
+
+Epoch 1/1
+8000/8000 [==============================] - 2s 306us/step - loss: 0.0027 - acc: 1.0000
+Epoch No: 165
+Accuracy: 0.6599 (max: 0.7957)
+cnn_predictions F1_score: 70.49% >>>
+Non-other Macro-Averaged F1: 0.6541 (max: 0.7767)
+
+Epoch 1/1
+8000/8000 [==============================] - 2s 299us/step - loss: 0.0031 - acc: 1.0000
+Epoch No: 166
+Accuracy: 0.6625 (max: 0.7957)
+cnn_predictions F1_score: 71.07% >>>
+Non-other Macro-Averaged F1: 0.6613 (max: 0.7767)
+
+Epoch 1/1
+8000/8000 [==============================] - 2s 296us/step - loss: 0.0028 - acc: 1.0000
+Epoch No: 167
+Accuracy: 0.6684 (max: 0.7957)
+cnn_predictions F1_score: 71.64% >>>
+Non-other Macro-Averaged F1: 0.6653 (max: 0.7767)
+
+Epoch 1/1
+8000/8000 [==============================] - 2s 294us/step - loss: 0.0029 - acc: 1.0000
+Epoch No: 168
+Accuracy: 0.6636 (max: 0.7957)
+cnn_predictions F1_score: 71.19% >>>
+Non-other Macro-Averaged F1: 0.6606 (max: 0.7767)
+
+Epoch 1/1
+8000/8000 [==============================] - 2s 295us/step - loss: 0.0028 - acc: 1.0000
+Epoch No: 169
+Accuracy: 0.6643 (max: 0.7957)
+cnn_predictions F1_score: 71.14% >>>
+Non-other Macro-Averaged F1: 0.6585 (max: 0.7767)
+
+Epoch 1/1
+8000/8000 [==============================] - 2s 301us/step - loss: 0.0032 - acc: 1.0000
+Epoch No: 170
+Accuracy: 0.6607 (max: 0.7957)
+cnn_predictions F1_score: 70.84% >>>
+Non-other Macro-Averaged F1: 0.6555 (max: 0.7767)
+
+Epoch 1/1
+8000/8000 [==============================] - 2s 298us/step - loss: 0.0029 - acc: 1.0000
+Epoch No: 171
+Accuracy: 0.6629 (max: 0.7957)
+cnn_predictions F1_score: 70.93% >>>
+Non-other Macro-Averaged F1: 0.6584 (max: 0.7767)
+
+Epoch 1/1
+8000/8000 [==============================] - 2s 296us/step - loss: 0.0028 - acc: 1.0000
+Epoch No: 172
+Accuracy: 0.6621 (max: 0.7957)
+cnn_predictions F1_score: 71.12% >>>
+Non-other Macro-Averaged F1: 0.6589 (max: 0.7767)
+
+Epoch 1/1
+8000/8000 [==============================] - 2s 298us/step - loss: 0.0027 - acc: 1.0000
+Epoch No: 173
+Accuracy: 0.6592 (max: 0.7957)
+cnn_predictions F1_score: 70.66% >>>
+Non-other Macro-Averaged F1: 0.6552 (max: 0.7767)
+
+Epoch 1/1
+8000/8000 [==============================] - 2s 299us/step - loss: 0.0029 - acc: 1.0000
+Epoch No: 174
+Accuracy: 0.6658 (max: 0.7957)
+cnn_predictions F1_score: 71.01% >>>
+Non-other Macro-Averaged F1: 0.6608 (max: 0.7767)
+
+Epoch 1/1
+8000/8000 [==============================] - 2s 296us/step - loss: 0.0031 - acc: 1.0000
+Epoch No: 175
+Accuracy: 0.6636 (max: 0.7957)
+cnn_predictions F1_score: 70.92% >>>
+Non-other Macro-Averaged F1: 0.6571 (max: 0.7767)
+
+Epoch 1/1
+8000/8000 [==============================] - 2s 301us/step - loss: 0.0028 - acc: 1.0000
+Epoch No: 176
+Accuracy: 0.6636 (max: 0.7957)
+cnn_predictions F1_score: 71.00% >>>
+Non-other Macro-Averaged F1: 0.6571 (max: 0.7767)
+
+Epoch 1/1
+8000/8000 [==============================] - 2s 296us/step - loss: 0.0028 - acc: 1.0000
+Epoch No: 177
+Accuracy: 0.6618 (max: 0.7957)
+cnn_predictions F1_score: 70.93% >>>
+Non-other Macro-Averaged F1: 0.6611 (max: 0.7767)
+
+Epoch 1/1
+8000/8000 [==============================] - 2s 299us/step - loss: 0.0029 - acc: 1.0000
+Epoch No: 178
+Accuracy: 0.6596 (max: 0.7957)
+cnn_predictions F1_score: 70.69% >>>
+Non-other Macro-Averaged F1: 0.6498 (max: 0.7767)
+
+Epoch 1/1
+8000/8000 [==============================] - 2s 292us/step - loss: 0.0029 - acc: 1.0000
+Epoch No: 179
+Accuracy: 0.6669 (max: 0.7957)
+cnn_predictions F1_score: 71.45% >>>
+Non-other Macro-Averaged F1: 0.6641 (max: 0.7767)
+
+Epoch 1/1
+8000/8000 [==============================] - 2s 296us/step - loss: 0.0030 - acc: 1.0000
+Epoch No: 180
+Accuracy: 0.6643 (max: 0.7957)
+cnn_predictions F1_score: 71.20% >>>
+Non-other Macro-Averaged F1: 0.6616 (max: 0.7767)
+
+Epoch 1/1
+8000/8000 [==============================] - 2s 295us/step - loss: 0.0027 - acc: 1.0000
+Epoch No: 181
+Accuracy: 0.6629 (max: 0.7957)
+cnn_predictions F1_score: 71.06% >>>
+Non-other Macro-Averaged F1: 0.6599 (max: 0.7767)
+
+Epoch 1/1
+8000/8000 [==============================] - 2s 299us/step - loss: 0.0030 - acc: 1.0000
+Epoch No: 182
+Accuracy: 0.6636 (max: 0.7957)
+cnn_predictions F1_score: 71.09% >>>
+Non-other Macro-Averaged F1: 0.6602 (max: 0.7767)
+
+Epoch 1/1
+8000/8000 [==============================] - 2s 297us/step - loss: 0.0027 - acc: 1.0000
+Epoch No: 183
+Accuracy: 0.6632 (max: 0.7957)
+cnn_predictions F1_score: 71.07% >>>
+Non-other Macro-Averaged F1: 0.6568 (max: 0.7767)
+
+Epoch 1/1
+8000/8000 [==============================] - 2s 296us/step - loss: 0.0028 - acc: 1.0000
+Epoch No: 184
+Accuracy: 0.6629 (max: 0.7957)
+cnn_predictions F1_score: 71.27% >>>
+Non-other Macro-Averaged F1: 0.6621 (max: 0.7767)
+
+Epoch 1/1
+8000/8000 [==============================] - 2s 293us/step - loss: 0.0028 - acc: 1.0000
+Epoch No: 185
+Accuracy: 0.6636 (max: 0.7957)
+cnn_predictions F1_score: 71.09% >>>
+Non-other Macro-Averaged F1: 0.6588 (max: 0.7767)
+
+Epoch 1/1
+8000/8000 [==============================] - 2s 295us/step - loss: 0.0027 - acc: 1.0000
+Epoch No: 186
+Accuracy: 0.6614 (max: 0.7957)
+cnn_predictions F1_score: 70.99% >>>
+Non-other Macro-Averaged F1: 0.6565 (max: 0.7767)
+
+Epoch 1/1
+8000/8000 [==============================] - 2s 300us/step - loss: 0.0029 - acc: 1.0000
+Epoch No: 187
+Accuracy: 0.6632 (max: 0.7957)
+cnn_predictions F1_score: 71.20% >>>
+Non-other Macro-Averaged F1: 0.6633 (max: 0.7767)
+
+Epoch 1/1
+8000/8000 [==============================] - 2s 299us/step - loss: 0.0035 - acc: 1.0000
+Epoch No: 188
+Accuracy: 0.6629 (max: 0.7957)
+cnn_predictions F1_score: 71.08% >>>
+Non-other Macro-Averaged F1: 0.6599 (max: 0.7767)
+
+Epoch 1/1
+8000/8000 [==============================] - 2s 293us/step - loss: 0.0028 - acc: 1.0000
+Epoch No: 189
+Accuracy: 0.6625 (max: 0.7957)
+cnn_predictions F1_score: 71.03% >>>
+Non-other Macro-Averaged F1: 0.6580 (max: 0.7767)
+
+Epoch 1/1
+8000/8000 [==============================] - 2s 295us/step - loss: 0.0027 - acc: 1.0000
+Epoch No: 190
+Accuracy: 0.6610 (max: 0.7957)
+cnn_predictions F1_score: 70.85% >>>
+Non-other Macro-Averaged F1: 0.6564 (max: 0.7767)
+
+Epoch 1/1
+8000/8000 [==============================] - 2s 298us/step - loss: 0.0027 - acc: 1.0000
+Epoch No: 191
+Accuracy: 0.6607 (max: 0.7957)
+cnn_predictions F1_score: 70.60% >>>
+Non-other Macro-Averaged F1: 0.6565 (max: 0.7767)
+
+Epoch 1/1
+8000/8000 [==============================] - 2s 299us/step - loss: 0.0028 - acc: 1.0000
+Epoch No: 192
+Accuracy: 0.6684 (max: 0.7957)
+cnn_predictions F1_score: 71.56% >>>
+Non-other Macro-Averaged F1: 0.6638 (max: 0.7767)
+
+Epoch 1/1
+8000/8000 [==============================] - 2s 297us/step - loss: 0.0029 - acc: 1.0000
+Epoch No: 193
+Accuracy: 0.6658 (max: 0.7957)
+cnn_predictions F1_score: 71.42% >>>
+Non-other Macro-Averaged F1: 0.6611 (max: 0.7767)
+
+Epoch 1/1
+8000/8000 [==============================] - 2s 298us/step - loss: 0.0029 - acc: 1.0000
+Epoch No: 194
+Accuracy: 0.6640 (max: 0.7957)
+cnn_predictions F1_score: 71.32% >>>
+Non-other Macro-Averaged F1: 0.6653 (max: 0.7767)
+
+Epoch 1/1
+8000/8000 [==============================] - 2s 299us/step - loss: 0.0028 - acc: 1.0000
+Epoch No: 195
+Accuracy: 0.6654 (max: 0.7957)
+cnn_predictions F1_score: 71.25% >>>
+Non-other Macro-Averaged F1: 0.6628 (max: 0.7767)
+
+Epoch 1/1
+8000/8000 [==============================] - 2s 293us/step - loss: 0.0027 - acc: 1.0000
+Epoch No: 196
+Accuracy: 0.6643 (max: 0.7957)
+cnn_predictions F1_score: 71.19% >>>
+Non-other Macro-Averaged F1: 0.6622 (max: 0.7767)
+
+Epoch 1/1
+8000/8000 [==============================] - 2s 297us/step - loss: 0.0029 - acc: 1.0000
+Epoch No: 197
+Accuracy: 0.6651 (max: 0.7957)
+cnn_predictions F1_score: 71.25% >>>
+Non-other Macro-Averaged F1: 0.6602 (max: 0.7767)
+
+Epoch 1/1
+8000/8000 [==============================] - 2s 297us/step - loss: 0.0027 - acc: 1.0000
+Epoch No: 198
+Accuracy: 0.6618 (max: 0.7957)
+cnn_predictions F1_score: 70.81% >>>
+Non-other Macro-Averaged F1: 0.6563 (max: 0.7767)
+
+Epoch 1/1
+8000/8000 [==============================] - 2s 297us/step - loss: 0.0031 - acc: 1.0000
+Epoch No: 199
+Accuracy: 0.6651 (max: 0.7957)
+cnn_predictions F1_score: 71.40% >>>
+Non-other Macro-Averaged F1: 0.6626 (max: 0.7767)
+
+Epoch 1/1
+8000/8000 [==============================] - 2s 298us/step - loss: 0.0028 - acc: 1.0000
+Epoch No: 200
+Accuracy: 0.6610 (max: 0.7957)
+cnn_predictions F1_score: 70.80% >>>
+Non-other Macro-Averaged F1: 0.6541 (max: 0.7767)
+
+Epoch 1/1
+8000/8000 [==============================] - 2s 297us/step - loss: 0.0030 - acc: 1.0000
+Epoch No: 201
+Accuracy: 0.6640 (max: 0.7957)
+cnn_predictions F1_score: 71.17% >>>
+Non-other Macro-Averaged F1: 0.6610 (max: 0.7767)
+
+Epoch 1/1
+8000/8000 [==============================] - 2s 299us/step - loss: 0.0028 - acc: 1.0000
+Epoch No: 202
+Accuracy: 0.6625 (max: 0.7957)
+cnn_predictions F1_score: 71.10% >>>
+Non-other Macro-Averaged F1: 0.6617 (max: 0.7767)
+
+Epoch 1/1
+8000/8000 [==============================] - 2s 300us/step - loss: 0.0028 - acc: 1.0000
+Epoch No: 203
+Accuracy: 0.6654 (max: 0.7957)
+cnn_predictions F1_score: 71.23% >>>
+Non-other Macro-Averaged F1: 0.6618 (max: 0.7767)
+
+Epoch 1/1
+8000/8000 [==============================] - 2s 299us/step - loss: 0.0030 - acc: 1.0000
+Epoch No: 204
+Accuracy: 0.6618 (max: 0.7957)
+cnn_predictions F1_score: 71.04% >>>
+Non-other Macro-Averaged F1: 0.6590 (max: 0.7767)
+
+Epoch 1/1
+8000/8000 [==============================] - 2s 302us/step - loss: 0.0028 - acc: 1.0000
+Epoch No: 205
+Accuracy: 0.6625 (max: 0.7957)
+cnn_predictions F1_score: 70.96% >>>
+Non-other Macro-Averaged F1: 0.6577 (max: 0.7767)
+
+Epoch 1/1
+8000/8000 [==============================] - 2s 296us/step - loss: 0.0027 - acc: 1.0000
+Epoch No: 206
+Accuracy: 0.6625 (max: 0.7957)
+cnn_predictions F1_score: 70.97% >>>
+Non-other Macro-Averaged F1: 0.6594 (max: 0.7767)
+
+Epoch 1/1
+8000/8000 [==============================] - 2s 301us/step - loss: 0.0029 - acc: 1.0000
+Epoch No: 207
+Accuracy: 0.6625 (max: 0.7957)
+cnn_predictions F1_score: 71.04% >>>
+Non-other Macro-Averaged F1: 0.6614 (max: 0.7767)
+
+Epoch 1/1
+8000/8000 [==============================] - 2s 294us/step - loss: 0.0033 - acc: 1.0000
+Epoch No: 208
+Accuracy: 0.6658 (max: 0.7957)
+cnn_predictions F1_score: 71.36% >>>
+Non-other Macro-Averaged F1: 0.6639 (max: 0.7767)
+
+Epoch 1/1
+8000/8000 [==============================] - 2s 297us/step - loss: 0.0028 - acc: 1.0000
+Epoch No: 209
+Accuracy: 0.6651 (max: 0.7957)
+cnn_predictions F1_score: 71.20% >>>
+Non-other Macro-Averaged F1: 0.6595 (max: 0.7767)
+
+Epoch 1/1
+8000/8000 [==============================] - 2s 299us/step - loss: 0.0028 - acc: 1.0000
+Epoch No: 210
+Accuracy: 0.6603 (max: 0.7957)
+cnn_predictions F1_score: 70.76% >>>
+Non-other Macro-Averaged F1: 0.6558 (max: 0.7767)
+
+Epoch 1/1
+8000/8000 [==============================] - 2s 299us/step - loss: 0.0027 - acc: 1.0000
+Epoch No: 211
+Accuracy: 0.6658 (max: 0.7957)
+cnn_predictions F1_score: 71.31% >>>
+Non-other Macro-Averaged F1: 0.6616 (max: 0.7767)
+
+Epoch 1/1
+8000/8000 [==============================] - 2s 297us/step - loss: 0.0028 - acc: 1.0000
+Epoch No: 212
+Accuracy: 0.6647 (max: 0.7957)
+cnn_predictions F1_score: 71.18% >>>
+Non-other Macro-Averaged F1: 0.6615 (max: 0.7767)
+
+Epoch 1/1
+8000/8000 [==============================] - 2s 303us/step - loss: 0.0031 - acc: 1.0000
+Epoch No: 213
+Accuracy: 0.6643 (max: 0.7957)
+cnn_predictions F1_score: 71.25% >>>
+Non-other Macro-Averaged F1: 0.6619 (max: 0.7767)
+
+Epoch 1/1
+8000/8000 [==============================] - 2s 296us/step - loss: 0.0027 - acc: 1.0000
+Epoch No: 214
+Accuracy: 0.6632 (max: 0.7957)
+cnn_predictions F1_score: 71.06% >>>
+Non-other Macro-Averaged F1: 0.6613 (max: 0.7767)
+
+Epoch 1/1
+8000/8000 [==============================] - 2s 298us/step - loss: 0.0030 - acc: 1.0000
+Epoch No: 215
+Accuracy: 0.6676 (max: 0.7957)
+cnn_predictions F1_score: 71.34% >>>
+Non-other Macro-Averaged F1: 0.6638 (max: 0.7767)
+
+Epoch 1/1
+8000/8000 [==============================] - 2s 292us/step - loss: 0.0030 - acc: 1.0000
+Epoch No: 216
+Accuracy: 0.6651 (max: 0.7957)
+cnn_predictions F1_score: 71.25% >>>
+Non-other Macro-Averaged F1: 0.6621 (max: 0.7767)
+
+Epoch 1/1
+8000/8000 [==============================] - 2s 296us/step - loss: 0.0028 - acc: 1.0000
+Epoch No: 217
+Accuracy: 0.6599 (max: 0.7957)
+cnn_predictions F1_score: 70.75% >>>
+Non-other Macro-Averaged F1: 0.6574 (max: 0.7767)
+
+Epoch 1/1
+8000/8000 [==============================] - 2s 298us/step - loss: 0.0028 - acc: 1.0000
+Epoch No: 218
+Accuracy: 0.6643 (max: 0.7957)
+cnn_predictions F1_score: 71.17% >>>
+Non-other Macro-Averaged F1: 0.6612 (max: 0.7767)
+
+Epoch 1/1
+8000/8000 [==============================] - 2s 296us/step - loss: 0.0029 - acc: 1.0000
+Epoch No: 219
+Accuracy: 0.6636 (max: 0.7957)
+cnn_predictions F1_score: 70.98% >>>
+Non-other Macro-Averaged F1: 0.6598 (max: 0.7767)
+
+Epoch 1/1
+8000/8000 [==============================] - 2s 301us/step - loss: 0.0028 - acc: 1.0000
+Epoch No: 220
+Accuracy: 0.6654 (max: 0.7957)
+cnn_predictions F1_score: 71.22% >>>
+Non-other Macro-Averaged F1: 0.6611 (max: 0.7767)
+
+Epoch 1/1
+8000/8000 [==============================] - 2s 295us/step - loss: 0.0028 - acc: 1.0000
+Epoch No: 221
+Accuracy: 0.6632 (max: 0.7957)
+cnn_predictions F1_score: 71.03% >>>
+Non-other Macro-Averaged F1: 0.6546 (max: 0.7767)
+
+Epoch 1/1
+8000/8000 [==============================] - 2s 295us/step - loss: 0.0028 - acc: 1.0000
+Epoch No: 222
+Accuracy: 0.6654 (max: 0.7957)
+cnn_predictions F1_score: 71.46% >>>
+Non-other Macro-Averaged F1: 0.6629 (max: 0.7767)
+
+Epoch 1/1
+8000/8000 [==============================] - 2s 299us/step - loss: 0.0031 - acc: 1.0000
+Epoch No: 223
+Accuracy: 0.6614 (max: 0.7957)
+cnn_predictions F1_score: 70.99% >>>
+Non-other Macro-Averaged F1: 0.6581 (max: 0.7767)
+
+Epoch 1/1
+8000/8000 [==============================] - 2s 298us/step - loss: 0.0028 - acc: 1.0000
+Epoch No: 224
+Accuracy: 0.6621 (max: 0.7957)
+cnn_predictions F1_score: 70.75% >>>
+Non-other Macro-Averaged F1: 0.6567 (max: 0.7767)
+
+Epoch 1/1
+8000/8000 [==============================] - 2s 301us/step - loss: 0.0028 - acc: 1.0000
+Epoch No: 225
+Accuracy: 0.6647 (max: 0.7957)
+cnn_predictions F1_score: 71.25% >>>
+Non-other Macro-Averaged F1: 0.6602 (max: 0.7767)
+
+Epoch 1/1
+8000/8000 [==============================] - 2s 300us/step - loss: 0.0027 - acc: 1.0000
+Epoch No: 226
+Accuracy: 0.6658 (max: 0.7957)
+cnn_predictions F1_score: 71.27% >>>
+Non-other Macro-Averaged F1: 0.6624 (max: 0.7767)
+
+Epoch 1/1
+8000/8000 [==============================] - 2s 300us/step - loss: 0.0032 - acc: 1.0000
+Epoch No: 227
+Accuracy: 0.6621 (max: 0.7957)
+cnn_predictions F1_score: 70.90% >>>
+Non-other Macro-Averaged F1: 0.6601 (max: 0.7767)
+
+Epoch 1/1
+8000/8000 [==============================] - 2s 300us/step - loss: 0.0032 - acc: 1.0000
+Epoch No: 228
+Accuracy: 0.6629 (max: 0.7957)
+cnn_predictions F1_score: 71.07% >>>
+Non-other Macro-Averaged F1: 0.6585 (max: 0.7767)
+
+Epoch 1/1
+8000/8000 [==============================] - 2s 299us/step - loss: 0.0028 - acc: 1.0000
+Epoch No: 229
+Accuracy: 0.6610 (max: 0.7957)
+cnn_predictions F1_score: 70.84% >>>
+Non-other Macro-Averaged F1: 0.6572 (max: 0.7767)
+
+Epoch 1/1
+8000/8000 [==============================] - 2s 294us/step - loss: 0.0028 - acc: 1.0000
+Epoch No: 230
+Accuracy: 0.6629 (max: 0.7957)
+cnn_predictions F1_score: 70.90% >>>
+Non-other Macro-Averaged F1: 0.6559 (max: 0.7767)
+
+Epoch 1/1
+8000/8000 [==============================] - 2s 300us/step - loss: 0.0027 - acc: 1.0000
+Epoch No: 231
+Accuracy: 0.6640 (max: 0.7957)
+cnn_predictions F1_score: 71.15% >>>
+Non-other Macro-Averaged F1: 0.6599 (max: 0.7767)
+
+Epoch 1/1
+8000/8000 [==============================] - 2s 297us/step - loss: 0.0029 - acc: 1.0000
+Epoch No: 232
+Accuracy: 0.6610 (max: 0.7957)
+cnn_predictions F1_score: 70.95% >>>
+Non-other Macro-Averaged F1: 0.6572 (max: 0.7767)
+
+Epoch 1/1
+8000/8000 [==============================] - 2s 300us/step - loss: 0.0029 - acc: 1.0000
+Epoch No: 233
+Accuracy: 0.6643 (max: 0.7957)
+cnn_predictions F1_score: 71.28% >>>
+Non-other Macro-Averaged F1: 0.6630 (max: 0.7767)
+
+Epoch 1/1
+8000/8000 [==============================] - 2s 297us/step - loss: 0.0028 - acc: 1.0000
+Epoch No: 234
+Accuracy: 0.6636 (max: 0.7957)
+cnn_predictions F1_score: 71.02% >>>
+Non-other Macro-Averaged F1: 0.6629 (max: 0.7767)
+
+Epoch 1/1
+8000/8000 [==============================] - 2s 298us/step - loss: 0.0028 - acc: 1.0000
+Epoch No: 235
+Accuracy: 0.6614 (max: 0.7957)
+cnn_predictions F1_score: 70.92% >>>
+Non-other Macro-Averaged F1: 0.6570 (max: 0.7767)
+
+Epoch 1/1
+8000/8000 [==============================] - 2s 298us/step - loss: 0.0027 - acc: 1.0000
+Epoch No: 236
+Accuracy: 0.6632 (max: 0.7957)
+cnn_predictions F1_score: 71.00% >>>
+Non-other Macro-Averaged F1: 0.6589 (max: 0.7767)
+
+Epoch 1/1
+8000/8000 [==============================] - 2s 297us/step - loss: 0.0030 - acc: 1.0000
+Epoch No: 237
+Accuracy: 0.6676 (max: 0.7957)
+cnn_predictions F1_score: 71.47% >>>
+Non-other Macro-Averaged F1: 0.6678 (max: 0.7767)
+
+Epoch 1/1
+8000/8000 [==============================] - 2s 298us/step - loss: 0.0032 - acc: 1.0000
+Epoch No: 238
+Accuracy: 0.6625 (max: 0.7957)
+cnn_predictions F1_score: 71.07% >>>
+Non-other Macro-Averaged F1: 0.6582 (max: 0.7767)
+
+Epoch 1/1
+8000/8000 [==============================] - 2s 301us/step - loss: 0.0028 - acc: 1.0000
+Epoch No: 239
+Accuracy: 0.6629 (max: 0.7957)
+cnn_predictions F1_score: 71.04% >>>
+Non-other Macro-Averaged F1: 0.6576 (max: 0.7767)
+
+Epoch 1/1
+8000/8000 [==============================] - 2s 295us/step - loss: 0.0028 - acc: 1.0000
+Epoch No: 240
+Accuracy: 0.6618 (max: 0.7957)
+cnn_predictions F1_score: 70.97% >>>
+Non-other Macro-Averaged F1: 0.6563 (max: 0.7767)
+
+Epoch 1/1
+8000/8000 [==============================] - 2s 301us/step - loss: 0.0027 - acc: 1.0000
+Epoch No: 241
+Accuracy: 0.6618 (max: 0.7957)
+cnn_predictions F1_score: 70.82% >>>
+Non-other Macro-Averaged F1: 0.6556 (max: 0.7767)
+
+Epoch 1/1
+8000/8000 [==============================] - 2s 296us/step - loss: 0.0027 - acc: 1.0000
+Epoch No: 242
+Accuracy: 0.6676 (max: 0.7957)
+cnn_predictions F1_score: 71.62% >>>
+Non-other Macro-Averaged F1: 0.6657 (max: 0.7767)
+
+Epoch 1/1
+8000/8000 [==============================] - 2s 298us/step - loss: 0.0031 - acc: 1.0000
+Epoch No: 243
+Accuracy: 0.6662 (max: 0.7957)
+cnn_predictions F1_score: 71.47% >>>
+Non-other Macro-Averaged F1: 0.6638 (max: 0.7767)
+
+Epoch 1/1
+8000/8000 [==============================] - 2s 298us/step - loss: 0.0027 - acc: 1.0000
+Epoch No: 244
+Accuracy: 0.6629 (max: 0.7957)
+cnn_predictions F1_score: 71.01% >>>
+Non-other Macro-Averaged F1: 0.6572 (max: 0.7767)
+
+Epoch 1/1
+8000/8000 [==============================] - 2s 294us/step - loss: 0.0028 - acc: 1.0000
+Epoch No: 245
+Accuracy: 0.6629 (max: 0.7957)
+cnn_predictions F1_score: 71.13% >>>
+Non-other Macro-Averaged F1: 0.6592 (max: 0.7767)
+
+Epoch 1/1
+8000/8000 [==============================] - 2s 294us/step - loss: 0.0029 - acc: 1.0000
+Epoch No: 246
+Accuracy: 0.6654 (max: 0.7957)
+cnn_predictions F1_score: 71.05% >>>
+Non-other Macro-Averaged F1: 0.6617 (max: 0.7767)
+
+Epoch 1/1
+8000/8000 [==============================] - 2s 298us/step - loss: 0.0027 - acc: 1.0000
+Epoch No: 247
+Accuracy: 0.6647 (max: 0.7957)
+cnn_predictions F1_score: 71.16% >>>
+Non-other Macro-Averaged F1: 0.6593 (max: 0.7767)
+
+Epoch 1/1
+8000/8000 [==============================] - 2s 297us/step - loss: 0.0031 - acc: 1.0000
+Epoch No: 248
+Accuracy: 0.6607 (max: 0.7957)
+cnn_predictions F1_score: 70.53% >>>
+Non-other Macro-Averaged F1: 0.6578 (max: 0.7767)
+
+Epoch 1/1
+8000/8000 [==============================] - 2s 299us/step - loss: 0.0031 - acc: 1.0000
+Epoch No: 249
+Accuracy: 0.6625 (max: 0.7957)
+cnn_predictions F1_score: 71.07% >>>
+Non-other Macro-Averaged F1: 0.6588 (max: 0.7767)
+
+Epoch 1/1
+8000/8000 [==============================] - 2s 303us/step - loss: 0.0028 - acc: 1.0000
+Epoch No: 250
+Accuracy: 0.6665 (max: 0.7957)
+cnn_predictions F1_score: 71.28% >>>
+Non-other Macro-Averaged F1: 0.6623 (max: 0.7767)
+
+Epoch 1/1
+8000/8000 [==============================] - 2s 296us/step - loss: 0.0027 - acc: 1.0000
+Epoch No: 251
+Accuracy: 0.6665 (max: 0.7957)
+cnn_predictions F1_score: 71.37% >>>
+Non-other Macro-Averaged F1: 0.6609 (max: 0.7767)
+
+Epoch 1/1
+8000/8000 [==============================] - 2s 296us/step - loss: 0.0029 - acc: 1.0000
+Epoch No: 252
+Accuracy: 0.6647 (max: 0.7957)
+cnn_predictions F1_score: 71.16% >>>
+Non-other Macro-Averaged F1: 0.6572 (max: 0.7767)
+
+Epoch 1/1
+8000/8000 [==============================] - 2s 299us/step - loss: 0.0028 - acc: 1.0000
+Epoch No: 253
+Accuracy: 0.6640 (max: 0.7957)
+cnn_predictions F1_score: 71.04% >>>
+Non-other Macro-Averaged F1: 0.6559 (max: 0.7767)
+
+Epoch 1/1
+8000/8000 [==============================] - 2s 297us/step - loss: 0.0027 - acc: 1.0000
+Epoch No: 254
+Accuracy: 0.6625 (max: 0.7957)
+cnn_predictions F1_score: 70.83% >>>
+Non-other Macro-Averaged F1: 0.6575 (max: 0.7767)
+
+Epoch 1/1
+8000/8000 [==============================] - 2s 299us/step - loss: 0.0028 - acc: 1.0000
+Epoch No: 255
+Accuracy: 0.6665 (max: 0.7957)
+cnn_predictions F1_score: 71.44% >>>
+Non-other Macro-Averaged F1: 0.6592 (max: 0.7767)
+
+Epoch 1/1
+8000/8000 [==============================] - 2s 303us/step - loss: 0.0028 - acc: 1.0000
+Epoch No: 256
+Accuracy: 0.6621 (max: 0.7957)
+cnn_predictions F1_score: 70.94% >>>
+Non-other Macro-Averaged F1: 0.6557 (max: 0.7767)
+
+Epoch 1/1
+8000/8000 [==============================] - 2s 297us/step - loss: 0.0033 - acc: 1.0000
+Epoch No: 257
+Accuracy: 0.6654 (max: 0.7957)
+cnn_predictions F1_score: 71.35% >>>
+Non-other Macro-Averaged F1: 0.6643 (max: 0.7767)
+
+Epoch 1/1
+8000/8000 [==============================] - 2s 298us/step - loss: 0.0029 - acc: 1.0000
+Epoch No: 258
+Accuracy: 0.6654 (max: 0.7957)
+cnn_predictions F1_score: 71.34% >>>
+Non-other Macro-Averaged F1: 0.6614 (max: 0.7767)
+
+Epoch 1/1
+8000/8000 [==============================] - 2s 296us/step - loss: 0.0028 - acc: 1.0000
+Epoch No: 259
+Accuracy: 0.6636 (max: 0.7957)
+cnn_predictions F1_score: 71.12% >>>
+Non-other Macro-Averaged F1: 0.6602 (max: 0.7767)
+
+Epoch 1/1
+8000/8000 [==============================] - 2s 297us/step - loss: 0.0029 - acc: 1.0000
+Epoch No: 260
+Accuracy: 0.6618 (max: 0.7957)
+cnn_predictions F1_score: 71.01% >>>
+Non-other Macro-Averaged F1: 0.6616 (max: 0.7767)
+
+Epoch 1/1
+8000/8000 [==============================] - 2s 296us/step - loss: 0.0030 - acc: 1.0000
+Epoch No: 261
+Accuracy: 0.6665 (max: 0.7957)
+cnn_predictions F1_score: 71.48% >>>
+Non-other Macro-Averaged F1: 0.6647 (max: 0.7767)
+
+Epoch 1/1
+8000/8000 [==============================] - 2s 294us/step - loss: 0.0027 - acc: 1.0000
+Epoch No: 262
+Accuracy: 0.6669 (max: 0.7957)
+cnn_predictions F1_score: 71.38% >>>
+Non-other Macro-Averaged F1: 0.6595 (max: 0.7767)
+
+Epoch 1/1
+8000/8000 [==============================] - 2s 296us/step - loss: 0.0029 - acc: 1.0000
+Epoch No: 263
+Accuracy: 0.6643 (max: 0.7957)
+cnn_predictions F1_score: 71.12% >>>
+Non-other Macro-Averaged F1: 0.6609 (max: 0.7767)
+
+Epoch 1/1
+8000/8000 [==============================] - 2s 296us/step - loss: 0.0030 - acc: 1.0000
+Epoch No: 264
+Accuracy: 0.6607 (max: 0.7957)
+cnn_predictions F1_score: 70.65% >>>
+Non-other Macro-Averaged F1: 0.6549 (max: 0.7767)
+
+Epoch 1/1
+8000/8000 [==============================] - 2s 297us/step - loss: 0.0027 - acc: 1.0000
+Epoch No: 265
+Accuracy: 0.6629 (max: 0.7957)
+cnn_predictions F1_score: 71.02% >>>
+Non-other Macro-Averaged F1: 0.6573 (max: 0.7767)
+
+Epoch 1/1
+8000/8000 [==============================] - 2s 298us/step - loss: 0.0028 - acc: 1.0000
+Epoch No: 266
+Accuracy: 0.6665 (max: 0.7957)
+cnn_predictions F1_score: 71.26% >>>
+Non-other Macro-Averaged F1: 0.6620 (max: 0.7767)
+
+Epoch 1/1
+8000/8000 [==============================] - 2s 298us/step - loss: 0.0027 - acc: 1.0000
+Epoch No: 267
+Accuracy: 0.6636 (max: 0.7957)
+cnn_predictions F1_score: 71.15% >>>
+Non-other Macro-Averaged F1: 0.6588 (max: 0.7767)
+
+Epoch 1/1
+8000/8000 [==============================] - 2s 297us/step - loss: 0.0030 - acc: 1.0000
+Epoch No: 268
+Accuracy: 0.6632 (max: 0.7957)
+cnn_predictions F1_score: 70.92% >>>
+Non-other Macro-Averaged F1: 0.6581 (max: 0.7767)
+
+Epoch 1/1
+8000/8000 [==============================] - 2s 300us/step - loss: 0.0027 - acc: 1.0000
+Epoch No: 269
+Accuracy: 0.6669 (max: 0.7957)
+cnn_predictions F1_score: 71.44% >>>
+Non-other Macro-Averaged F1: 0.6616 (max: 0.7767)
+
+Epoch 1/1
+8000/8000 [==============================] - 2s 298us/step - loss: 0.0031 - acc: 1.0000
+Epoch No: 270
+Accuracy: 0.6658 (max: 0.7957)
+cnn_predictions F1_score: 71.39% >>>
+Non-other Macro-Averaged F1: 0.6650 (max: 0.7767)
+
+Epoch 1/1
+8000/8000 [==============================] - 2s 297us/step - loss: 0.0029 - acc: 1.0000
+Epoch No: 271
+Accuracy: 0.6662 (max: 0.7957)
+cnn_predictions F1_score: 71.37% >>>
+Non-other Macro-Averaged F1: 0.6625 (max: 0.7767)
+
+Epoch 1/1
+8000/8000 [==============================] - 2s 300us/step - loss: 0.0028 - acc: 1.0000
+Epoch No: 272
+Accuracy: 0.6643 (max: 0.7957)
+cnn_predictions F1_score: 71.18% >>>
+Non-other Macro-Averaged F1: 0.6637 (max: 0.7767)
+
+Epoch 1/1
+8000/8000 [==============================] - 2s 295us/step - loss: 0.0028 - acc: 1.0000
+Epoch No: 273
+Accuracy: 0.6621 (max: 0.7957)
+cnn_predictions F1_score: 70.89% >>>
+Non-other Macro-Averaged F1: 0.6571 (max: 0.7767)
+
+Epoch 1/1
+8000/8000 [==============================] - 2s 297us/step - loss: 0.0028 - acc: 1.0000
+Epoch No: 274
+Accuracy: 0.6647 (max: 0.7957)
+cnn_predictions F1_score: 71.20% >>>
+Non-other Macro-Averaged F1: 0.6638 (max: 0.7767)
+
+Epoch 1/1
+8000/8000 [==============================] - 2s 297us/step - loss: 0.0031 - acc: 1.0000
+Epoch No: 275
+Accuracy: 0.6636 (max: 0.7957)
+cnn_predictions F1_score: 71.17% >>>
+Non-other Macro-Averaged F1: 0.6611 (max: 0.7767)
+
+Epoch 1/1
+8000/8000 [==============================] - 2s 297us/step - loss: 0.0028 - acc: 1.0000
+Epoch No: 276
+Accuracy: 0.6665 (max: 0.7957)
+cnn_predictions F1_score: 71.23% >>>
+Non-other Macro-Averaged F1: 0.6611 (max: 0.7767)
+
+Epoch 1/1
+8000/8000 [==============================] - 2s 299us/step - loss: 0.0028 - acc: 1.0000
+Epoch No: 277
+Accuracy: 0.6643 (max: 0.7957)
+cnn_predictions F1_score: 70.99% >>>
+Non-other Macro-Averaged F1: 0.6540 (max: 0.7767)
+
+Epoch 1/1
+8000/8000 [==============================] - 2s 297us/step - loss: 0.0028 - acc: 1.0000
+Epoch No: 278
+Accuracy: 0.6636 (max: 0.7957)
+cnn_predictions F1_score: 71.10% >>>
+Non-other Macro-Averaged F1: 0.6558 (max: 0.7767)
+
+Epoch 1/1
+8000/8000 [==============================] - 2s 284us/step - loss: 0.0028 - acc: 1.0000
+Epoch No: 279
+Accuracy: 0.6614 (max: 0.7957)
+cnn_predictions F1_score: 70.82% >>>
+Non-other Macro-Averaged F1: 0.6584 (max: 0.7767)
+
+Epoch 1/1
+8000/8000 [==============================] - 2s 307us/step - loss: 0.0031 - acc: 1.0000
+Epoch No: 280
+Accuracy: 0.6625 (max: 0.7957)
+cnn_predictions F1_score: 70.88% >>>
+Non-other Macro-Averaged F1: 0.6582 (max: 0.7767)
+
+Epoch 1/1
+8000/8000 [==============================] - 2s 301us/step - loss: 0.0027 - acc: 1.0000
+Epoch No: 281
+Accuracy: 0.6662 (max: 0.7957)
+cnn_predictions F1_score: 71.58% >>>
+Non-other Macro-Averaged F1: 0.6654 (max: 0.7767)
+
+Epoch 1/1
+8000/8000 [==============================] - 2s 300us/step - loss: 0.0030 - acc: 1.0000
+Epoch No: 282
+Accuracy: 0.6651 (max: 0.7957)
+cnn_predictions F1_score: 71.25% >>>
+Non-other Macro-Averaged F1: 0.6614 (max: 0.7767)
+
+Epoch 1/1
+8000/8000 [==============================] - 2s 298us/step - loss: 0.0028 - acc: 1.0000
+Epoch No: 283
+Accuracy: 0.6632 (max: 0.7957)
+cnn_predictions F1_score: 71.07% >>>
+Non-other Macro-Averaged F1: 0.6600 (max: 0.7767)
+
+Epoch 1/1
+8000/8000 [==============================] - 2s 296us/step - loss: 0.0027 - acc: 1.0000
+Epoch No: 284
+Accuracy: 0.6691 (max: 0.7957)
+cnn_predictions F1_score: 71.65% >>>
+Non-other Macro-Averaged F1: 0.6678 (max: 0.7767)
+
+Epoch 1/1
+8000/8000 [==============================] - 2s 301us/step - loss: 0.0030 - acc: 1.0000
+Epoch No: 285
+Accuracy: 0.6596 (max: 0.7957)
+cnn_predictions F1_score: 70.59% >>>
+Non-other Macro-Averaged F1: 0.6558 (max: 0.7767)
+
+Epoch 1/1
+8000/8000 [==============================] - 2s 299us/step - loss: 0.0027 - acc: 1.0000
+Epoch No: 286
+Accuracy: 0.6640 (max: 0.7957)
+cnn_predictions F1_score: 71.13% >>>
+Non-other Macro-Averaged F1: 0.6614 (max: 0.7767)
+
+Epoch 1/1
+8000/8000 [==============================] - 2s 297us/step - loss: 0.0031 - acc: 1.0000
+Epoch No: 287
+Accuracy: 0.6647 (max: 0.7957)
+cnn_predictions F1_score: 71.38% >>>
+Non-other Macro-Averaged F1: 0.6609 (max: 0.7767)
+
+Epoch 1/1
+8000/8000 [==============================] - 2s 295us/step - loss: 0.0028 - acc: 1.0000
+Epoch No: 288
+Accuracy: 0.6658 (max: 0.7957)
+cnn_predictions F1_score: 71.33% >>>
+Non-other Macro-Averaged F1: 0.6609 (max: 0.7767)
+
+Epoch 1/1
+8000/8000 [==============================] - 2s 295us/step - loss: 0.0027 - acc: 1.0000
+Epoch No: 289
+Accuracy: 0.6636 (max: 0.7957)
+cnn_predictions F1_score: 71.07% >>>
+Non-other Macro-Averaged F1: 0.6587 (max: 0.7767)
+
+Epoch 1/1
+8000/8000 [==============================] - 2s 300us/step - loss: 0.0029 - acc: 1.0000
+Epoch No: 290
+Accuracy: 0.6643 (max: 0.7957)
+cnn_predictions F1_score: 71.15% >>>
+Non-other Macro-Averaged F1: 0.6605 (max: 0.7767)
+
+Epoch 1/1
+8000/8000 [==============================] - 2s 297us/step - loss: 0.0028 - acc: 1.0000
+Epoch No: 291
+Accuracy: 0.6632 (max: 0.7957)
+cnn_predictions F1_score: 71.12% >>>
+Non-other Macro-Averaged F1: 0.6587 (max: 0.7767)
+
+Epoch 1/1
+8000/8000 [==============================] - 2s 298us/step - loss: 0.0028 - acc: 1.0000
+Epoch No: 292
+Accuracy: 0.6658 (max: 0.7957)
+cnn_predictions F1_score: 71.46% >>>
+Non-other Macro-Averaged F1: 0.6627 (max: 0.7767)
+
+Epoch 1/1
+8000/8000 [==============================] - 2s 297us/step - loss: 0.0028 - acc: 1.0000
+Epoch No: 293
+Accuracy: 0.6618 (max: 0.7957)
+cnn_predictions F1_score: 70.92% >>>
+Non-other Macro-Averaged F1: 0.6573 (max: 0.7767)
+
+Epoch 1/1
+8000/8000 [==============================] - 2s 295us/step - loss: 0.0030 - acc: 1.0000
+Epoch No: 294
+Accuracy: 0.6654 (max: 0.7957)
+cnn_predictions F1_score: 71.16% >>>
+Non-other Macro-Averaged F1: 0.6615 (max: 0.7767)
+
+Epoch 1/1
+8000/8000 [==============================] - 2s 296us/step - loss: 0.0028 - acc: 1.0000
+Epoch No: 295
+Accuracy: 0.6673 (max: 0.7957)
+cnn_predictions F1_score: 71.46% >>>
+Non-other Macro-Averaged F1: 0.6594 (max: 0.7767)
+
+Epoch 1/1
+8000/8000 [==============================] - 2s 296us/step - loss: 0.0027 - acc: 1.0000
+Epoch No: 296
+Accuracy: 0.6665 (max: 0.7957)
+cnn_predictions F1_score: 71.32% >>>
+Non-other Macro-Averaged F1: 0.6619 (max: 0.7767)
+
+Epoch 1/1
+8000/8000 [==============================] - 2s 298us/step - loss: 0.0030 - acc: 1.0000
+Epoch No: 297
+Accuracy: 0.6632 (max: 0.7957)
+cnn_predictions F1_score: 70.90% >>>
+Non-other Macro-Averaged F1: 0.6576 (max: 0.7767)
+
+Epoch 1/1
+8000/8000 [==============================] - 2s 298us/step - loss: 0.0027 - acc: 1.0000
+Epoch No: 298
+Accuracy: 0.6676 (max: 0.7957)
+cnn_predictions F1_score: 71.52% >>>
+Non-other Macro-Averaged F1: 0.6636 (max: 0.7767)
+
+Epoch 1/1
+8000/8000 [==============================] - 2s 295us/step - loss: 0.0033 - acc: 1.0000
+Epoch No: 299
+Accuracy: 0.6640 (max: 0.7957)
+cnn_predictions F1_score: 71.11% >>>
+Non-other Macro-Averaged F1: 0.6595 (max: 0.7767)
+
+
+
+
+dropout after word emb doesnot help much 
+
+Start training
+Epoch 1/1
+8000/8000 [==============================] - 3s 401us/step - loss: 2.0042 - acc: 0.3937
+Epoch No: 0
+Accuracy: 0.6746 (max: 0.6746)
+cnn_copy_predictions F1_score: 72.32% >>>
+Non-other Macro-Averaged F1: 0.6230 (max: 0.6230)
+
+Epoch 1/1
+8000/8000 [==============================] - 2s 298us/step - loss: 0.9923 - acc: 0.6971
+Epoch No: 1
+Accuracy: 0.7578 (max: 0.7578)
+cnn_copy_predictions F1_score: 80.30% >>>
+Non-other Macro-Averaged F1: 0.7262 (max: 0.7262)
+
+Epoch 1/1
+8000/8000 [==============================] - 2s 301us/step - loss: 0.6983 - acc: 0.7876
+Epoch No: 2
+Accuracy: 0.7692 (max: 0.7692)
+cnn_copy_predictions F1_score: 81.70% >>>
+Non-other Macro-Averaged F1: 0.7462 (max: 0.7462)
+
+Epoch 1/1
+8000/8000 [==============================] - 2s 299us/step - loss: 0.5102 - acc: 0.8553
+Epoch No: 3
+Accuracy: 0.7836 (max: 0.7836)
+cnn_copy_predictions F1_score: 82.49% >>>
+Non-other Macro-Averaged F1: 0.7617 (max: 0.7617)
+
+Epoch 1/1
+8000/8000 [==============================] - 2s 306us/step - loss: 0.3893 - acc: 0.8942
+Epoch No: 4
+Accuracy: 0.7939 (max: 0.7939)
+cnn_copy_predictions F1_score: 83.41% >>>
+Non-other Macro-Averaged F1: 0.7689 (max: 0.7689)
+
+Epoch 1/1
+8000/8000 [==============================] - 2s 304us/step - loss: 0.2915 - acc: 0.9315
+Epoch No: 5
+Accuracy: 0.7895 (max: 0.7939)
+cnn_copy_predictions F1_score: 82.85% >>>
+Non-other Macro-Averaged F1: 0.7659 (max: 0.7689)
+
+Epoch 1/1
+8000/8000 [==============================] - 2s 300us/step - loss: 0.2312 - acc: 0.9508
+Epoch No: 6
+Accuracy: 0.7858 (max: 0.7939)
+cnn_copy_predictions F1_score: 82.56% >>>
+Non-other Macro-Averaged F1: 0.7620 (max: 0.7689)
+
+Epoch 1/1
+8000/8000 [==============================] - 2s 301us/step - loss: 0.1906 - acc: 0.9618
+Epoch No: 7
+Accuracy: 0.7972 (max: 0.7972)
+cnn_copy_predictions F1_score: 83.37% >>>
+Non-other Macro-Averaged F1: 0.7687 (max: 0.7689)
+
+Epoch 1/1
+8000/8000 [==============================] - 2s 306us/step - loss: 0.1504 - acc: 0.9783
+Epoch No: 8
+Accuracy: 0.7935 (max: 0.7972)
+cnn_copy_predictions F1_score: 83.14% >>>
+Non-other Macro-Averaged F1: 0.7727 (max: 0.7727)
+
+Epoch 1/1
+8000/8000 [==============================] - 2s 310us/step - loss: 0.1356 - acc: 0.9820
+Epoch No: 9
+Accuracy: 0.7968 (max: 0.7972)
+cnn_copy_predictions F1_score: 83.54% >>>
+Non-other Macro-Averaged F1: 0.7705 (max: 0.7727)
+
+Epoch 1/1
+8000/8000 [==============================] - 2s 303us/step - loss: 0.1186 - acc: 0.9868
+Epoch No: 10
+Accuracy: 0.7994 (max: 0.7994)
+cnn_copy_predictions F1_score: 83.77% >>>
+Non-other Macro-Averaged F1: 0.7751 (max: 0.7751)
+
+Epoch 1/1
+8000/8000 [==============================] - 2s 308us/step - loss: 0.1012 - acc: 0.9906
+Epoch No: 11
+Accuracy: 0.7891 (max: 0.7994)
+cnn_copy_predictions F1_score: 83.02% >>>
+Non-other Macro-Averaged F1: 0.7667 (max: 0.7751)
+
+Epoch 1/1
+8000/8000 [==============================] - 2s 308us/step - loss: 0.0929 - acc: 0.9943
+Epoch No: 12
+Accuracy: 0.7873 (max: 0.7994)
+cnn_copy_predictions F1_score: 82.73% >>>
+Non-other Macro-Averaged F1: 0.7676 (max: 0.7751)
+
+Epoch 1/1
+8000/8000 [==============================] - 2s 308us/step - loss: 0.0918 - acc: 0.9915
+Epoch No: 13
+Accuracy: 0.7902 (max: 0.7994)
+cnn_copy_predictions F1_score: 83.02% >>>
+Non-other Macro-Averaged F1: 0.7715 (max: 0.7751)
+
+Epoch 1/1
+8000/8000 [==============================] - 2s 307us/step - loss: 0.0822 - acc: 0.9940
+Epoch No: 14
+Accuracy: 0.7946 (max: 0.7994)
+cnn_copy_predictions F1_score: 83.51% >>>
+Non-other Macro-Averaged F1: 0.7758 (max: 0.7758)
+
+Epoch 1/1
+8000/8000 [==============================] - 2s 301us/step - loss: 0.0720 - acc: 0.9968
+Epoch No: 15
+Accuracy: 0.7950 (max: 0.7994)
+cnn_copy_predictions F1_score: 83.37% >>>
+Non-other Macro-Averaged F1: 0.7726 (max: 0.7758)
+
+Epoch 1/1
+8000/8000 [==============================] - 2s 305us/step - loss: 0.0700 - acc: 0.9961
+Epoch No: 16
+Accuracy: 0.7935 (max: 0.7994)
+cnn_copy_predictions F1_score: 83.48% >>>
+Non-other Macro-Averaged F1: 0.7727 (max: 0.7758)
+
+Epoch 1/1
+8000/8000 [==============================] - 2s 301us/step - loss: 0.0638 - acc: 0.9968
+Epoch No: 17
+Accuracy: 0.7917 (max: 0.7994)
+cnn_copy_predictions F1_score: 83.27% >>>
+Non-other Macro-Averaged F1: 0.7721 (max: 0.7758)
+
+Epoch 1/1
+8000/8000 [==============================] - 2s 303us/step - loss: 0.0615 - acc: 0.9966
+Epoch No: 18
+Accuracy: 0.7880 (max: 0.7994)
+cnn_copy_predictions F1_score: 82.91% >>>
+Non-other Macro-Averaged F1: 0.7664 (max: 0.7758)
+
+Epoch 1/1
+8000/8000 [==============================] - 2s 308us/step - loss: 0.0581 - acc: 0.9971
+Epoch No: 19
+Accuracy: 0.7865 (max: 0.7994)
+cnn_copy_predictions F1_score: 82.70% >>>
+Non-other Macro-Averaged F1: 0.7638 (max: 0.7758)
+
+Epoch 1/1
+8000/8000 [==============================] - 2s 303us/step - loss: 0.0538 - acc: 0.9984
+Epoch No: 20
+Accuracy: 0.7935 (max: 0.7994)
+cnn_copy_predictions F1_score: 83.37% >>>
+Non-other Macro-Averaged F1: 0.7719 (max: 0.7758)
+
+Epoch 1/1
+8000/8000 [==============================] - 2s 309us/step - loss: 0.0511 - acc: 0.9984
+Epoch No: 21
+Accuracy: 0.7917 (max: 0.7994)
+cnn_copy_predictions F1_score: 83.38% >>>
+Non-other Macro-Averaged F1: 0.7708 (max: 0.7758)
+
+Epoch 1/1
+8000/8000 [==============================] - 2s 301us/step - loss: 0.0485 - acc: 0.9985
+Epoch No: 22
+Accuracy: 0.7873 (max: 0.7994)
+cnn_copy_predictions F1_score: 82.63% >>>
+Non-other Macro-Averaged F1: 0.7686 (max: 0.7758)
+
+Epoch 1/1
+8000/8000 [==============================] - 2s 304us/step - loss: 0.0439 - acc: 0.9993
+Epoch No: 23
+Accuracy: 0.7906 (max: 0.7994)
+cnn_copy_predictions F1_score: 83.15% >>>
+Non-other Macro-Averaged F1: 0.7677 (max: 0.7758)
+
+Epoch 1/1
+8000/8000 [==============================] - 2s 297us/step - loss: 0.0437 - acc: 0.9986
+Epoch No: 24
+Accuracy: 0.7887 (max: 0.7994)
+cnn_copy_predictions F1_score: 82.94% >>>
+Non-other Macro-Averaged F1: 0.7680 (max: 0.7758)
+
+Epoch 1/1
+8000/8000 [==============================] - 2s 310us/step - loss: 0.0408 - acc: 0.9990
+Epoch No: 25
+Accuracy: 0.7858 (max: 0.7994)
+cnn_copy_predictions F1_score: 82.79% >>>
+Non-other Macro-Averaged F1: 0.7660 (max: 0.7758)
+
+Epoch 1/1
+8000/8000 [==============================] - 2s 307us/step - loss: 0.0380 - acc: 0.9996
+Epoch No: 26
+Accuracy: 0.7884 (max: 0.7994)
+cnn_copy_predictions F1_score: 82.98% >>>
+Non-other Macro-Averaged F1: 0.7666 (max: 0.7758)
+
+Epoch 1/1
+8000/8000 [==============================] - 2s 312us/step - loss: 0.0372 - acc: 0.9993
+Epoch No: 27
+Accuracy: 0.7869 (max: 0.7994)
+cnn_copy_predictions F1_score: 82.90% >>>
+Non-other Macro-Averaged F1: 0.7668 (max: 0.7758)
+
+Epoch 1/1
+8000/8000 [==============================] - 2s 309us/step - loss: 0.0363 - acc: 0.9984
+Epoch No: 28
+Accuracy: 0.7880 (max: 0.7994)
+cnn_copy_predictions F1_score: 82.93% >>>
+Non-other Macro-Averaged F1: 0.7664 (max: 0.7758)
+
+Epoch 1/1
+8000/8000 [==============================] - 2s 292us/step - loss: 0.0363 - acc: 0.9986
+Epoch No: 29
+Accuracy: 0.7781 (max: 0.7994)
+cnn_copy_predictions F1_score: 82.03% >>>
+Non-other Macro-Averaged F1: 0.7591 (max: 0.7758)
+
+Epoch 1/1
+8000/8000 [==============================] - 2s 311us/step - loss: 0.0345 - acc: 0.9991
+Epoch No: 30
+Accuracy: 0.7828 (max: 0.7994)
+cnn_copy_predictions F1_score: 82.40% >>>
+Non-other Macro-Averaged F1: 0.7643 (max: 0.7758)
+
+Epoch 1/1
+8000/8000 [==============================] - 2s 304us/step - loss: 0.0335 - acc: 0.9988
+Epoch No: 31
+Accuracy: 0.7854 (max: 0.7994)
+cnn_copy_predictions F1_score: 82.69% >>>
+Non-other Macro-Averaged F1: 0.7693 (max: 0.7758)
+
+Epoch 1/1
+8000/8000 [==============================] - 2s 302us/step - loss: 0.0316 - acc: 0.9990
+Epoch No: 32
+Accuracy: 0.7806 (max: 0.7994)
+cnn_copy_predictions F1_score: 82.08% >>>
+Non-other Macro-Averaged F1: 0.7653 (max: 0.7758)
+
+Epoch 1/1
+8000/8000 [==============================] - 2s 310us/step - loss: 0.0312 - acc: 0.9994
+Epoch No: 33
+Accuracy: 0.7847 (max: 0.7994)
+cnn_copy_predictions F1_score: 82.92% >>>
+Non-other Macro-Averaged F1: 0.7696 (max: 0.7758)
+
+Epoch 1/1
+8000/8000 [==============================] - 2s 311us/step - loss: 0.0288 - acc: 0.9996
+Epoch No: 34
+Accuracy: 0.7858 (max: 0.7994)
+cnn_copy_predictions F1_score: 82.73% >>>
+Non-other Macro-Averaged F1: 0.7625 (max: 0.7758)
+
+Epoch 1/1
+8000/8000 [==============================] - 2s 305us/step - loss: 0.0260 - acc: 1.0000
+Epoch No: 35
+Accuracy: 0.7869 (max: 0.7994)
+cnn_copy_predictions F1_score: 82.77% >>>
+Non-other Macro-Averaged F1: 0.7645 (max: 0.7758)
+
+Epoch 1/1
+8000/8000 [==============================] - 2s 299us/step - loss: 0.0248 - acc: 0.9999
+Epoch No: 36
+Accuracy: 0.7858 (max: 0.7994)
+cnn_copy_predictions F1_score: 82.74% >>>
+Non-other Macro-Averaged F1: 0.7648 (max: 0.7758)
+
+Epoch 1/1
+8000/8000 [==============================] - 2s 311us/step - loss: 0.0245 - acc: 0.9998
+Epoch No: 37
+Accuracy: 0.7828 (max: 0.7994)
+cnn_copy_predictions F1_score: 82.46% >>>
+Non-other Macro-Averaged F1: 0.7614 (max: 0.7758)
+
+Epoch 1/1
+8000/8000 [==============================] - 2s 305us/step - loss: 0.0240 - acc: 0.9995
+Epoch No: 38
+Accuracy: 0.7773 (max: 0.7994)
+cnn_copy_predictions F1_score: 81.93% >>>
+Non-other Macro-Averaged F1: 0.7570 (max: 0.7758)
+
+Epoch 1/1
+8000/8000 [==============================] - 2s 302us/step - loss: 0.0223 - acc: 0.9999
+Epoch No: 39
+Accuracy: 0.7795 (max: 0.7994)
+cnn_copy_predictions F1_score: 82.18% >>>
+Non-other Macro-Averaged F1: 0.7574 (max: 0.7758)
+
+Epoch 1/1
+8000/8000 [==============================] - 2s 306us/step - loss: 0.0217 - acc: 0.9998
+Epoch No: 40
+Accuracy: 0.7788 (max: 0.7994)
+cnn_copy_predictions F1_score: 82.24% >>>
+Non-other Macro-Averaged F1: 0.7617 (max: 0.7758)
+
+Epoch 1/1
+8000/8000 [==============================] - 2s 303us/step - loss: 0.0218 - acc: 0.9998
+Epoch No: 41
+Accuracy: 0.7773 (max: 0.7994)
+cnn_copy_predictions F1_score: 82.01% >>>
+Non-other Macro-Averaged F1: 0.7591 (max: 0.7758)
+
+Epoch 1/1
+8000/8000 [==============================] - 2s 300us/step - loss: 0.0217 - acc: 0.9998
+Epoch No: 42
+Accuracy: 0.7729 (max: 0.7994)
+cnn_copy_predictions F1_score: 81.39% >>>
+Non-other Macro-Averaged F1: 0.7547 (max: 0.7758)
+
+Epoch 1/1
+8000/8000 [==============================] - 2s 300us/step - loss: 0.0205 - acc: 0.9999
+Epoch No: 43
+Accuracy: 0.7725 (max: 0.7994)
+cnn_copy_predictions F1_score: 81.60% >>>
+Non-other Macro-Averaged F1: 0.7543 (max: 0.7758)
+
+Epoch 1/1
+8000/8000 [==============================] - 2s 309us/step - loss: 0.0188 - acc: 0.9999
+Epoch No: 44
+Accuracy: 0.7714 (max: 0.7994)
+cnn_copy_predictions F1_score: 81.66% >>>
+Non-other Macro-Averaged F1: 0.7556 (max: 0.7758)
+
+Epoch 1/1
+8000/8000 [==============================] - 2s 307us/step - loss: 0.0192 - acc: 0.9998
+Epoch No: 45
+Accuracy: 0.7773 (max: 0.7994)
+cnn_copy_predictions F1_score: 82.00% >>>
+Non-other Macro-Averaged F1: 0.7564 (max: 0.7758)
+
+Epoch 1/1
+8000/8000 [==============================] - 2s 304us/step - loss: 0.0197 - acc: 0.9994
+Epoch No: 46
+Accuracy: 0.7711 (max: 0.7994)
+cnn_copy_predictions F1_score: 81.68% >>>
+Non-other Macro-Averaged F1: 0.7518 (max: 0.7758)
+
+Epoch 1/1
+8000/8000 [==============================] - 2s 306us/step - loss: 0.0194 - acc: 0.9998
+Epoch No: 47
+Accuracy: 0.7751 (max: 0.7994)
+cnn_copy_predictions F1_score: 81.73% >>>
+Non-other Macro-Averaged F1: 0.7543 (max: 0.7758)
+
+Epoch 1/1
+8000/8000 [==============================] - 2s 306us/step - loss: 0.0169 - acc: 1.0000
+Epoch No: 48
+Accuracy: 0.7725 (max: 0.7994)
+cnn_copy_predictions F1_score: 81.56% >>>
+Non-other Macro-Averaged F1: 0.7570 (max: 0.7758)
+
+Epoch 1/1
+8000/8000 [==============================] - 2s 308us/step - loss: 0.0160 - acc: 1.0000
+Epoch No: 49
+Accuracy: 0.7781 (max: 0.7994)
+cnn_copy_predictions F1_score: 82.12% >>>
+Non-other Macro-Averaged F1: 0.7590 (max: 0.7758)
+
+Epoch 1/1
+8000/8000 [==============================] - 2s 302us/step - loss: 0.0159 - acc: 0.9998
+Epoch No: 50
+Accuracy: 0.7667 (max: 0.7994)
+cnn_copy_predictions F1_score: 81.44% >>>
+Non-other Macro-Averaged F1: 0.7532 (max: 0.7758)
+
+Epoch 1/1
+8000/8000 [==============================] - 2s 306us/step - loss: 0.0157 - acc: 1.0000
+Epoch No: 51
+Accuracy: 0.7707 (max: 0.7994)
+cnn_copy_predictions F1_score: 81.37% >>>
+Non-other Macro-Averaged F1: 0.7514 (max: 0.7758)
+
+Epoch 1/1
+8000/8000 [==============================] - 2s 305us/step - loss: 0.0146 - acc: 1.0000
+Epoch No: 52
+Accuracy: 0.7755 (max: 0.7994)
+cnn_copy_predictions F1_score: 81.79% >>>
+Non-other Macro-Averaged F1: 0.7566 (max: 0.7758)
+
+Epoch 1/1
+8000/8000 [==============================] - 2s 307us/step - loss: 0.0136 - acc: 1.0000
+Epoch No: 53
+Accuracy: 0.7681 (max: 0.7994)
+cnn_copy_predictions F1_score: 81.15% >>>
+Non-other Macro-Averaged F1: 0.7493 (max: 0.7758)
+
+Epoch 1/1
+8000/8000 [==============================] - 2s 308us/step - loss: 0.0132 - acc: 1.0000
+Epoch No: 54
+Accuracy: 0.7736 (max: 0.7994)
+cnn_copy_predictions F1_score: 81.86% >>>
+Non-other Macro-Averaged F1: 0.7546 (max: 0.7758)
+
+Epoch 1/1
+8000/8000 [==============================] - 2s 307us/step - loss: 0.0129 - acc: 1.0000
+Epoch No: 55
+Accuracy: 0.7678 (max: 0.7994)
+cnn_copy_predictions F1_score: 81.06% >>>
+Non-other Macro-Averaged F1: 0.7476 (max: 0.7758)
+
+Epoch 1/1
+8000/8000 [==============================] - 2s 305us/step - loss: 0.0124 - acc: 1.0000
+Epoch No: 56
+Accuracy: 0.7659 (max: 0.7994)
+cnn_copy_predictions F1_score: 80.95% >>>
+Non-other Macro-Averaged F1: 0.7504 (max: 0.7758)
+
+Epoch 1/1
+8000/8000 [==============================] - 2s 310us/step - loss: 0.0124 - acc: 1.0000
+Epoch No: 57
+Accuracy: 0.7611 (max: 0.7994)
+cnn_copy_predictions F1_score: 80.60% >>>
+Non-other Macro-Averaged F1: 0.7442 (max: 0.7758)
+
+Epoch 1/1
+8000/8000 [==============================] - 2s 304us/step - loss: 0.0136 - acc: 0.9996
+Epoch No: 58
+Accuracy: 0.7692 (max: 0.7994)
+cnn_copy_predictions F1_score: 81.35% >>>
+Non-other Macro-Averaged F1: 0.7515 (max: 0.7758)
+
+Epoch 1/1
+8000/8000 [==============================] - 2s 305us/step - loss: 0.0128 - acc: 1.0000
+Epoch No: 59
+Accuracy: 0.7652 (max: 0.7994)
+cnn_copy_predictions F1_score: 81.10% >>>
+Non-other Macro-Averaged F1: 0.7463 (max: 0.7758)
+
+Epoch 1/1
+8000/8000 [==============================] - 2s 307us/step - loss: 0.0118 - acc: 1.0000
+Epoch No: 60
+Accuracy: 0.7703 (max: 0.7994)
+cnn_copy_predictions F1_score: 81.35% >>>
+Non-other Macro-Averaged F1: 0.7524 (max: 0.7758)
+
+Epoch 1/1
+8000/8000 [==============================] - 2s 309us/step - loss: 0.0114 - acc: 1.0000
+Epoch No: 61
+Accuracy: 0.7648 (max: 0.7994)
+cnn_copy_predictions F1_score: 80.96% >>>
+Non-other Macro-Averaged F1: 0.7504 (max: 0.7758)
+
+Epoch 1/1
+8000/8000 [==============================] - 2s 304us/step - loss: 0.0109 - acc: 1.0000
+Epoch No: 62
+Accuracy: 0.7626 (max: 0.7994)
+cnn_copy_predictions F1_score: 80.89% >>>
+Non-other Macro-Averaged F1: 0.7476 (max: 0.7758)
+
+Epoch 1/1
+8000/8000 [==============================] - 2s 304us/step - loss: 0.0104 - acc: 1.0000
+Epoch No: 63
+Accuracy: 0.7689 (max: 0.7994)
+cnn_copy_predictions F1_score: 81.25% >>>
+Non-other Macro-Averaged F1: 0.7498 (max: 0.7758)
+
+Epoch 1/1
+8000/8000 [==============================] - 2s 308us/step - loss: 0.0103 - acc: 1.0000
+Epoch No: 64
+Accuracy: 0.7589 (max: 0.7994)
+cnn_copy_predictions F1_score: 80.52% >>>
+Non-other Macro-Averaged F1: 0.7453 (max: 0.7758)
+
+Epoch 1/1
+8000/8000 [==============================] - 2s 307us/step - loss: 0.0101 - acc: 1.0000
+Epoch No: 65
+Accuracy: 0.7600 (max: 0.7994)
+cnn_copy_predictions F1_score: 80.55% >>>
+Non-other Macro-Averaged F1: 0.7433 (max: 0.7758)
+
+Epoch 1/1
+8000/8000 [==============================] - 2s 307us/step - loss: 0.0097 - acc: 1.0000
+Epoch No: 66
+Accuracy: 0.7582 (max: 0.7994)
+cnn_copy_predictions F1_score: 80.45% >>>
+Non-other Macro-Averaged F1: 0.7452 (max: 0.7758)
+
+Epoch 1/1
+8000/8000 [==============================] - 2s 306us/step - loss: 0.0102 - acc: 0.9999
+Epoch No: 67
+Accuracy: 0.7523 (max: 0.7994)
+cnn_copy_predictions F1_score: 79.74% >>>
+Non-other Macro-Averaged F1: 0.7399 (max: 0.7758)
+
+Epoch 1/1
+8000/8000 [==============================] - 2s 306us/step - loss: 0.0110 - acc: 0.9999
+Epoch No: 68
+Accuracy: 0.7541 (max: 0.7994)
+cnn_copy_predictions F1_score: 79.76% >>>
+Non-other Macro-Averaged F1: 0.7372 (max: 0.7758)
+
+Epoch 1/1
+8000/8000 [==============================] - 2s 308us/step - loss: 0.0094 - acc: 1.0000
+Epoch No: 69
+Accuracy: 0.7560 (max: 0.7994)
+cnn_copy_predictions F1_score: 80.30% >>>
+Non-other Macro-Averaged F1: 0.7435 (max: 0.7758)
+
+Epoch 1/1
+8000/8000 [==============================] - 2s 307us/step - loss: 0.0089 - acc: 1.0000
+Epoch No: 70
+Accuracy: 0.7545 (max: 0.7994)
+cnn_copy_predictions F1_score: 80.15% >>>
+Non-other Macro-Averaged F1: 0.7428 (max: 0.7758)
+
+Epoch 1/1
+8000/8000 [==============================] - 2s 312us/step - loss: 0.0088 - acc: 1.0000
+Epoch No: 71
+Accuracy: 0.7586 (max: 0.7994)
+cnn_copy_predictions F1_score: 80.28% >>>
+Non-other Macro-Averaged F1: 0.7413 (max: 0.7758)
+
+Epoch 1/1
+8000/8000 [==============================] - 2s 310us/step - loss: 0.0084 - acc: 1.0000
+Epoch No: 72
+Accuracy: 0.7545 (max: 0.7994)
+cnn_copy_predictions F1_score: 79.98% >>>
+Non-other Macro-Averaged F1: 0.7394 (max: 0.7758)
+
+Epoch 1/1
+8000/8000 [==============================] - 2s 310us/step - loss: 0.0086 - acc: 1.0000
+Epoch No: 73
+Accuracy: 0.7471 (max: 0.7994)
+cnn_copy_predictions F1_score: 79.37% >>>
+Non-other Macro-Averaged F1: 0.7330 (max: 0.7758)
+
+Epoch 1/1
+8000/8000 [==============================] - 2s 312us/step - loss: 0.0089 - acc: 0.9999
+Epoch No: 74
+Accuracy: 0.7571 (max: 0.7994)
+cnn_copy_predictions F1_score: 80.19% >>>
+Non-other Macro-Averaged F1: 0.7416 (max: 0.7758)
+
+Epoch 1/1
+8000/8000 [==============================] - 2s 309us/step - loss: 0.0087 - acc: 1.0000
+Epoch No: 75
+Accuracy: 0.7512 (max: 0.7994)
+cnn_copy_predictions F1_score: 79.69% >>>
+Non-other Macro-Averaged F1: 0.7371 (max: 0.7758)
+
+Epoch 1/1
+8000/8000 [==============================] - 3s 313us/step - loss: 0.0078 - acc: 1.0000
+Epoch No: 76
+Accuracy: 0.7512 (max: 0.7994)
+cnn_copy_predictions F1_score: 79.60% >>>
+Non-other Macro-Averaged F1: 0.7377 (max: 0.7758)
+
+Epoch 1/1
+8000/8000 [==============================] - 2s 309us/step - loss: 0.0084 - acc: 1.0000
+Epoch No: 77
+Accuracy: 0.7471 (max: 0.7994)
+cnn_copy_predictions F1_score: 79.10% >>>
+Non-other Macro-Averaged F1: 0.7254 (max: 0.7758)
+
+Epoch 1/1
+8000/8000 [==============================] - 2s 303us/step - loss: 0.0081 - acc: 1.0000
+Epoch No: 78
+Accuracy: 0.7486 (max: 0.7994)
+cnn_copy_predictions F1_score: 79.15% >>>
+Non-other Macro-Averaged F1: 0.7297 (max: 0.7758)
+
+Epoch 1/1
+8000/8000 [==============================] - 2s 308us/step - loss: 0.0072 - acc: 1.0000
+Epoch No: 79
+Accuracy: 0.7486 (max: 0.7994)
+cnn_copy_predictions F1_score: 79.26% >>>
+Non-other Macro-Averaged F1: 0.7298 (max: 0.7758)
+
+Epoch 1/1
+8000/8000 [==============================] - 2s 309us/step - loss: 0.0073 - acc: 1.0000
+Epoch No: 80
+Accuracy: 0.7449 (max: 0.7994)
+cnn_copy_predictions F1_score: 79.19% >>>
+Non-other Macro-Averaged F1: 0.7328 (max: 0.7758)
+
+Epoch 1/1
+8000/8000 [==============================] - 2s 309us/step - loss: 0.0074 - acc: 1.0000
+Epoch No: 81
+Accuracy: 0.7394 (max: 0.7994)
+cnn_copy_predictions F1_score: 78.50% >>>
+Non-other Macro-Averaged F1: 0.7240 (max: 0.7758)
+
+Epoch 1/1
+8000/8000 [==============================] - 2s 303us/step - loss: 0.0071 - acc: 1.0000
+Epoch No: 82
+Accuracy: 0.7449 (max: 0.7994)
+cnn_copy_predictions F1_score: 78.95% >>>
+Non-other Macro-Averaged F1: 0.7276 (max: 0.7758)
+
+Epoch 1/1
+8000/8000 [==============================] - 2s 304us/step - loss: 0.0067 - acc: 1.0000
+Epoch No: 83
+Accuracy: 0.7490 (max: 0.7994)
+cnn_copy_predictions F1_score: 79.59% >>>
+Non-other Macro-Averaged F1: 0.7366 (max: 0.7758)
+
+Epoch 1/1
+8000/8000 [==============================] - 2s 300us/step - loss: 0.0065 - acc: 1.0000
+Epoch No: 84
+Accuracy: 0.7494 (max: 0.7994)
+cnn_copy_predictions F1_score: 79.64% >>>
+Non-other Macro-Averaged F1: 0.7345 (max: 0.7758)
+
+Epoch 1/1
+8000/8000 [==============================] - 2s 305us/step - loss: 0.0070 - acc: 1.0000
+Epoch No: 85
+Accuracy: 0.7354 (max: 0.7994)
+cnn_copy_predictions F1_score: 78.43% >>>
+Non-other Macro-Averaged F1: 0.7246 (max: 0.7758)
+
+Epoch 1/1
+8000/8000 [==============================] - 2s 305us/step - loss: 0.0066 - acc: 1.0000
+Epoch No: 86
+Accuracy: 0.7372 (max: 0.7994)
+cnn_copy_predictions F1_score: 78.56% >>>
+Non-other Macro-Averaged F1: 0.7264 (max: 0.7758)
+
+Epoch 1/1
+8000/8000 [==============================] - 2s 311us/step - loss: 0.0066 - acc: 1.0000
+Epoch No: 87
+Accuracy: 0.7376 (max: 0.7994)
+cnn_copy_predictions F1_score: 78.72% >>>
+Non-other Macro-Averaged F1: 0.7268 (max: 0.7758)
+
+Epoch 1/1
+8000/8000 [==============================] - 2s 302us/step - loss: 0.0063 - acc: 1.0000
+Epoch No: 88
+Accuracy: 0.7376 (max: 0.7994)
+cnn_copy_predictions F1_score: 78.52% >>>
+Non-other Macro-Averaged F1: 0.7244 (max: 0.7758)
+
+Epoch 1/1
+8000/8000 [==============================] - 2s 312us/step - loss: 0.0061 - acc: 1.0000
+Epoch No: 89
+Accuracy: 0.7346 (max: 0.7994)
+cnn_copy_predictions F1_score: 78.18% >>>
+Non-other Macro-Averaged F1: 0.7234 (max: 0.7758)
+
+Epoch 1/1
+8000/8000 [==============================] - 2s 308us/step - loss: 0.0064 - acc: 1.0000
+Epoch No: 90
+Accuracy: 0.7354 (max: 0.7994)
+cnn_copy_predictions F1_score: 78.24% >>>
+Non-other Macro-Averaged F1: 0.7178 (max: 0.7758)
+
+Epoch 1/1
+8000/8000 [==============================] - 2s 306us/step - loss: 0.0061 - acc: 1.0000
+Epoch No: 91
+Accuracy: 0.7343 (max: 0.7994)
+cnn_copy_predictions F1_score: 78.26% >>>
+Non-other Macro-Averaged F1: 0.7207 (max: 0.7758)
+
+Epoch 1/1
+8000/8000 [==============================] - 2s 309us/step - loss: 0.0060 - acc: 1.0000
+Epoch No: 92
+Accuracy: 0.7240 (max: 0.7994)
+cnn_copy_predictions F1_score: 77.32% >>>
+Non-other Macro-Averaged F1: 0.7113 (max: 0.7758)
+
+Epoch 1/1
+8000/8000 [==============================] - 2s 301us/step - loss: 0.0059 - acc: 1.0000
+Epoch No: 93
+Accuracy: 0.7339 (max: 0.7994)
+cnn_copy_predictions F1_score: 78.11% >>>
+Non-other Macro-Averaged F1: 0.7206 (max: 0.7758)
+
+Epoch 1/1
+8000/8000 [==============================] - 2s 303us/step - loss: 0.0055 - acc: 1.0000
+Epoch No: 94
+Accuracy: 0.7295 (max: 0.7994)
+cnn_copy_predictions F1_score: 77.55% >>>
+Non-other Macro-Averaged F1: 0.7102 (max: 0.7758)
+
+Epoch 1/1
+8000/8000 [==============================] - 3s 313us/step - loss: 0.0056 - acc: 1.0000
+Epoch No: 95
+Accuracy: 0.7291 (max: 0.7994)
+cnn_copy_predictions F1_score: 77.71% >>>
+Non-other Macro-Averaged F1: 0.7171 (max: 0.7758)
+
+Epoch 1/1
+8000/8000 [==============================] - 2s 305us/step - loss: 0.0057 - acc: 1.0000
+Epoch No: 96
+Accuracy: 0.7302 (max: 0.7994)
+cnn_copy_predictions F1_score: 77.96% >>>
+Non-other Macro-Averaged F1: 0.7167 (max: 0.7758)
+
+Epoch 1/1
+8000/8000 [==============================] - 2s 306us/step - loss: 0.0054 - acc: 1.0000
+Epoch No: 97
+Accuracy: 0.7287 (max: 0.7994)
+cnn_copy_predictions F1_score: 77.86% >>>
+Non-other Macro-Averaged F1: 0.7187 (max: 0.7758)
+
+Epoch 1/1
+8000/8000 [==============================] - 2s 304us/step - loss: 0.0058 - acc: 1.0000
+Epoch No: 98
+Accuracy: 0.7236 (max: 0.7994)
+cnn_copy_predictions F1_score: 77.00% >>>
+Non-other Macro-Averaged F1: 0.7129 (max: 0.7758)
+
+Epoch 1/1
+8000/8000 [==============================] - 2s 302us/step - loss: 0.0055 - acc: 1.0000
+Epoch No: 99
+Accuracy: 0.7251 (max: 0.7994)
+cnn_copy_predictions F1_score: 77.22% >>>
+Non-other Macro-Averaged F1: 0.7105 (max: 0.7758)
+
+Epoch 1/1
+8000/8000 [==============================] - 2s 307us/step - loss: 0.0052 - acc: 1.0000
+Epoch No: 100
+Accuracy: 0.7214 (max: 0.7994)
+cnn_copy_predictions F1_score: 77.04% >>>
+Non-other Macro-Averaged F1: 0.7113 (max: 0.7758)
+
+Epoch 1/1
+8000/8000 [==============================] - 2s 305us/step - loss: 0.0051 - acc: 1.0000
+Epoch No: 101
+Accuracy: 0.7269 (max: 0.7994)
+cnn_copy_predictions F1_score: 77.66% >>>
+Non-other Macro-Averaged F1: 0.7185 (max: 0.7758)
+
+Epoch 1/1
+8000/8000 [==============================] - 2s 304us/step - loss: 0.0050 - acc: 1.0000
+Epoch No: 102
+Accuracy: 0.7232 (max: 0.7994)
+cnn_copy_predictions F1_score: 77.17% >>>
+Non-other Macro-Averaged F1: 0.7075 (max: 0.7758)
+
+Epoch 1/1
+8000/8000 [==============================] - 2s 307us/step - loss: 0.0050 - acc: 1.0000
+Epoch No: 103
+Accuracy: 0.7206 (max: 0.7994)
+cnn_copy_predictions F1_score: 76.84% >>>
+Non-other Macro-Averaged F1: 0.7087 (max: 0.7758)
+
+Epoch 1/1
+8000/8000 [==============================] - 2s 304us/step - loss: 0.0050 - acc: 1.0000
+Epoch No: 104
+Accuracy: 0.7206 (max: 0.7994)
+cnn_copy_predictions F1_score: 76.88% >>>
+Non-other Macro-Averaged F1: 0.7086 (max: 0.7758)
+
+Epoch 1/1
+8000/8000 [==============================] - 2s 308us/step - loss: 0.0050 - acc: 1.0000
+Epoch No: 105
+Accuracy: 0.7173 (max: 0.7994)
+cnn_copy_predictions F1_score: 76.51% >>>
+Non-other Macro-Averaged F1: 0.7045 (max: 0.7758)
+
+Epoch 1/1
+8000/8000 [==============================] - 2s 312us/step - loss: 0.0049 - acc: 1.0000
+Epoch No: 106
+Accuracy: 0.7166 (max: 0.7994)
+cnn_copy_predictions F1_score: 76.38% >>>
+Non-other Macro-Averaged F1: 0.7058 (max: 0.7758)
+
+Epoch 1/1
+8000/8000 [==============================] - 2s 307us/step - loss: 0.0049 - acc: 1.0000
+Epoch No: 107
+Accuracy: 0.7162 (max: 0.7994)
+cnn_copy_predictions F1_score: 76.48% >>>
+Non-other Macro-Averaged F1: 0.7027 (max: 0.7758)
+
+Epoch 1/1
+8000/8000 [==============================] - 2s 306us/step - loss: 0.0049 - acc: 1.0000
+Epoch No: 108
+Accuracy: 0.7092 (max: 0.7994)
+cnn_copy_predictions F1_score: 75.60% >>>
+Non-other Macro-Averaged F1: 0.6963 (max: 0.7758)
+
+Epoch 1/1
+8000/8000 [==============================] - 2s 312us/step - loss: 0.0046 - acc: 1.0000
+Epoch No: 109
+Accuracy: 0.7081 (max: 0.7994)
+cnn_copy_predictions F1_score: 75.68% >>>
+Non-other Macro-Averaged F1: 0.7002 (max: 0.7758)
+
+Epoch 1/1
+8000/8000 [==============================] - 2s 310us/step - loss: 0.0046 - acc: 1.0000
+Epoch No: 110
+Accuracy: 0.7078 (max: 0.7994)
+cnn_copy_predictions F1_score: 75.26% >>>
+Non-other Macro-Averaged F1: 0.6938 (max: 0.7758)
+
+Epoch 1/1
+8000/8000 [==============================] - 2s 303us/step - loss: 0.0046 - acc: 1.0000
+Epoch No: 111
+Accuracy: 0.7081 (max: 0.7994)
+cnn_copy_predictions F1_score: 75.56% >>>
+Non-other Macro-Averaged F1: 0.6948 (max: 0.7758)
+
+Epoch 1/1
+8000/8000 [==============================] - 2s 306us/step - loss: 0.0044 - acc: 1.0000
+Epoch No: 112
+Accuracy: 0.7048 (max: 0.7994)
+cnn_copy_predictions F1_score: 75.23% >>>
+Non-other Macro-Averaged F1: 0.6935 (max: 0.7758)
+
+Epoch 1/1
+8000/8000 [==============================] - 3s 314us/step - loss: 0.0045 - acc: 1.0000
+Epoch No: 113
+Accuracy: 0.7045 (max: 0.7994)
+cnn_copy_predictions F1_score: 75.34% >>>
+Non-other Macro-Averaged F1: 0.6933 (max: 0.7758)
+
+Epoch 1/1
+8000/8000 [==============================] - 2s 305us/step - loss: 0.0048 - acc: 1.0000
+Epoch No: 114
+Accuracy: 0.7008 (max: 0.7994)
+cnn_copy_predictions F1_score: 75.06% >>>
+Non-other Macro-Averaged F1: 0.6889 (max: 0.7758)
+
+Epoch 1/1
+8000/8000 [==============================] - 2s 310us/step - loss: 0.0044 - acc: 1.0000
+Epoch No: 115
+Accuracy: 0.7052 (max: 0.7994)
+cnn_copy_predictions F1_score: 75.29% >>>
+Non-other Macro-Averaged F1: 0.6932 (max: 0.7758)
+
+Epoch 1/1
+8000/8000 [==============================] - 2s 306us/step - loss: 0.0043 - acc: 1.0000
+Epoch No: 116
+Accuracy: 0.6997 (max: 0.7994)
+cnn_copy_predictions F1_score: 74.79% >>>
+Non-other Macro-Averaged F1: 0.6904 (max: 0.7758)
+
+Epoch 1/1
+8000/8000 [==============================] - 2s 308us/step - loss: 0.0049 - acc: 0.9998
+Epoch No: 117
+Accuracy: 0.7015 (max: 0.7994)
+cnn_copy_predictions F1_score: 75.51% >>>
+Non-other Macro-Averaged F1: 0.6973 (max: 0.7758)
+
+Epoch 1/1
+8000/8000 [==============================] - 2s 306us/step - loss: 0.0055 - acc: 1.0000
+Epoch No: 118
+Accuracy: 0.6953 (max: 0.7994)
+cnn_copy_predictions F1_score: 74.18% >>>
+Non-other Macro-Averaged F1: 0.6831 (max: 0.7758)
+
+Epoch 1/1
+8000/8000 [==============================] - 2s 305us/step - loss: 0.0047 - acc: 1.0000
+Epoch No: 119
+Accuracy: 0.6975 (max: 0.7994)
+cnn_copy_predictions F1_score: 74.33% >>>
+Non-other Macro-Averaged F1: 0.6832 (max: 0.7758)
+
+Epoch 1/1
+8000/8000 [==============================] - 2s 306us/step - loss: 0.0042 - acc: 1.0000
+Epoch No: 120
+Accuracy: 0.6960 (max: 0.7994)
+cnn_copy_predictions F1_score: 74.22% >>>
+Non-other Macro-Averaged F1: 0.6799 (max: 0.7758)
+
+Epoch 1/1
+8000/8000 [==============================] - 2s 306us/step - loss: 0.0044 - acc: 1.0000
+Epoch No: 121
+Accuracy: 0.6975 (max: 0.7994)
+cnn_copy_predictions F1_score: 74.67% >>>
+Non-other Macro-Averaged F1: 0.6881 (max: 0.7758)
+
+Epoch 1/1
+8000/8000 [==============================] - 2s 309us/step - loss: 0.0043 - acc: 1.0000
+Epoch No: 122
+Accuracy: 0.6960 (max: 0.7994)
+cnn_copy_predictions F1_score: 74.26% >>>
+Non-other Macro-Averaged F1: 0.6821 (max: 0.7758)
+
+Epoch 1/1
+8000/8000 [==============================] - 2s 304us/step - loss: 0.0041 - acc: 1.0000
+Epoch No: 123
+Accuracy: 0.6916 (max: 0.7994)
+cnn_copy_predictions F1_score: 73.74% >>>
+Non-other Macro-Averaged F1: 0.6774 (max: 0.7758)
+
+Epoch 1/1
+8000/8000 [==============================] - 2s 306us/step - loss: 0.0042 - acc: 1.0000
+Epoch No: 124
+Accuracy: 0.6934 (max: 0.7994)
+cnn_copy_predictions F1_score: 73.69% >>>
+Non-other Macro-Averaged F1: 0.6792 (max: 0.7758)
+
+Epoch 1/1
+8000/8000 [==============================] - 2s 307us/step - loss: 0.0040 - acc: 1.0000
+Epoch No: 125
+Accuracy: 0.6883 (max: 0.7994)
+cnn_copy_predictions F1_score: 73.41% >>>
+Non-other Macro-Averaged F1: 0.6830 (max: 0.7758)
+
+Epoch 1/1
+8000/8000 [==============================] - 2s 306us/step - loss: 0.0043 - acc: 1.0000
+Epoch No: 126
+Accuracy: 0.6883 (max: 0.7994)
+cnn_copy_predictions F1_score: 73.43% >>>
+Non-other Macro-Averaged F1: 0.6719 (max: 0.7758)
+
+Epoch 1/1
+8000/8000 [==============================] - 2s 304us/step - loss: 0.0039 - acc: 1.0000
+Epoch No: 127
+Accuracy: 0.6894 (max: 0.7994)
+cnn_copy_predictions F1_score: 73.52% >>>
+Non-other Macro-Averaged F1: 0.6765 (max: 0.7758)
+
+Epoch 1/1
+8000/8000 [==============================] - 2s 310us/step - loss: 0.0041 - acc: 1.0000
+Epoch No: 128
+Accuracy: 0.6879 (max: 0.7994)
+cnn_copy_predictions F1_score: 73.43% >>>
+Non-other Macro-Averaged F1: 0.6749 (max: 0.7758)
+
+Epoch 1/1
+8000/8000 [==============================] - 2s 308us/step - loss: 0.0040 - acc: 1.0000
+Epoch No: 129
+Accuracy: 0.6849 (max: 0.7994)
+cnn_copy_predictions F1_score: 73.08% >>>
+Non-other Macro-Averaged F1: 0.6731 (max: 0.7758)
+
+Epoch 1/1
+8000/8000 [==============================] - 2s 308us/step - loss: 0.0039 - acc: 1.0000
+Epoch No: 130
+Accuracy: 0.6864 (max: 0.7994)
+cnn_copy_predictions F1_score: 73.17% >>>
+Non-other Macro-Averaged F1: 0.6752 (max: 0.7758)
+
+Epoch 1/1
+8000/8000 [==============================] - 2s 309us/step - loss: 0.0040 - acc: 1.0000
+Epoch No: 131
+Accuracy: 0.6879 (max: 0.7994)
+cnn_copy_predictions F1_score: 73.44% >>>
+Non-other Macro-Averaged F1: 0.6770 (max: 0.7758)
+
+Epoch 1/1
+8000/8000 [==============================] - 2s 309us/step - loss: 0.0038 - acc: 1.0000
+Epoch No: 132
+Accuracy: 0.6849 (max: 0.7994)
+cnn_copy_predictions F1_score: 73.01% >>>
+Non-other Macro-Averaged F1: 0.6722 (max: 0.7758)
+
+Epoch 1/1
+8000/8000 [==============================] - 2s 310us/step - loss: 0.0038 - acc: 1.0000
+Epoch No: 133
+Accuracy: 0.6827 (max: 0.7994)
+cnn_copy_predictions F1_score: 72.67% >>>
+Non-other Macro-Averaged F1: 0.6663 (max: 0.7758)
+
+Epoch 1/1
+8000/8000 [==============================] - 2s 306us/step - loss: 0.0039 - acc: 1.0000
+Epoch No: 134
+Accuracy: 0.6798 (max: 0.7994)
+cnn_copy_predictions F1_score: 72.49% >>>
+Non-other Macro-Averaged F1: 0.6671 (max: 0.7758)
+
+Epoch 1/1
+8000/8000 [==============================] - 2s 310us/step - loss: 0.0039 - acc: 1.0000
+Epoch No: 135
+Accuracy: 0.6721 (max: 0.7994)
+cnn_copy_predictions F1_score: 71.66% >>>
+Non-other Macro-Averaged F1: 0.6609 (max: 0.7758)
+
+Epoch 1/1
+8000/8000 [==============================] - 2s 299us/step - loss: 0.0038 - acc: 1.0000
+Epoch No: 136
+Accuracy: 0.6857 (max: 0.7994)
+cnn_copy_predictions F1_score: 73.16% >>>
+Non-other Macro-Averaged F1: 0.6751 (max: 0.7758)
+
+Epoch 1/1
+8000/8000 [==============================] - 2s 308us/step - loss: 0.0037 - acc: 1.0000
+Epoch No: 137
+Accuracy: 0.6805 (max: 0.7994)
+cnn_copy_predictions F1_score: 72.73% >>>
+Non-other Macro-Averaged F1: 0.6701 (max: 0.7758)
+
+Epoch 1/1
+8000/8000 [==============================] - 2s 311us/step - loss: 0.0037 - acc: 1.0000
+Epoch No: 138
+Accuracy: 0.6776 (max: 0.7994)
+cnn_copy_predictions F1_score: 72.28% >>>
+Non-other Macro-Averaged F1: 0.6661 (max: 0.7758)
+
+Epoch 1/1
+8000/8000 [==============================] - 2s 309us/step - loss: 0.0042 - acc: 1.0000
+Epoch No: 139
+Accuracy: 0.6721 (max: 0.7994)
+cnn_copy_predictions F1_score: 71.69% >>>
+Non-other Macro-Averaged F1: 0.6598 (max: 0.7758)
+
+Epoch 1/1
+8000/8000 [==============================] - 2s 307us/step - loss: 0.0036 - acc: 1.0000
+Epoch No: 140
+Accuracy: 0.6695 (max: 0.7994)
+cnn_copy_predictions F1_score: 71.37% >>>
+Non-other Macro-Averaged F1: 0.6568 (max: 0.7758)
+
+Epoch 1/1
+8000/8000 [==============================] - 2s 306us/step - loss: 0.0036 - acc: 1.0000
+Epoch No: 141
+Accuracy: 0.6702 (max: 0.7994)
+cnn_copy_predictions F1_score: 71.29% >>>
+Non-other Macro-Averaged F1: 0.6574 (max: 0.7758)
+
+Epoch 1/1
+8000/8000 [==============================] - 2s 305us/step - loss: 0.0038 - acc: 1.0000
+Epoch No: 142
+Accuracy: 0.6754 (max: 0.7994)
+cnn_copy_predictions F1_score: 72.13% >>>
+Non-other Macro-Averaged F1: 0.6712 (max: 0.7758)
+
+Epoch 1/1
+8000/8000 [==============================] - 2s 309us/step - loss: 0.0042 - acc: 1.0000
+Epoch No: 143
+Accuracy: 0.6724 (max: 0.7994)
+cnn_copy_predictions F1_score: 71.52% >>>
+Non-other Macro-Averaged F1: 0.6614 (max: 0.7758)
+
+Epoch 1/1
+8000/8000 [==============================] - 2s 309us/step - loss: 0.0037 - acc: 1.0000
+Epoch No: 144
+Accuracy: 0.6721 (max: 0.7994)
+cnn_copy_predictions F1_score: 71.50% >>>
+Non-other Macro-Averaged F1: 0.6598 (max: 0.7758)
+
+Epoch 1/1
+8000/8000 [==============================] - 2s 312us/step - loss: 0.0036 - acc: 1.0000
+Epoch No: 145
+Accuracy: 0.6691 (max: 0.7994)
+cnn_copy_predictions F1_score: 71.49% >>>
+Non-other Macro-Averaged F1: 0.6594 (max: 0.7758)
+
+Epoch 1/1
+8000/8000 [==============================] - 2s 310us/step - loss: 0.0035 - acc: 1.0000
+Epoch No: 146
+Accuracy: 0.6710 (max: 0.7994)
+cnn_copy_predictions F1_score: 71.36% >>>
+Non-other Macro-Averaged F1: 0.6553 (max: 0.7758)
+
+Epoch 1/1
+8000/8000 [==============================] - 2s 306us/step - loss: 0.0039 - acc: 1.0000
+Epoch No: 147
+Accuracy: 0.6654 (max: 0.7994)
+cnn_copy_predictions F1_score: 70.79% >>>
+Non-other Macro-Averaged F1: 0.6545 (max: 0.7758)
+
+Epoch 1/1
+8000/8000 [==============================] - 2s 311us/step - loss: 0.0037 - acc: 1.0000
+Epoch No: 148
+Accuracy: 0.6654 (max: 0.7994)
+cnn_copy_predictions F1_score: 70.89% >>>
+Non-other Macro-Averaged F1: 0.6522 (max: 0.7758)
+
+Epoch 1/1
+8000/8000 [==============================] - 2s 312us/step - loss: 0.0035 - acc: 1.0000
+Epoch No: 149
+Accuracy: 0.6688 (max: 0.7994)
+cnn_copy_predictions F1_score: 71.06% >>>
+Non-other Macro-Averaged F1: 0.6543 (max: 0.7758)
+
+Epoch 1/1
+8000/8000 [==============================] - 2s 304us/step - loss: 0.0037 - acc: 1.0000
+Epoch No: 150
+Accuracy: 0.6699 (max: 0.7994)
+cnn_copy_predictions F1_score: 71.41% >>>
+Non-other Macro-Averaged F1: 0.6569 (max: 0.7758)
+
+Epoch 1/1
+8000/8000 [==============================] - 2s 307us/step - loss: 0.0035 - acc: 1.0000
+Epoch No: 151
+Accuracy: 0.6658 (max: 0.7994)
+cnn_copy_predictions F1_score: 70.72% >>>
+Non-other Macro-Averaged F1: 0.6521 (max: 0.7758)
+
+Epoch 1/1
+8000/8000 [==============================] - 2s 310us/step - loss: 0.0034 - acc: 1.0000
+Epoch No: 152
+Accuracy: 0.6629 (max: 0.7994)
+cnn_copy_predictions F1_score: 70.66% >>>
+Non-other Macro-Averaged F1: 0.6530 (max: 0.7758)
+
+Epoch 1/1
+8000/8000 [==============================] - 2s 308us/step - loss: 0.0039 - acc: 1.0000
+Epoch No: 153
+Accuracy: 0.6654 (max: 0.7994)
+cnn_copy_predictions F1_score: 70.81% >>>
+Non-other Macro-Averaged F1: 0.6553 (max: 0.7758)
+
+Epoch 1/1
+8000/8000 [==============================] - 2s 301us/step - loss: 0.0038 - acc: 1.0000
+Epoch No: 154
+Accuracy: 0.6629 (max: 0.7994)
+cnn_copy_predictions F1_score: 70.54% >>>
+Non-other Macro-Averaged F1: 0.6479 (max: 0.7758)
+
+Epoch 1/1
+8000/8000 [==============================] - 2s 310us/step - loss: 0.0034 - acc: 1.0000
+Epoch No: 155
+Accuracy: 0.6640 (max: 0.7994)
+cnn_copy_predictions F1_score: 70.67% >>>
+Non-other Macro-Averaged F1: 0.6484 (max: 0.7758)
+
+Epoch 1/1
+8000/8000 [==============================] - 2s 304us/step - loss: 0.0034 - acc: 1.0000
+Epoch No: 156
+Accuracy: 0.6632 (max: 0.7994)
+cnn_copy_predictions F1_score: 70.61% >>>
+Non-other Macro-Averaged F1: 0.6507 (max: 0.7758)
+
+Epoch 1/1
+8000/8000 [==============================] - 2s 309us/step - loss: 0.0033 - acc: 1.0000
+Epoch No: 157
+Accuracy: 0.6647 (max: 0.7994)
+cnn_copy_predictions F1_score: 70.67% >>>
+Non-other Macro-Averaged F1: 0.6484 (max: 0.7758)
+
+Epoch 1/1
+8000/8000 [==============================] - 2s 305us/step - loss: 0.0035 - acc: 1.0000
+Epoch No: 158
+Accuracy: 0.6588 (max: 0.7994)
+cnn_copy_predictions F1_score: 70.06% >>>
+Non-other Macro-Averaged F1: 0.6436 (max: 0.7758)
+
+Epoch 1/1
+8000/8000 [==============================] - 2s 305us/step - loss: 0.0033 - acc: 1.0000
+Epoch No: 159
+Accuracy: 0.6584 (max: 0.7994)
+cnn_copy_predictions F1_score: 69.92% >>>
+Non-other Macro-Averaged F1: 0.6391 (max: 0.7758)
+
+Epoch 1/1
+8000/8000 [==============================] - 2s 303us/step - loss: 0.0033 - acc: 1.0000
+Epoch No: 160
+Accuracy: 0.6618 (max: 0.7994)
+cnn_copy_predictions F1_score: 70.40% >>>
+Non-other Macro-Averaged F1: 0.6514 (max: 0.7758)
+
+Epoch 1/1
+8000/8000 [==============================] - 2s 308us/step - loss: 0.0036 - acc: 1.0000
+Epoch No: 161
+Accuracy: 0.6533 (max: 0.7994)
+cnn_copy_predictions F1_score: 69.63% >>>
+Non-other Macro-Averaged F1: 0.6424 (max: 0.7758)
+
+Epoch 1/1
+8000/8000 [==============================] - 2s 310us/step - loss: 0.0034 - acc: 1.0000
+Epoch No: 162
+Accuracy: 0.6562 (max: 0.7994)
+cnn_copy_predictions F1_score: 70.06% >>>
+Non-other Macro-Averaged F1: 0.6459 (max: 0.7758)
+
+Epoch 1/1
+8000/8000 [==============================] - 2s 310us/step - loss: 0.0035 - acc: 1.0000
+Epoch No: 163
+Accuracy: 0.6584 (max: 0.7994)
+cnn_copy_predictions F1_score: 70.00% >>>
+Non-other Macro-Averaged F1: 0.6469 (max: 0.7758)
+
+Epoch 1/1
+8000/8000 [==============================] - 2s 312us/step - loss: 0.0034 - acc: 1.0000
+Epoch No: 164
+Accuracy: 0.6559 (max: 0.7994)
+cnn_copy_predictions F1_score: 69.76% >>>
+Non-other Macro-Averaged F1: 0.6417 (max: 0.7758)
+
+Epoch 1/1
+8000/8000 [==============================] - 2s 306us/step - loss: 0.0033 - acc: 1.0000
+Epoch No: 165
+Accuracy: 0.6529 (max: 0.7994)
+cnn_copy_predictions F1_score: 69.48% >>>
+Non-other Macro-Averaged F1: 0.6418 (max: 0.7758)
+
+Epoch 1/1
+8000/8000 [==============================] - 2s 306us/step - loss: 0.0036 - acc: 1.0000
+Epoch No: 166
+Accuracy: 0.6544 (max: 0.7994)
+cnn_copy_predictions F1_score: 69.65% >>>
+Non-other Macro-Averaged F1: 0.6410 (max: 0.7758)
+
+Epoch 1/1
+8000/8000 [==============================] - 2s 308us/step - loss: 0.0032 - acc: 1.0000
+Epoch No: 167
+Accuracy: 0.6551 (max: 0.7994)
+cnn_copy_predictions F1_score: 69.73% >>>
+Non-other Macro-Averaged F1: 0.6403 (max: 0.7758)
+
+Epoch 1/1
+8000/8000 [==============================] - 2s 308us/step - loss: 0.0034 - acc: 1.0000
+Epoch No: 168
+Accuracy: 0.6544 (max: 0.7994)
+cnn_copy_predictions F1_score: 69.71% >>>
+Non-other Macro-Averaged F1: 0.6399 (max: 0.7758)
+
+Epoch 1/1
+8000/8000 [==============================] - 2s 307us/step - loss: 0.0033 - acc: 1.0000
+Epoch No: 169
+Accuracy: 0.6507 (max: 0.7994)
+cnn_copy_predictions F1_score: 69.32% >>>
+Non-other Macro-Averaged F1: 0.6376 (max: 0.7758)
+
+Epoch 1/1
+8000/8000 [==============================] - 2s 302us/step - loss: 0.0035 - acc: 1.0000
+Epoch No: 170
+Accuracy: 0.6522 (max: 0.7994)
+cnn_copy_predictions F1_score: 69.44% >>>
+Non-other Macro-Averaged F1: 0.6424 (max: 0.7758)
+
+Epoch 1/1
+8000/8000 [==============================] - 2s 302us/step - loss: 0.0033 - acc: 1.0000
+Epoch No: 171
+Accuracy: 0.6478 (max: 0.7994)
+cnn_copy_predictions F1_score: 69.13% >>>
+Non-other Macro-Averaged F1: 0.6326 (max: 0.7758)
+
+Epoch 1/1
+8000/8000 [==============================] - 2s 303us/step - loss: 0.0033 - acc: 1.0000
+Epoch No: 172
+Accuracy: 0.6485 (max: 0.7994)
+cnn_copy_predictions F1_score: 69.12% >>>
+Non-other Macro-Averaged F1: 0.6391 (max: 0.7758)
+
+Epoch 1/1
+8000/8000 [==============================] - 2s 307us/step - loss: 0.0032 - acc: 1.0000
+Epoch No: 173
+Accuracy: 0.6515 (max: 0.7994)
+cnn_copy_predictions F1_score: 69.32% >>>
+Non-other Macro-Averaged F1: 0.6392 (max: 0.7758)
+
+Epoch 1/1
+8000/8000 [==============================] - 2s 306us/step - loss: 0.0033 - acc: 1.0000
+Epoch No: 174
+Accuracy: 0.6452 (max: 0.7994)
+cnn_copy_predictions F1_score: 68.92% >>>
+Non-other Macro-Averaged F1: 0.6391 (max: 0.7758)
+
+Epoch 1/1
+8000/8000 [==============================] - 2s 309us/step - loss: 0.0036 - acc: 1.0000
+Epoch No: 175
+Accuracy: 0.6529 (max: 0.7994)
+cnn_copy_predictions F1_score: 69.51% >>>
+Non-other Macro-Averaged F1: 0.6407 (max: 0.7758)
+
+Epoch 1/1
+8000/8000 [==============================] - 2s 305us/step - loss: 0.0032 - acc: 1.0000
+Epoch No: 176
+Accuracy: 0.6481 (max: 0.7994)
+cnn_copy_predictions F1_score: 69.16% >>>
+Non-other Macro-Averaged F1: 0.6396 (max: 0.7758)
+
+Epoch 1/1
+8000/8000 [==============================] - 2s 304us/step - loss: 0.0035 - acc: 1.0000
+Epoch No: 177
+Accuracy: 0.6526 (max: 0.7994)
+cnn_copy_predictions F1_score: 69.60% >>>
+Non-other Macro-Averaged F1: 0.6429 (max: 0.7758)
+
+Epoch 1/1
+8000/8000 [==============================] - 2s 310us/step - loss: 0.0033 - acc: 1.0000
+Epoch No: 178
+Accuracy: 0.6312 (max: 0.7994)
+cnn_copy_predictions F1_score: 67.33% >>>
+Non-other Macro-Averaged F1: 0.6221 (max: 0.7758)
+
+Epoch 1/1
+8000/8000 [==============================] - 2s 309us/step - loss: 0.0034 - acc: 1.0000
+Epoch No: 179
+Accuracy: 0.6470 (max: 0.7994)
+cnn_copy_predictions F1_score: 68.96% >>>
+Non-other Macro-Averaged F1: 0.6366 (max: 0.7758)
+
+Epoch 1/1
+8000/8000 [==============================] - 2s 307us/step - loss: 0.0032 - acc: 1.0000
+Epoch No: 180
+Accuracy: 0.6474 (max: 0.7994)
+cnn_copy_predictions F1_score: 68.91% >>>
+Non-other Macro-Averaged F1: 0.6329 (max: 0.7758)
+
+Epoch 1/1
+8000/8000 [==============================] - 2s 304us/step - loss: 0.0032 - acc: 1.0000
+Epoch No: 181
+Accuracy: 0.6470 (max: 0.7994)
+cnn_copy_predictions F1_score: 68.89% >>>
+Non-other Macro-Averaged F1: 0.6363 (max: 0.7758)
+
+Epoch 1/1
+8000/8000 [==============================] - 2s 309us/step - loss: 0.0032 - acc: 1.0000
+Epoch No: 182
+Accuracy: 0.6492 (max: 0.7994)
+cnn_copy_predictions F1_score: 69.20% >>>
+Non-other Macro-Averaged F1: 0.6365 (max: 0.7758)
+
+Epoch 1/1
+8000/8000 [==============================] - 2s 308us/step - loss: 0.0033 - acc: 1.0000
+Epoch No: 183
+Accuracy: 0.6467 (max: 0.7994)
+cnn_copy_predictions F1_score: 69.06% >>>
+Non-other Macro-Averaged F1: 0.6382 (max: 0.7758)
+
+Epoch 1/1
+8000/8000 [==============================] - 2s 309us/step - loss: 0.0037 - acc: 1.0000
+Epoch No: 184
+Accuracy: 0.6452 (max: 0.7994)
+cnn_copy_predictions F1_score: 68.89% >>>
+Non-other Macro-Averaged F1: 0.6319 (max: 0.7758)
+
+Epoch 1/1
+8000/8000 [==============================] - 2s 301us/step - loss: 0.0032 - acc: 1.0000
+Epoch No: 185
+Accuracy: 0.6452 (max: 0.7994)
+cnn_copy_predictions F1_score: 68.84% >>>
+Non-other Macro-Averaged F1: 0.6328 (max: 0.7758)
+
+Epoch 1/1
+8000/8000 [==============================] - 2s 311us/step - loss: 0.0031 - acc: 1.0000
+Epoch No: 186
+Accuracy: 0.6430 (max: 0.7994)
+cnn_copy_predictions F1_score: 68.52% >>>
+Non-other Macro-Averaged F1: 0.6300 (max: 0.7758)
+
+Epoch 1/1
+8000/8000 [==============================] - 2s 308us/step - loss: 0.0032 - acc: 1.0000
+Epoch No: 187
+Accuracy: 0.6481 (max: 0.7994)
+cnn_copy_predictions F1_score: 69.02% >>>
+Non-other Macro-Averaged F1: 0.6403 (max: 0.7758)
+
+Epoch 1/1
+8000/8000 [==============================] - 2s 309us/step - loss: 0.0037 - acc: 1.0000
+Epoch No: 188
+Accuracy: 0.6437 (max: 0.7994)
+cnn_copy_predictions F1_score: 68.53% >>>
+Non-other Macro-Averaged F1: 0.6333 (max: 0.7758)
+
+Epoch 1/1
+8000/8000 [==============================] - 2s 309us/step - loss: 0.0031 - acc: 1.0000
+Epoch No: 189
+Accuracy: 0.6434 (max: 0.7994)
+cnn_copy_predictions F1_score: 68.68% >>>
+Non-other Macro-Averaged F1: 0.6300 (max: 0.7758)
+
+Epoch 1/1
+8000/8000 [==============================] - 2s 305us/step - loss: 0.0032 - acc: 1.0000
+Epoch No: 190
+Accuracy: 0.6404 (max: 0.7994)
+cnn_copy_predictions F1_score: 68.15% >>>
+Non-other Macro-Averaged F1: 0.6290 (max: 0.7758)
+
+Epoch 1/1
+8000/8000 [==============================] - 2s 308us/step - loss: 0.0031 - acc: 1.0000
+Epoch No: 191
+Accuracy: 0.6397 (max: 0.7994)
+cnn_copy_predictions F1_score: 67.98% >>>
+Non-other Macro-Averaged F1: 0.6280 (max: 0.7758)
+
+Epoch 1/1
+8000/8000 [==============================] - 2s 308us/step - loss: 0.0031 - acc: 1.0000
+Epoch No: 192
+Accuracy: 0.6419 (max: 0.7994)
+cnn_copy_predictions F1_score: 68.39% >>>
+Non-other Macro-Averaged F1: 0.6279 (max: 0.7758)
+
+Epoch 1/1
+8000/8000 [==============================] - 2s 310us/step - loss: 0.0034 - acc: 1.0000
+Epoch No: 193
+Accuracy: 0.6397 (max: 0.7994)
+cnn_copy_predictions F1_score: 68.14% >>>
+Non-other Macro-Averaged F1: 0.6263 (max: 0.7758)
+
+Epoch 1/1
+8000/8000 [==============================] - 2s 306us/step - loss: 0.0031 - acc: 1.0000
+Epoch No: 194
+Accuracy: 0.6393 (max: 0.7994)
+cnn_copy_predictions F1_score: 68.15% >>>
+Non-other Macro-Averaged F1: 0.6267 (max: 0.7758)
+
+Epoch 1/1
+8000/8000 [==============================] - 2s 304us/step - loss: 0.0031 - acc: 1.0000
+Epoch No: 195
+Accuracy: 0.6423 (max: 0.7994)
+cnn_copy_predictions F1_score: 68.29% >>>
+Non-other Macro-Averaged F1: 0.6274 (max: 0.7758)
+
+Epoch 1/1
+8000/8000 [==============================] - 2s 307us/step - loss: 0.0032 - acc: 1.0000
+Epoch No: 196
+Accuracy: 0.6437 (max: 0.7994)
+cnn_copy_predictions F1_score: 68.41% >>>
+Non-other Macro-Averaged F1: 0.6280 (max: 0.7758)
+
+Epoch 1/1
+8000/8000 [==============================] - 2s 304us/step - loss: 0.0031 - acc: 1.0000
+Epoch No: 197
+Accuracy: 0.6411 (max: 0.7994)
+cnn_copy_predictions F1_score: 68.44% >>>
+Non-other Macro-Averaged F1: 0.6318 (max: 0.7758)
+
+Epoch 1/1
+8000/8000 [==============================] - 2s 308us/step - loss: 0.0032 - acc: 1.0000
+Epoch No: 198
+Accuracy: 0.6408 (max: 0.7994)
+cnn_copy_predictions F1_score: 68.24% >>>
+Non-other Macro-Averaged F1: 0.6259 (max: 0.7758)
+
+Epoch 1/1
+8000/8000 [==============================] - 2s 309us/step - loss: 0.0031 - acc: 1.0000
+Epoch No: 199
+Accuracy: 0.6375 (max: 0.7994)
+cnn_copy_predictions F1_score: 68.04% >>>
+Non-other Macro-Averaged F1: 0.6240 (max: 0.7758)
+
+Epoch 1/1
+8000/8000 [==============================] - 2s 310us/step - loss: 0.0031 - acc: 1.0000
+Epoch No: 200
+Accuracy: 0.6338 (max: 0.7994)
+cnn_copy_predictions F1_score: 67.59% >>>
+Non-other Macro-Averaged F1: 0.6153 (max: 0.7758)
+
+Epoch 1/1
+8000/8000 [==============================] - 2s 308us/step - loss: 0.0034 - acc: 1.0000
+Epoch No: 201
+Accuracy: 0.6297 (max: 0.7994)
+cnn_copy_predictions F1_score: 67.10% >>>
+Non-other Macro-Averaged F1: 0.6169 (max: 0.7758)
+
+Epoch 1/1
+8000/8000 [==============================] - 2s 312us/step - loss: 0.0031 - acc: 1.0000
+Epoch No: 202
+Accuracy: 0.6327 (max: 0.7994)
+cnn_copy_predictions F1_score: 67.48% >>>
+Non-other Macro-Averaged F1: 0.6177 (max: 0.7758)
+
+Epoch 1/1
+8000/8000 [==============================] - 3s 315us/step - loss: 0.0031 - acc: 1.0000
+Epoch No: 203
+Accuracy: 0.6338 (max: 0.7994)
+cnn_copy_predictions F1_score: 67.65% >>>
+Non-other Macro-Averaged F1: 0.6212 (max: 0.7758)
+
+Epoch 1/1
+8000/8000 [==============================] - 2s 312us/step - loss: 0.0034 - acc: 1.0000
+Epoch No: 204
+Accuracy: 0.6257 (max: 0.7994)
+cnn_copy_predictions F1_score: 66.73% >>>
+Non-other Macro-Averaged F1: 0.6127 (max: 0.7758)
+
+Epoch 1/1
+8000/8000 [==============================] - 3s 313us/step - loss: 0.0032 - acc: 1.0000
+Epoch No: 205
+Accuracy: 0.6334 (max: 0.7994)
+cnn_copy_predictions F1_score: 67.19% >>>
+Non-other Macro-Averaged F1: 0.6125 (max: 0.7758)
+
+Epoch 1/1
+8000/8000 [==============================] - 2s 305us/step - loss: 0.0030 - acc: 1.0000
+Epoch No: 206
+Accuracy: 0.6294 (max: 0.7994)
+cnn_copy_predictions F1_score: 66.92% >>>
+Non-other Macro-Averaged F1: 0.6122 (max: 0.7758)
+
+Epoch 1/1
+8000/8000 [==============================] - 2s 309us/step - loss: 0.0032 - acc: 1.0000
+Epoch No: 207
+Accuracy: 0.6345 (max: 0.7994)
+cnn_copy_predictions F1_score: 67.53% >>>
+Non-other Macro-Averaged F1: 0.6191 (max: 0.7758)
+
+Epoch 1/1
+8000/8000 [==============================] - 2s 310us/step - loss: 0.0035 - acc: 1.0000
+Epoch No: 208
+Accuracy: 0.6305 (max: 0.7994)
+cnn_copy_predictions F1_score: 67.11% >>>
+Non-other Macro-Averaged F1: 0.6149 (max: 0.7758)
+
+Epoch 1/1
+8000/8000 [==============================] - 2s 299us/step - loss: 0.0030 - acc: 1.0000
+Epoch No: 209
+Accuracy: 0.6261 (max: 0.7994)
+cnn_copy_predictions F1_score: 66.43% >>>
+Non-other Macro-Averaged F1: 0.6070 (max: 0.7758)
+
+Epoch 1/1
+8000/8000 [==============================] - 2s 310us/step - loss: 0.0031 - acc: 1.0000
+Epoch No: 210
+Accuracy: 0.6301 (max: 0.7994)
+cnn_copy_predictions F1_score: 67.02% >>>
+Non-other Macro-Averaged F1: 0.6139 (max: 0.7758)
+
+Epoch 1/1
+8000/8000 [==============================] - 2s 309us/step - loss: 0.0030 - acc: 1.0000
+Epoch No: 211
+Accuracy: 0.6268 (max: 0.7994)
+cnn_copy_predictions F1_score: 66.74% >>>
+Non-other Macro-Averaged F1: 0.6097 (max: 0.7758)
+
+Epoch 1/1
+8000/8000 [==============================] - 2s 307us/step - loss: 0.0030 - acc: 1.0000
+Epoch No: 212
+Accuracy: 0.6334 (max: 0.7994)
+cnn_copy_predictions F1_score: 67.35% >>>
+Non-other Macro-Averaged F1: 0.6194 (max: 0.7758)
+
+Epoch 1/1
+8000/8000 [==============================] - 2s 310us/step - loss: 0.0033 - acc: 1.0000
+Epoch No: 213
+Accuracy: 0.6323 (max: 0.7994)
+cnn_copy_predictions F1_score: 67.19% >>>
+Non-other Macro-Averaged F1: 0.6137 (max: 0.7758)
+
+Epoch 1/1
+8000/8000 [==============================] - 2s 308us/step - loss: 0.0030 - acc: 1.0000
+Epoch No: 214
+Accuracy: 0.6264 (max: 0.7994)
+cnn_copy_predictions F1_score: 66.56% >>>
+Non-other Macro-Averaged F1: 0.6090 (max: 0.7758)
+
+Epoch 1/1
+8000/8000 [==============================] - 2s 309us/step - loss: 0.0033 - acc: 1.0000
+Epoch No: 215
+Accuracy: 0.6257 (max: 0.7994)
+cnn_copy_predictions F1_score: 66.58% >>>
+Non-other Macro-Averaged F1: 0.6171 (max: 0.7758)
+
+Epoch 1/1
+8000/8000 [==============================] - 2s 307us/step - loss: 0.0034 - acc: 1.0000
+Epoch No: 216
+Accuracy: 0.6268 (max: 0.7994)
+cnn_copy_predictions F1_score: 66.71% >>>
+Non-other Macro-Averaged F1: 0.6111 (max: 0.7758)
+
+Epoch 1/1
+8000/8000 [==============================] - 2s 307us/step - loss: 0.0030 - acc: 1.0000
+Epoch No: 217
+Accuracy: 0.6268 (max: 0.7994)
+cnn_copy_predictions F1_score: 66.86% >>>
+Non-other Macro-Averaged F1: 0.6135 (max: 0.7758)
+
+Epoch 1/1
+8000/8000 [==============================] - 2s 311us/step - loss: 0.0030 - acc: 1.0000
+Epoch No: 218
+Accuracy: 0.6246 (max: 0.7994)
+cnn_copy_predictions F1_score: 66.64% >>>
+Non-other Macro-Averaged F1: 0.6101 (max: 0.7758)
+
+Epoch 1/1
+8000/8000 [==============================] - 2s 308us/step - loss: 0.0031 - acc: 1.0000
+Epoch No: 219
+Accuracy: 0.6191 (max: 0.7994)
+cnn_copy_predictions F1_score: 65.86% >>>
+Non-other Macro-Averaged F1: 0.6018 (max: 0.7758)
+
+Epoch 1/1
+8000/8000 [==============================] - 2s 310us/step - loss: 0.0030 - acc: 1.0000
+Epoch No: 220
+Accuracy: 0.6308 (max: 0.7994)
+cnn_copy_predictions F1_score: 67.03% >>>
+Non-other Macro-Averaged F1: 0.6168 (max: 0.7758)
+
+Epoch 1/1
+8000/8000 [==============================] - 2s 311us/step - loss: 0.0031 - acc: 1.0000
+Epoch No: 221
+Accuracy: 0.6261 (max: 0.7994)
+cnn_copy_predictions F1_score: 66.49% >>>
+Non-other Macro-Averaged F1: 0.6072 (max: 0.7758)
+
+Epoch 1/1
+8000/8000 [==============================] - 2s 310us/step - loss: 0.0030 - acc: 1.0000
+Epoch No: 222
+Accuracy: 0.6224 (max: 0.7994)
+cnn_copy_predictions F1_score: 66.08% >>>
+Non-other Macro-Averaged F1: 0.6051 (max: 0.7758)
+
+Epoch 1/1
+8000/8000 [==============================] - 2s 305us/step - loss: 0.0033 - acc: 1.0000
+Epoch No: 223
+Accuracy: 0.6227 (max: 0.7994)
+cnn_copy_predictions F1_score: 66.18% >>>
+Non-other Macro-Averaged F1: 0.6034 (max: 0.7758)
+
+Epoch 1/1
+8000/8000 [==============================] - 2s 308us/step - loss: 0.0030 - acc: 1.0000
+Epoch No: 224
+Accuracy: 0.6250 (max: 0.7994)
+cnn_copy_predictions F1_score: 66.33% >>>
+Non-other Macro-Averaged F1: 0.6041 (max: 0.7758)
+
+Epoch 1/1
+8000/8000 [==============================] - 2s 302us/step - loss: 0.0030 - acc: 1.0000
+Epoch No: 225
+Accuracy: 0.6257 (max: 0.7994)
+cnn_copy_predictions F1_score: 66.34% >>>
+Non-other Macro-Averaged F1: 0.6059 (max: 0.7758)
+
+Epoch 1/1
+8000/8000 [==============================] - 2s 308us/step - loss: 0.0029 - acc: 1.0000
+Epoch No: 226
+Accuracy: 0.6235 (max: 0.7994)
+cnn_copy_predictions F1_score: 66.29% >>>
+Non-other Macro-Averaged F1: 0.6055 (max: 0.7758)
+
+Epoch 1/1
+8000/8000 [==============================] - 2s 310us/step - loss: 0.0033 - acc: 1.0000
+Epoch No: 227
+Accuracy: 0.6224 (max: 0.7994)
+cnn_copy_predictions F1_score: 66.04% >>>
+Non-other Macro-Averaged F1: 0.6072 (max: 0.7758)
+
+Epoch 1/1
+8000/8000 [==============================] - 2s 306us/step - loss: 0.0034 - acc: 1.0000
+Epoch No: 228
+Accuracy: 0.6169 (max: 0.7994)
+cnn_copy_predictions F1_score: 65.35% >>>
+Non-other Macro-Averaged F1: 0.5948 (max: 0.7758)
+
+Epoch 1/1
+8000/8000 [==============================] - 2s 303us/step - loss: 0.0030 - acc: 1.0000
+Epoch No: 229
+Accuracy: 0.6161 (max: 0.7994)
+cnn_copy_predictions F1_score: 65.42% >>>
+Non-other Macro-Averaged F1: 0.5937 (max: 0.7758)
+
+Epoch 1/1
+8000/8000 [==============================] - 2s 308us/step - loss: 0.0030 - acc: 1.0000
+Epoch No: 230
+Accuracy: 0.6143 (max: 0.7994)
+cnn_copy_predictions F1_score: 65.26% >>>
+Non-other Macro-Averaged F1: 0.5973 (max: 0.7758)
+
+Epoch 1/1
+8000/8000 [==============================] - 2s 308us/step - loss: 0.0029 - acc: 1.0000
+Epoch No: 231
+Accuracy: 0.6180 (max: 0.7994)
+cnn_copy_predictions F1_score: 65.75% >>>
+Non-other Macro-Averaged F1: 0.5966 (max: 0.7758)
+
+Epoch 1/1
+8000/8000 [==============================] - 2s 303us/step - loss: 0.0031 - acc: 1.0000
+Epoch No: 232
+Accuracy: 0.6073 (max: 0.7994)
+cnn_copy_predictions F1_score: 64.63% >>>
+Non-other Macro-Averaged F1: 0.5926 (max: 0.7758)
+
+Epoch 1/1
+8000/8000 [==============================] - 2s 312us/step - loss: 0.0031 - acc: 1.0000
+Epoch No: 233
+Accuracy: 0.6165 (max: 0.7994)
+cnn_copy_predictions F1_score: 65.44% >>>
+Non-other Macro-Averaged F1: 0.5953 (max: 0.7758)
+
+Epoch 1/1
+8000/8000 [==============================] - 2s 305us/step - loss: 0.0030 - acc: 1.0000
+Epoch No: 234
+Accuracy: 0.6121 (max: 0.7994)
+cnn_copy_predictions F1_score: 64.84% >>>
+Non-other Macro-Averaged F1: 0.5958 (max: 0.7758)
+
+Epoch 1/1
+8000/8000 [==============================] - 2s 312us/step - loss: 0.0030 - acc: 1.0000
+Epoch No: 235
+Accuracy: 0.6146 (max: 0.7994)
+cnn_copy_predictions F1_score: 65.09% >>>
+Non-other Macro-Averaged F1: 0.5904 (max: 0.7758)
+
+Epoch 1/1
+8000/8000 [==============================] - 2s 308us/step - loss: 0.0030 - acc: 1.0000
+Epoch No: 236
+Accuracy: 0.6191 (max: 0.7994)
+cnn_copy_predictions F1_score: 65.58% >>>
+Non-other Macro-Averaged F1: 0.5976 (max: 0.7758)
+
+Epoch 1/1
+8000/8000 [==============================] - 2s 307us/step - loss: 0.0032 - acc: 1.0000
+Epoch No: 237
+Accuracy: 0.6176 (max: 0.7994)
+cnn_copy_predictions F1_score: 65.75% >>>
+Non-other Macro-Averaged F1: 0.5983 (max: 0.7758)
+
+Epoch 1/1
+8000/8000 [==============================] - 2s 310us/step - loss: 0.0034 - acc: 1.0000
+Epoch No: 238
+Accuracy: 0.6084 (max: 0.7994)
+cnn_copy_predictions F1_score: 64.76% >>>
+Non-other Macro-Averaged F1: 0.5928 (max: 0.7758)
+
+Epoch 1/1
+8000/8000 [==============================] - 2s 307us/step - loss: 0.0030 - acc: 1.0000
+Epoch No: 239
+Accuracy: 0.6143 (max: 0.7994)
+cnn_copy_predictions F1_score: 65.23% >>>
+Non-other Macro-Averaged F1: 0.5908 (max: 0.7758)
+
+Epoch 1/1
+8000/8000 [==============================] - 2s 307us/step - loss: 0.0030 - acc: 1.0000
+Epoch No: 240
+Accuracy: 0.6121 (max: 0.7994)
+cnn_copy_predictions F1_score: 65.06% >>>
+Non-other Macro-Averaged F1: 0.5927 (max: 0.7758)
+
+Epoch 1/1
+8000/8000 [==============================] - 2s 305us/step - loss: 0.0029 - acc: 1.0000
+Epoch No: 241
+Accuracy: 0.6154 (max: 0.7994)
+cnn_copy_predictions F1_score: 65.34% >>>
+Non-other Macro-Averaged F1: 0.5939 (max: 0.7758)
+
+Epoch 1/1
+8000/8000 [==============================] - 2s 304us/step - loss: 0.0029 - acc: 1.0000
+Epoch No: 242
+Accuracy: 0.6132 (max: 0.7994)
+cnn_copy_predictions F1_score: 65.05% >>>
+Non-other Macro-Averaged F1: 0.5955 (max: 0.7758)
+
+Epoch 1/1
+8000/8000 [==============================] - 2s 309us/step - loss: 0.0034 - acc: 1.0000
+Epoch No: 243
+Accuracy: 0.6180 (max: 0.7994)
+cnn_copy_predictions F1_score: 65.57% >>>
+Non-other Macro-Averaged F1: 0.5986 (max: 0.7758)
+
+Epoch 1/1
+8000/8000 [==============================] - 2s 305us/step - loss: 0.0030 - acc: 1.0000
+Epoch No: 244
+Accuracy: 0.6121 (max: 0.7994)
+cnn_copy_predictions F1_score: 65.00% >>>
+Non-other Macro-Averaged F1: 0.5932 (max: 0.7758)
+
+Epoch 1/1
+8000/8000 [==============================] - 2s 308us/step - loss: 0.0029 - acc: 1.0000
+Epoch No: 245
+Accuracy: 0.6088 (max: 0.7994)
+cnn_copy_predictions F1_score: 64.67% >>>
+Non-other Macro-Averaged F1: 0.5871 (max: 0.7758)
+
+Epoch 1/1
+8000/8000 [==============================] - 2s 309us/step - loss: 0.0033 - acc: 1.0000
+Epoch No: 246
+Accuracy: 0.6102 (max: 0.7994)
+cnn_copy_predictions F1_score: 64.78% >>>
+Non-other Macro-Averaged F1: 0.5911 (max: 0.7758)
+
+Epoch 1/1
+8000/8000 [==============================] - 2s 305us/step - loss: 0.0029 - acc: 1.0000
+Epoch No: 247
+Accuracy: 0.6117 (max: 0.7994)
+cnn_copy_predictions F1_score: 64.95% >>>
+Non-other Macro-Averaged F1: 0.5943 (max: 0.7758)
+
+Epoch 1/1
+8000/8000 [==============================] - 3s 314us/step - loss: 0.0030 - acc: 1.0000
+Epoch No: 248
+Accuracy: 0.6095 (max: 0.7994)
+cnn_copy_predictions F1_score: 64.67% >>>
+Non-other Macro-Averaged F1: 0.5869 (max: 0.7758)
+
+Epoch 1/1
+8000/8000 [==============================] - 2s 305us/step - loss: 0.0030 - acc: 1.0000
+Epoch No: 249
+Accuracy: 0.6110 (max: 0.7994)
+cnn_copy_predictions F1_score: 64.82% >>>
+Non-other Macro-Averaged F1: 0.5903 (max: 0.7758)
+
+Epoch 1/1
+8000/8000 [==============================] - 2s 305us/step - loss: 0.0031 - acc: 1.0000
+Epoch No: 250
+Accuracy: 0.6095 (max: 0.7994)
+cnn_copy_predictions F1_score: 64.54% >>>
+Non-other Macro-Averaged F1: 0.5878 (max: 0.7758)
+
+Epoch 1/1
+8000/8000 [==============================] - 2s 310us/step - loss: 0.0030 - acc: 1.0000
+Epoch No: 251
+Accuracy: 0.6099 (max: 0.7994)
+cnn_copy_predictions F1_score: 64.77% >>>
+Non-other Macro-Averaged F1: 0.5881 (max: 0.7758)
+
+Epoch 1/1
+8000/8000 [==============================] - 3s 313us/step - loss: 0.0029 - acc: 1.0000
+Epoch No: 252
+Accuracy: 0.6128 (max: 0.7994)
+cnn_copy_predictions F1_score: 64.95% >>>
+Non-other Macro-Averaged F1: 0.5906 (max: 0.7758)
+
+Epoch 1/1
+8000/8000 [==============================] - 2s 308us/step - loss: 0.0034 - acc: 1.0000
+Epoch No: 253
+Accuracy: 0.6113 (max: 0.7994)
+cnn_copy_predictions F1_score: 64.91% >>>
+Non-other Macro-Averaged F1: 0.5884 (max: 0.7758)
+
+Epoch 1/1
+8000/8000 [==============================] - 2s 308us/step - loss: 0.0030 - acc: 1.0000
+Epoch No: 254
+Accuracy: 0.6088 (max: 0.7994)
+cnn_copy_predictions F1_score: 64.57% >>>
+Non-other Macro-Averaged F1: 0.5874 (max: 0.7758)
+
+Epoch 1/1
+8000/8000 [==============================] - 3s 314us/step - loss: 0.0029 - acc: 1.0000
+Epoch No: 255
+Accuracy: 0.6080 (max: 0.7994)
+cnn_copy_predictions F1_score: 64.57% >>>
+Non-other Macro-Averaged F1: 0.5848 (max: 0.7758)
+
+Epoch 1/1
+8000/8000 [==============================] - 2s 308us/step - loss: 0.0030 - acc: 1.0000
+Epoch No: 256
+Accuracy: 0.6062 (max: 0.7994)
+cnn_copy_predictions F1_score: 64.23% >>>
+Non-other Macro-Averaged F1: 0.5826 (max: 0.7758)
+
+Epoch 1/1
+8000/8000 [==============================] - 2s 305us/step - loss: 0.0030 - acc: 1.0000
+Epoch No: 257
+Accuracy: 0.6106 (max: 0.7994)
+cnn_copy_predictions F1_score: 64.75% >>>
+Non-other Macro-Averaged F1: 0.5869 (max: 0.7758)
+
+Epoch 1/1
+8000/8000 [==============================] - 3s 316us/step - loss: 0.0029 - acc: 1.0000
+Epoch No: 258
+Accuracy: 0.6135 (max: 0.7994)
+cnn_copy_predictions F1_score: 64.97% >>>
+Non-other Macro-Averaged F1: 0.5942 (max: 0.7758)
+
+Epoch 1/1
+8000/8000 [==============================] - 2s 304us/step - loss: 0.0030 - acc: 1.0000
+Epoch No: 259
+Accuracy: 0.6062 (max: 0.7994)
+cnn_copy_predictions F1_score: 64.13% >>>
+Non-other Macro-Averaged F1: 0.5790 (max: 0.7758)
+
+Epoch 1/1
+8000/8000 [==============================] - 2s 305us/step - loss: 0.0031 - acc: 1.0000
+Epoch No: 260
+Accuracy: 0.6110 (max: 0.7994)
+cnn_copy_predictions F1_score: 64.84% >>>
+Non-other Macro-Averaged F1: 0.5990 (max: 0.7758)
+
+Epoch 1/1
+8000/8000 [==============================] - 2s 306us/step - loss: 0.0033 - acc: 1.0000
+Epoch No: 261
+Accuracy: 0.6095 (max: 0.7994)
+cnn_copy_predictions F1_score: 64.73% >>>
+Non-other Macro-Averaged F1: 0.5887 (max: 0.7758)
+
+Epoch 1/1
+8000/8000 [==============================] - 3s 313us/step - loss: 0.0029 - acc: 1.0000
+Epoch No: 262
+Accuracy: 0.6058 (max: 0.7994)
+cnn_copy_predictions F1_score: 64.24% >>>
+Non-other Macro-Averaged F1: 0.5831 (max: 0.7758)
+
+Epoch 1/1
+8000/8000 [==============================] - 3s 313us/step - loss: 0.0030 - acc: 1.0000
+Epoch No: 263
+Accuracy: 0.6054 (max: 0.7994)
+cnn_copy_predictions F1_score: 63.89% >>>
+Non-other Macro-Averaged F1: 0.5836 (max: 0.7758)
+
+Epoch 1/1
+8000/8000 [==============================] - 3s 313us/step - loss: 0.0030 - acc: 1.0000
+Epoch No: 264
+Accuracy: 0.6032 (max: 0.7994)
+cnn_copy_predictions F1_score: 63.98% >>>
+Non-other Macro-Averaged F1: 0.5783 (max: 0.7758)
+
+Epoch 1/1
+8000/8000 [==============================] - 2s 310us/step - loss: 0.0029 - acc: 1.0000
+Epoch No: 265
+Accuracy: 0.6036 (max: 0.7994)
+cnn_copy_predictions F1_score: 64.02% >>>
+Non-other Macro-Averaged F1: 0.5807 (max: 0.7758)
+
+Epoch 1/1
+8000/8000 [==============================] - 2s 309us/step - loss: 0.0030 - acc: 1.0000
+Epoch No: 266
+Accuracy: 0.6047 (max: 0.7994)
+cnn_copy_predictions F1_score: 64.02% >>>
+Non-other Macro-Averaged F1: 0.5785 (max: 0.7758)
+
+Epoch 1/1
+8000/8000 [==============================] - 2s 308us/step - loss: 0.0029 - acc: 1.0000
+Epoch No: 267
+Accuracy: 0.6073 (max: 0.7994)
+cnn_copy_predictions F1_score: 64.30% >>>
+Non-other Macro-Averaged F1: 0.5863 (max: 0.7758)
+
+Epoch 1/1
+8000/8000 [==============================] - 2s 308us/step - loss: 0.0031 - acc: 1.0000
+Epoch No: 268
+Accuracy: 0.6025 (max: 0.7994)
+cnn_copy_predictions F1_score: 63.76% >>>
+Non-other Macro-Averaged F1: 0.5797 (max: 0.7758)
+
+Epoch 1/1
+8000/8000 [==============================] - 3s 315us/step - loss: 0.0029 - acc: 1.0000
+Epoch No: 269
+Accuracy: 0.6073 (max: 0.7994)
+cnn_copy_predictions F1_score: 64.35% >>>
+Non-other Macro-Averaged F1: 0.5844 (max: 0.7758)
+
+Epoch 1/1
+8000/8000 [==============================] - 2s 310us/step - loss: 0.0032 - acc: 1.0000
+Epoch No: 270
+Accuracy: 0.6051 (max: 0.7994)
+cnn_copy_predictions F1_score: 63.94% >>>
+Non-other Macro-Averaged F1: 0.5800 (max: 0.7758)
+
+Epoch 1/1
+8000/8000 [==============================] - 2s 311us/step - loss: 0.0030 - acc: 1.0000
+Epoch No: 271
+Accuracy: 0.6003 (max: 0.7994)
+cnn_copy_predictions F1_score: 63.75% >>>
+Non-other Macro-Averaged F1: 0.5801 (max: 0.7758)
+
+Epoch 1/1
+8000/8000 [==============================] - 2s 308us/step - loss: 0.0029 - acc: 1.0000
+Epoch No: 272
+Accuracy: 0.6066 (max: 0.7994)
+cnn_copy_predictions F1_score: 64.27% >>>
+Non-other Macro-Averaged F1: 0.5828 (max: 0.7758)
+
+Epoch 1/1
+8000/8000 [==============================] - 2s 311us/step - loss: 0.0029 - acc: 1.0000
+Epoch No: 273
+Accuracy: 0.5981 (max: 0.7994)
+cnn_copy_predictions F1_score: 63.41% >>>
+Non-other Macro-Averaged F1: 0.5746 (max: 0.7758)
+
+Epoch 1/1
+8000/8000 [==============================] - 2s 311us/step - loss: 0.0029 - acc: 1.0000
+Epoch No: 274
+Accuracy: 0.6080 (max: 0.7994)
+cnn_copy_predictions F1_score: 64.34% >>>
+Non-other Macro-Averaged F1: 0.5878 (max: 0.7758)
+
+Epoch 1/1
+8000/8000 [==============================] - 2s 311us/step - loss: 0.0032 - acc: 1.0000
+Epoch No: 275
+Accuracy: 0.6069 (max: 0.7994)
+cnn_copy_predictions F1_score: 64.19% >>>
+Non-other Macro-Averaged F1: 0.5841 (max: 0.7758)
+
+Epoch 1/1
+8000/8000 [==============================] - 2s 311us/step - loss: 0.0029 - acc: 1.0000
+Epoch No: 276
+Accuracy: 0.6047 (max: 0.7994)
+cnn_copy_predictions F1_score: 64.11% >>>
+Non-other Macro-Averaged F1: 0.5837 (max: 0.7758)
+
+Epoch 1/1
+8000/8000 [==============================] - 2s 312us/step - loss: 0.0030 - acc: 1.0000
+Epoch No: 277
+Accuracy: 0.5981 (max: 0.7994)
+cnn_copy_predictions F1_score: 63.39% >>>
+Non-other Macro-Averaged F1: 0.5715 (max: 0.7758)
+
+Epoch 1/1
+8000/8000 [==============================] - 2s 309us/step - loss: 0.0028 - acc: 1.0000
+Epoch No: 278
+Accuracy: 0.5996 (max: 0.7994)
+cnn_copy_predictions F1_score: 63.49% >>>
+Non-other Macro-Averaged F1: 0.5748 (max: 0.7758)
+
+Epoch 1/1
+8000/8000 [==============================] - 2s 307us/step - loss: 0.0031 - acc: 1.0000
+Epoch No: 279
+Accuracy: 0.6047 (max: 0.7994)
+cnn_copy_predictions F1_score: 64.04% >>>
+Non-other Macro-Averaged F1: 0.5777 (max: 0.7758)
+
+Epoch 1/1
+8000/8000 [==============================] - 2s 306us/step - loss: 0.0028 - acc: 1.0000
+Epoch No: 280
+Accuracy: 0.6003 (max: 0.7994)
+cnn_copy_predictions F1_score: 63.51% >>>
+Non-other Macro-Averaged F1: 0.5728 (max: 0.7758)
+
+Epoch 1/1
+8000/8000 [==============================] - 2s 309us/step - loss: 0.0033 - acc: 1.0000
+Epoch No: 281
+Accuracy: 0.6025 (max: 0.7994)
+cnn_copy_predictions F1_score: 63.82% >>>
+Non-other Macro-Averaged F1: 0.5757 (max: 0.7758)
+
+Epoch 1/1
+8000/8000 [==============================] - 3s 314us/step - loss: 0.0030 - acc: 1.0000
+Epoch No: 282
+Accuracy: 0.5996 (max: 0.7994)
+cnn_copy_predictions F1_score: 63.49% >>>
+Non-other Macro-Averaged F1: 0.5720 (max: 0.7758)
+
+Epoch 1/1
+8000/8000 [==============================] - 2s 308us/step - loss: 0.0029 - acc: 1.0000
+Epoch No: 283
+Accuracy: 0.5992 (max: 0.7994)
+cnn_copy_predictions F1_score: 63.64% >>>
+Non-other Macro-Averaged F1: 0.5752 (max: 0.7758)
+
+Epoch 1/1
+8000/8000 [==============================] - 2s 307us/step - loss: 0.0029 - acc: 1.0000
+Epoch No: 284
+Accuracy: 0.5999 (max: 0.7994)
+cnn_copy_predictions F1_score: 63.56% >>>
+Non-other Macro-Averaged F1: 0.5752 (max: 0.7758)
+
+Epoch 1/1
+8000/8000 [==============================] - 2s 305us/step - loss: 0.0032 - acc: 1.0000
+Epoch No: 285
+Accuracy: 0.6025 (max: 0.7994)
+cnn_copy_predictions F1_score: 63.70% >>>
+Non-other Macro-Averaged F1: 0.5779 (max: 0.7758)
+
+Epoch 1/1
+8000/8000 [==============================] - 2s 309us/step - loss: 0.0028 - acc: 1.0000
+Epoch No: 286
+Accuracy: 0.6018 (max: 0.7994)
+cnn_copy_predictions F1_score: 63.70% >>>
+Non-other Macro-Averaged F1: 0.5740 (max: 0.7758)
+
+Epoch 1/1
+8000/8000 [==============================] - 2s 312us/step - loss: 0.0030 - acc: 1.0000
+Epoch No: 287
+Accuracy: 0.5985 (max: 0.7994)
+cnn_copy_predictions F1_score: 63.34% >>>
+Non-other Macro-Averaged F1: 0.5698 (max: 0.7758)
+
+Epoch 1/1
+8000/8000 [==============================] - 2s 307us/step - loss: 0.0029 - acc: 1.0000
+Epoch No: 288
+Accuracy: 0.6003 (max: 0.7994)
+cnn_copy_predictions F1_score: 63.53% >>>
+Non-other Macro-Averaged F1: 0.5725 (max: 0.7758)
+
+Epoch 1/1
+8000/8000 [==============================] - 2s 308us/step - loss: 0.0028 - acc: 1.0000
+Epoch No: 289
+Accuracy: 0.5981 (max: 0.7994)
+cnn_copy_predictions F1_score: 63.27% >>>
+Non-other Macro-Averaged F1: 0.5709 (max: 0.7758)
+
+Epoch 1/1
+8000/8000 [==============================] - 2s 305us/step - loss: 0.0032 - acc: 1.0000
+Epoch No: 290
+Accuracy: 0.5970 (max: 0.7994)
+cnn_copy_predictions F1_score: 63.19% >>>
+Non-other Macro-Averaged F1: 0.5734 (max: 0.7758)
+
+Epoch 1/1
+8000/8000 [==============================] - 2s 312us/step - loss: 0.0030 - acc: 1.0000
+Epoch No: 291
+Accuracy: 0.5959 (max: 0.7994)
+cnn_copy_predictions F1_score: 63.08% >>>
+Non-other Macro-Averaged F1: 0.5714 (max: 0.7758)
+
+Epoch 1/1
+8000/8000 [==============================] - 2s 312us/step - loss: 0.0029 - acc: 1.0000
+Epoch No: 292
+Accuracy: 0.6021 (max: 0.7994)
+cnn_copy_predictions F1_score: 63.45% >>>
+Non-other Macro-Averaged F1: 0.5762 (max: 0.7758)
+
+Epoch 1/1
+8000/8000 [==============================] - 2s 302us/step - loss: 0.0029 - acc: 1.0000
+Epoch No: 293
+Accuracy: 0.5926 (max: 0.7994)
+cnn_copy_predictions F1_score: 62.55% >>>
+Non-other Macro-Averaged F1: 0.5650 (max: 0.7758)
+
+Epoch 1/1
+8000/8000 [==============================] - 2s 310us/step - loss: 0.0031 - acc: 1.0000
+Epoch No: 294
+Accuracy: 0.5944 (max: 0.7994)
+cnn_copy_predictions F1_score: 62.95% >>>
+Non-other Macro-Averaged F1: 0.5671 (max: 0.7758)
+
+Epoch 1/1
+8000/8000 [==============================] - 3s 314us/step - loss: 0.0029 - acc: 1.0000
+Epoch No: 295
+Accuracy: 0.6021 (max: 0.7994)
+cnn_copy_predictions F1_score: 63.88% >>>
+Non-other Macro-Averaged F1: 0.5789 (max: 0.7758)
+
+Epoch 1/1
+8000/8000 [==============================] - 2s 309us/step - loss: 0.0029 - acc: 1.0000
+Epoch No: 296
+Accuracy: 0.5915 (max: 0.7994)
+cnn_copy_predictions F1_score: 62.82% >>>
+Non-other Macro-Averaged F1: 0.5696 (max: 0.7758)
+
+Epoch 1/1
+8000/8000 [==============================] - 2s 308us/step - loss: 0.0031 - acc: 1.0000
+Epoch No: 297
+Accuracy: 0.5999 (max: 0.7994)
+cnn_copy_predictions F1_score: 63.53% >>>
+Non-other Macro-Averaged F1: 0.5766 (max: 0.7758)
+
+Epoch 1/1
+8000/8000 [==============================] - 2s 311us/step - loss: 0.0028 - acc: 1.0000
+Epoch No: 298
+Accuracy: 0.5996 (max: 0.7994)
+cnn_copy_predictions F1_score: 63.49% >>>
+Non-other Macro-Averaged F1: 0.5744 (max: 0.7758)
+
+Epoch 1/1
+8000/8000 [==============================] - 2s 308us/step - loss: 0.0033 - acc: 1.0000
+Epoch No: 299
+Accuracy: 0.5999 (max: 0.7994)
+cnn_copy_predictions F1_score: 63.30% >>>
+Non-other Macro-Averaged F1: 0.5778 (max: 0.7758)

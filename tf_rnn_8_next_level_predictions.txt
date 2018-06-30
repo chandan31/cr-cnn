@@ -1,0 +1,1079 @@
+
+1>>> Embedding Size POS and WNET = 25, No dropout for POS and WNET. SGD 50 Epochs. Wordvec Dropout = 0.5 
+-----------------------------------------------------------------------------------------------------------------------------------------
+
+(2717, 12)
+[1 2 4 0 0 0 0 0 0 0 0 0]
+2018-01-27 14:04:46.693906: I tensorflow/core/platform/cpu_feature_guard.cc:137] Your CPU supports instructions that this TensorFlow binary was not compiled to use: SSE4.1 SSE4.2 AVX AVX2 FMA
+New epoch 0
+epoch Train loss 428.524848044
+Epoch Train Accuracy 0.545323743666
+Test Loss:  0.888924
+test accuracy : 0.719176
+(2717,)
+tf_rnn_8_next_level_predictions F1_score: 74.39% >>>
+New epoch 1
+epoch Train loss 256.788374901
+Epoch Train Accuracy 0.706546765008
+Test Loss:  0.724008
+test accuracy : 0.769231
+(2717,)
+tf_rnn_8_next_level_predictions F1_score: 78.45% >>>
+New epoch 2
+epoch Train loss 222.780209094
+Epoch Train Accuracy 0.738489210177
+Test Loss:  0.699373
+test accuracy : 0.772911
+(2717,)
+tf_rnn_8_next_level_predictions F1_score: 79.21% >>>
+New epoch 3
+epoch Train loss 194.572869062
+Epoch Train Accuracy 0.771798559659
+Test Loss:  0.691701
+test accuracy : 0.778432
+(2717,)
+tf_rnn_8_next_level_predictions F1_score: 80.38% >>>
+New epoch 4
+epoch Train loss 177.346235275
+Epoch Train Accuracy 0.78971222772
+Test Loss:  0.70095
+test accuracy : 0.769231
+(2717,)
+tf_rnn_8_next_level_predictions F1_score: 80.06% >>>
+New epoch 5
+epoch Train loss 159.797050968
+Epoch Train Accuracy 0.806618700997
+Test Loss:  0.639149
+test accuracy : 0.795731
+(2717,)
+tf_rnn_8_next_level_predictions F1_score: 81.38% >>>
+New epoch 6
+epoch Train loss 149.318800122
+Epoch Train Accuracy 0.820575535297
+Test Loss:  0.661286
+test accuracy : 0.794626
+(2717,)
+tf_rnn_8_next_level_predictions F1_score: 81.91% >>>
+New epoch 7
+epoch Train loss 136.089254856
+Epoch Train Accuracy 0.837553951809
+Test Loss:  0.68275
+test accuracy : 0.786897
+(2717,)
+tf_rnn_8_next_level_predictions F1_score: 81.20% >>>
+New epoch 8
+epoch Train loss 126.140993014
+Epoch Train Accuracy 0.846546756492
+Test Loss:  0.628967
+test accuracy : 0.804196
+(2717,)
+tf_rnn_8_next_level_predictions F1_score: 82.49% >>>
+New epoch 9
+epoch Train loss 116.849049091
+Epoch Train Accuracy 0.859208626498
+Test Loss:  0.654653
+test accuracy : 0.796835
+(2717,)
+tf_rnn_8_next_level_predictions F1_score: 82.29% >>>
+New epoch 10
+epoch Train loss 109.511134297
+Epoch Train Accuracy 0.867985607266
+Test Loss:  0.632692
+test accuracy : 0.807508
+(2717,)
+tf_rnn_8_next_level_predictions F1_score: 82.93% >>>
+New epoch 11
+epoch Train loss 101.288357377
+Epoch Train Accuracy 0.878489204662
+Test Loss:  0.663246
+test accuracy : 0.796835
+(2717,)
+tf_rnn_8_next_level_predictions F1_score: 82.08% >>>
+New epoch 12
+epoch Train loss 96.8899378926
+Epoch Train Accuracy 0.883956830922
+Test Loss:  0.652173
+test accuracy : 0.801251
+(2717,)
+tf_rnn_8_next_level_predictions F1_score: 82.73% >>>
+New epoch 13
+epoch Train loss 93.424830839
+Epoch Train Accuracy 0.88827337464
+Test Loss:  0.638995
+test accuracy : 0.803828
+(2717,)
+tf_rnn_8_next_level_predictions F1_score: 82.57% >>>
+New epoch 14
+epoch Train loss 90.1598412618
+Epoch Train Accuracy 0.890431650037
+Test Loss:  0.673163
+test accuracy : 0.795731
+(2717,)
+tf_rnn_8_next_level_predictions F1_score: 82.19% >>>
+New epoch 15
+epoch Train loss 86.1697101593
+Epoch Train Accuracy 0.897410067723
+Test Loss:  0.648934
+test accuracy : 0.80346
+(2717,)
+tf_rnn_8_next_level_predictions F1_score: 82.64% >>>
+New epoch 16
+epoch Train loss 83.9155071229
+Epoch Train Accuracy 0.899280571251
+Test Loss:  0.64602
+test accuracy : 0.809349
+(2717,)
+tf_rnn_8_next_level_predictions F1_score: 83.07% >>>
+New epoch 17
+epoch Train loss 81.4237733558
+Epoch Train Accuracy 0.899712227446
+Test Loss:  0.632848
+test accuracy : 0.810453
+(2717,)
+tf_rnn_8_next_level_predictions F1_score: 82.94% >>>
+New epoch 18
+epoch Train loss 77.3395874426
+Epoch Train Accuracy 0.906546756947
+Test Loss:  0.636353
+test accuracy : 0.811925
+(2717,)
+tf_rnn_8_next_level_predictions F1_score: 83.19% >>>
+New epoch 19
+epoch Train loss 75.9417183995
+Epoch Train Accuracy 0.906115104826
+Test Loss:  0.660296
+test accuracy : 0.808612
+(2717,)
+tf_rnn_8_next_level_predictions F1_score: 82.97% >>>
+New epoch 20
+epoch Train loss 75.1033600047
+Epoch Train Accuracy 0.908920858618
+Test Loss:  0.65806
+test accuracy : 0.807876
+(2717,)
+tf_rnn_8_next_level_predictions F1_score: 83.01% >>>
+New epoch 21
+epoch Train loss 72.9628941193
+Epoch Train Accuracy 0.91158272937
+Test Loss:  0.631234
+test accuracy : 0.814869
+(2717,)
+tf_rnn_8_next_level_predictions F1_score: 83.29% >>>
+New epoch 22
+epoch Train loss 71.1877894178
+Epoch Train Accuracy 0.91496402454
+Test Loss:  0.650172
+test accuracy : 0.807508
+(2717,)
+tf_rnn_8_next_level_predictions F1_score: 82.70% >>>
+New epoch 23
+epoch Train loss 72.2848367915
+Epoch Train Accuracy 0.909999996424
+Test Loss:  0.647118
+test accuracy : 0.811189
+(2717,)
+tf_rnn_8_next_level_predictions F1_score: 83.04% >>>
+New epoch 24
+epoch Train loss 70.1540812403
+Epoch Train Accuracy 0.916474818969
+Test Loss:  0.664196
+test accuracy : 0.807876
+(2717,)
+tf_rnn_8_next_level_predictions F1_score: 83.02% >>>
+New epoch 25
+epoch Train loss 69.5325867236
+Epoch Train Accuracy 0.914964025827
+Test Loss:  0.656458
+test accuracy : 0.811557
+(2717,)
+tf_rnn_8_next_level_predictions F1_score: 83.20% >>>
+New epoch 26
+epoch Train loss 68.891298674
+Epoch Train Accuracy 0.915611506795
+Test Loss:  0.666378
+test accuracy : 0.807508
+(2717,)
+tf_rnn_8_next_level_predictions F1_score: 82.87% >>>
+New epoch 27
+epoch Train loss 66.2094081342
+Epoch Train Accuracy 0.921582730554
+Test Loss:  0.656198
+test accuracy : 0.810085
+(2717,)
+tf_rnn_8_next_level_predictions F1_score: 82.96% >>>
+New epoch 28
+epoch Train loss 66.9274945632
+Epoch Train Accuracy 0.919712226382
+Test Loss:  0.651227
+test accuracy : 0.813397
+(2717,)
+tf_rnn_8_next_level_predictions F1_score: 83.21% >>>
+New epoch 29
+epoch Train loss 64.6318572015
+Epoch Train Accuracy 0.92237409692
+Test Loss:  0.662649
+test accuracy : 0.810453
+(2717,)
+tf_rnn_8_next_level_predictions F1_score: 83.11% >>>
+New epoch 30
+epoch Train loss 66.543856509
+Epoch Train Accuracy 0.921151076504
+Test Loss:  0.663592
+test accuracy : 0.808244
+(2717,)
+tf_rnn_8_next_level_predictions F1_score: 82.93% >>>
+New epoch 31
+epoch Train loss 65.0172595195
+Epoch Train Accuracy 0.921294962331
+Test Loss:  0.652708
+test accuracy : 0.815237
+(2717,)
+tf_rnn_8_next_level_predictions F1_score: 83.32% >>>
+New epoch 32
+epoch Train loss 64.958399877
+Epoch Train Accuracy 0.918561147915
+Test Loss:  0.651364
+test accuracy : 0.813765
+(2717,)
+tf_rnn_8_next_level_predictions F1_score: 83.19% >>>
+New epoch 33
+epoch Train loss 62.1776240915
+Epoch Train Accuracy 0.924820140111
+Test Loss:  0.651204
+test accuracy : 0.813765
+(2717,)
+tf_rnn_8_next_level_predictions F1_score: 83.28% >>>
+New epoch 34
+epoch Train loss 63.7870068178
+Epoch Train Accuracy 0.922805750756
+Test Loss:  0.654983
+test accuracy : 0.812661
+(2717,)
+tf_rnn_8_next_level_predictions F1_score: 83.24% >>>
+New epoch 35
+epoch Train loss 63.5547254533
+Epoch Train Accuracy 0.923597119266
+Test Loss:  0.662894
+test accuracy : 0.810085
+(2717,)
+tf_rnn_8_next_level_predictions F1_score: 83.00% >>>
+New epoch 36
+epoch Train loss 63.6223197505
+Epoch Train Accuracy 0.922374099707
+Test Loss:  0.668136
+test accuracy : 0.811189
+(2717,)
+tf_rnn_8_next_level_predictions F1_score: 83.21% >>>
+New epoch 37
+epoch Train loss 62.499917008
+Epoch Train Accuracy 0.923884889205
+Test Loss:  0.66483
+test accuracy : 0.811189
+(2717,)
+tf_rnn_8_next_level_predictions F1_score: 83.09% >>>
+New epoch 38
+epoch Train loss 62.7990169823
+Epoch Train Accuracy 0.923741003592
+Test Loss:  0.663746
+test accuracy : 0.811925
+(2717,)
+tf_rnn_8_next_level_predictions F1_score: 83.13% >>>
+New epoch 39
+epoch Train loss 62.1279002577
+Epoch Train Accuracy 0.924604314694
+Test Loss:  0.658816
+test accuracy : 0.812661
+(2717,)
+tf_rnn_8_next_level_predictions F1_score: 83.21% >>>
+New epoch 40
+epoch Train loss 61.5638504401
+Epoch Train Accuracy 0.925179852642
+Test Loss:  0.663683
+test accuracy : 0.812293
+(2717,)
+tf_rnn_8_next_level_predictions F1_score: 83.18% >>>
+New epoch 41
+epoch Train loss 62.2822047472
+Epoch Train Accuracy 0.925971220938
+Test Loss:  0.664904
+test accuracy : 0.812293
+(2717,)
+tf_rnn_8_next_level_predictions F1_score: 83.15% >>>
+New epoch 42
+epoch Train loss 60.5932533741
+Epoch Train Accuracy 0.927697839282
+Test Loss:  0.662079
+test accuracy : 0.812293
+(2717,)
+tf_rnn_8_next_level_predictions F1_score: 83.13% >>>
+New epoch 43
+epoch Train loss 61.5256480724
+Epoch Train Accuracy 0.925755392304
+Test Loss:  0.661924
+test accuracy : 0.812661
+(2717,)
+tf_rnn_8_next_level_predictions F1_score: 83.17% >>>
+New epoch 44
+epoch Train loss 61.4871976301
+Epoch Train Accuracy 0.926690644283
+Test Loss:  0.664693
+test accuracy : 0.812661
+(2717,)
+tf_rnn_8_next_level_predictions F1_score: 83.25% >>>
+New epoch 45
+epoch Train loss 63.5416766405
+Epoch Train Accuracy 0.924244601521
+Test Loss:  0.665226
+test accuracy : 0.811557
+(2717,)
+tf_rnn_8_next_level_predictions F1_score: 83.12% >>>
+New epoch 46
+epoch Train loss 61.1300426498
+Epoch Train Accuracy 0.928273378945
+Test Loss:  0.664249
+test accuracy : 0.811557
+(2717,)
+tf_rnn_8_next_level_predictions F1_score: 83.08% >>>
+New epoch 47
+epoch Train loss 62.1482419446
+Epoch Train Accuracy 0.92669064557
+Test Loss:  0.663304
+test accuracy : 0.810453
+(2717,)
+tf_rnn_8_next_level_predictions F1_score: 82.99% >>>
+New epoch 48
+epoch Train loss 62.0640341006
+Epoch Train Accuracy 0.926330931753
+Test Loss:  0.663718
+test accuracy : 0.812293
+(2717,)
+tf_rnn_8_next_level_predictions F1_score: 83.22% >>>
+New epoch 49
+epoch Train loss 61.5330579877
+Epoch Train Accuracy 0.924388485847
+Test Loss:  0.663213
+test accuracy : 0.812293
+(2717,)
+tf_rnn_8_next_level_predictions F1_score: 83.17% >>>
+[0.71917558, 0.76923078, 0.77291131, 0.77843207, 0.76923078, 0.79573059, 0.79462641, 0.7868973, 0.80419582, 0.79683477, 0.80750829, 0.79683477, 0.80125135, 0.80382776, 0.79573059, 0.8034597, 0.80934852, 0.8104527, 0.81192493, 0.80861247, 0.80787635, 0.81486934, 0.80750829, 0.81118882, 0.80787635, 0.81155688, 0.80750829, 0.81008464, 0.81339711, 0.8104527, 0.80824441, 0.8152374, 0.81376517, 0.81376517, 0.81266105, 0.81008464, 0.81118882, 0.81118882, 0.81192493, 0.81266105, 0.81229299, 0.81229299, 0.81229299, 0.81266105, 0.81266105, 0.81155688, 0.81155688, 0.8104527, 0.81229299, 0.81229299]
+
+##################################################################################################################################################################-----------------------------------------------------------------------------------------------------------------------------------------------------------
+
+Just added dropout 0.5 to above model
+
+(2717, 12)
+[1 2 4 0 0 0 0 0 0 0 0 0]
+2018-01-27 20:12:31.633441: I tensorflow/core/platform/cpu_feature_guard.cc:137] Your CPU supports instructions that this TensorFlow binary was not compiled to use: SSE4.1 SSE4.2 AVX AVX2 FMA
+New epoch 0
+epoch Train loss 431.941124141
+Epoch Train Accuracy 0.54028777218
+Test Loss:  0.897308
+test accuracy : 0.714391
+(2717,)
+tf_rnn_8_next_level_predictions F1_score: 73.95% >>>
+New epoch 1
+epoch Train loss 260.14867717
+Epoch Train Accuracy 0.70395683599
+Test Loss:  0.823682
+test accuracy : 0.73905
+(2717,)
+tf_rnn_8_next_level_predictions F1_score: 76.57% >>>
+New epoch 2
+epoch Train loss 220.818856061
+Epoch Train Accuracy 0.745899279555
+Test Loss:  0.664015
+test accuracy : 0.779536
+(2717,)
+tf_rnn_8_next_level_predictions F1_score: 79.24% >>>
+New epoch 3
+epoch Train loss 194.683333695
+Epoch Train Accuracy 0.770503595364
+Test Loss:  0.684285
+test accuracy : 0.781377
+(2717,)
+tf_rnn_8_next_level_predictions F1_score: 80.69% >>>
+New epoch 4
+epoch Train loss 178.261801332
+Epoch Train Accuracy 0.789784168597
+Test Loss:  0.702282
+test accuracy : 0.770703
+(2717,)
+tf_rnn_8_next_level_predictions F1_score: 80.19% >>>
+New epoch 5
+epoch Train loss 161.707182884
+Epoch Train Accuracy 0.810071937043
+Test Loss:  0.67065
+test accuracy : 0.783585
+(2717,)
+tf_rnn_8_next_level_predictions F1_score: 80.63% >>>
+New epoch 6
+epoch Train loss 148.677775696
+Epoch Train Accuracy 0.822661865101
+Test Loss:  0.662988
+test accuracy : 0.787633
+(2717,)
+tf_rnn_8_next_level_predictions F1_score: 81.07% >>>
+New epoch 7
+epoch Train loss 136.999577343
+Epoch Train Accuracy 0.837553949022
+Test Loss:  0.671777
+test accuracy : 0.790946
+(2717,)
+tf_rnn_8_next_level_predictions F1_score: 81.63% >>>
+New epoch 8
+epoch Train loss 126.823264271
+Epoch Train Accuracy 0.849424454377
+Test Loss:  0.671588
+test accuracy : 0.788001
+(2717,)
+tf_rnn_8_next_level_predictions F1_score: 81.65% >>>
+New epoch 9
+epoch Train loss 119.177339613
+Epoch Train Accuracy 0.855323734687
+Test Loss:  0.630034
+test accuracy : 0.809717
+(2717,)
+tf_rnn_8_next_level_predictions F1_score: 83.19% >>>
+New epoch 10
+epoch Train loss 110.46783784
+Epoch Train Accuracy 0.868345319582
+Test Loss:  0.633413
+test accuracy : 0.80714
+(2717,)
+tf_rnn_8_next_level_predictions F1_score: 82.83% >>>
+New epoch 11
+epoch Train loss 103.817771882
+Epoch Train Accuracy 0.876115102348
+Test Loss:  0.675098
+test accuracy : 0.799411
+(2717,)
+tf_rnn_8_next_level_predictions F1_score: 82.61% >>>
+New epoch 12
+epoch Train loss 100.133042902
+Epoch Train Accuracy 0.87964028313
+Test Loss:  0.652248
+test accuracy : 0.804932
+(2717,)
+tf_rnn_8_next_level_predictions F1_score: 82.83% >>>
+New epoch 13
+epoch Train loss 95.0104490668
+Epoch Train Accuracy 0.882374095402
+Test Loss:  0.649859
+test accuracy : 0.803828
+(2717,)
+tf_rnn_8_next_level_predictions F1_score: 82.59% >>>
+New epoch 14
+epoch Train loss 91.5623729229
+Epoch Train Accuracy 0.890359707659
+Test Loss:  0.671516
+test accuracy : 0.800883
+(2717,)
+tf_rnn_8_next_level_predictions F1_score: 82.60% >>>
+New epoch 15
+epoch Train loss 86.9219419733
+Epoch Train Accuracy 0.896043161694
+Test Loss:  0.65083
+test accuracy : 0.813397
+(2717,)
+tf_rnn_8_next_level_predictions F1_score: 83.58% >>>
+New epoch 16
+epoch Train loss 84.1314240247
+Epoch Train Accuracy 0.897266182754
+Test Loss:  0.661281
+test accuracy : 0.80898
+(2717,)
+tf_rnn_8_next_level_predictions F1_score: 83.14% >>>
+New epoch 17
+epoch Train loss 81.4546295553
+Epoch Train Accuracy 0.899136686497
+Test Loss:  0.668294
+test accuracy : 0.809349
+(2717,)
+tf_rnn_8_next_level_predictions F1_score: 83.18% >>>
+New epoch 18
+epoch Train loss 79.5214800239
+Epoch Train Accuracy 0.902446040361
+Test Loss:  0.668875
+test accuracy : 0.806036
+(2717,)
+tf_rnn_8_next_level_predictions F1_score: 83.08% >>>
+New epoch 19
+epoch Train loss 78.1452433243
+Epoch Train Accuracy 0.905251795868
+Test Loss:  0.662373
+test accuracy : 0.806772
+(2717,)
+tf_rnn_8_next_level_predictions F1_score: 82.96% >>>
+New epoch 20
+epoch Train loss 74.5527864844
+Epoch Train Accuracy 0.909424458047
+Test Loss:  0.668575
+test accuracy : 0.80714
+(2717,)
+tf_rnn_8_next_level_predictions F1_score: 83.00% >>>
+New epoch 21
+epoch Train loss 74.2020280063
+Epoch Train Accuracy 0.912014385565
+Test Loss:  0.678386
+test accuracy : 0.807876
+(2717,)
+tf_rnn_8_next_level_predictions F1_score: 83.17% >>>
+New epoch 22
+epoch Train loss 74.7483649775
+Epoch Train Accuracy 0.907625895824
+Test Loss:  0.668976
+test accuracy : 0.811189
+(2717,)
+tf_rnn_8_next_level_predictions F1_score: 83.39% >>>
+New epoch 23
+epoch Train loss 71.9011178464
+Epoch Train Accuracy 0.914676255459
+Test Loss:  0.656522
+test accuracy : 0.812293
+(2717,)
+tf_rnn_8_next_level_predictions F1_score: 83.24% >>>
+New epoch 24
+epoch Train loss 69.5269459188
+Epoch Train Accuracy 0.9153237375
+Test Loss:  0.657381
+test accuracy : 0.817814
+(2717,)
+tf_rnn_8_next_level_predictions F1_score: 83.62% >>>
+New epoch 25
+epoch Train loss 70.1029001027
+Epoch Train Accuracy 0.913525175276
+Test Loss:  0.662249
+test accuracy : 0.815237
+(2717,)
+tf_rnn_8_next_level_predictions F1_score: 83.48% >>>
+New epoch 26
+epoch Train loss 68.5343067721
+Epoch Train Accuracy 0.914748198051
+Test Loss:  0.67618
+test accuracy : 0.811557
+(2717,)
+tf_rnn_8_next_level_predictions F1_score: 83.45% >>>
+New epoch 27
+epoch Train loss 68.1636188999
+Epoch Train Accuracy 0.916474815753
+Test Loss:  0.672697
+test accuracy : 0.811189
+(2717,)
+tf_rnn_8_next_level_predictions F1_score: 83.39% >>>
+New epoch 28
+epoch Train loss 67.1236370578
+Epoch Train Accuracy 0.918345321425
+Test Loss:  0.666533
+test accuracy : 0.814869
+(2717,)
+tf_rnn_8_next_level_predictions F1_score: 83.62% >>>
+New epoch 29
+epoch Train loss 66.3820793852
+Epoch Train Accuracy 0.920359708637
+Test Loss:  0.670057
+test accuracy : 0.815605
+(2717,)
+tf_rnn_8_next_level_predictions F1_score: 83.69% >>>
+New epoch 30
+epoch Train loss 65.290476881
+Epoch Train Accuracy 0.919568342271
+Test Loss:  0.667938
+test accuracy : 0.817078
+(2717,)
+tf_rnn_8_next_level_predictions F1_score: 83.70% >>>
+New epoch 31
+epoch Train loss 67.1544695646
+Epoch Train Accuracy 0.917410069232
+Test Loss:  0.666506
+test accuracy : 0.81855
+(2717,)
+tf_rnn_8_next_level_predictions F1_score: 83.81% >>>
+New epoch 32
+epoch Train loss 63.086695388
+Epoch Train Accuracy 0.926474818223
+Test Loss:  0.672617
+test accuracy : 0.814133
+(2717,)
+tf_rnn_8_next_level_predictions F1_score: 83.55% >>>
+New epoch 33
+epoch Train loss 64.7807984948
+Epoch Train Accuracy 0.921366902778
+Test Loss:  0.676528
+test accuracy : 0.813029
+(2717,)
+tf_rnn_8_next_level_predictions F1_score: 83.46% >>>
+New epoch 34
+epoch Train loss 63.5919572785
+Epoch Train Accuracy 0.923597118623
+Test Loss:  0.671803
+test accuracy : 0.815237
+(2717,)
+tf_rnn_8_next_level_predictions F1_score: 83.63% >>>
+New epoch 35
+epoch Train loss 64.1304857656
+Epoch Train Accuracy 0.921870501136
+Test Loss:  0.670782
+test accuracy : 0.815974
+(2717,)
+tf_rnn_8_next_level_predictions F1_score: 83.63% >>>
+New epoch 36
+epoch Train loss 64.8102431521
+Epoch Train Accuracy 0.921510788605
+Test Loss:  0.670378
+test accuracy : 0.815974
+(2717,)
+tf_rnn_8_next_level_predictions F1_score: 83.62% >>>
+New epoch 37
+epoch Train loss 64.650001049
+Epoch Train Accuracy 0.920071938055
+Test Loss:  0.672219
+test accuracy : 0.813765
+(2717,)
+tf_rnn_8_next_level_predictions F1_score: 83.50% >>>
+New epoch 38
+epoch Train loss 62.9596611634
+Epoch Train Accuracy 0.924172658286
+Test Loss:  0.667534
+test accuracy : 0.818182
+(2717,)
+tf_rnn_8_next_level_predictions F1_score: 83.85% >>>
+New epoch 39
+epoch Train loss 64.1925050467
+Epoch Train Accuracy 0.924604315552
+Test Loss:  0.670785
+test accuracy : 0.816342
+(2717,)
+tf_rnn_8_next_level_predictions F1_score: 83.75% >>>
+New epoch 40
+epoch Train loss 63.1852716953
+Epoch Train Accuracy 0.922805752471
+Test Loss:  0.673652
+test accuracy : 0.818182
+(2717,)
+tf_rnn_8_next_level_predictions F1_score: 83.89% >>>
+New epoch 41
+epoch Train loss 61.7219505087
+Epoch Train Accuracy 0.926906472702
+Test Loss:  0.67264
+test accuracy : 0.816342
+(2717,)
+tf_rnn_8_next_level_predictions F1_score: 83.67% >>>
+New epoch 42
+epoch Train loss 61.8606739044
+Epoch Train Accuracy 0.9241726585
+Test Loss:  0.675436
+test accuracy : 0.815974
+(2717,)
+tf_rnn_8_next_level_predictions F1_score: 83.74% >>>
+New epoch 43
+epoch Train loss 60.7223147377
+Epoch Train Accuracy 0.925179853071
+Test Loss:  0.676331
+test accuracy : 0.817078
+(2717,)
+tf_rnn_8_next_level_predictions F1_score: 83.82% >>>
+New epoch 44
+epoch Train loss 62.3960984424
+Epoch Train Accuracy 0.923884888347
+Test Loss:  0.672603
+test accuracy : 0.816342
+(2717,)
+tf_rnn_8_next_level_predictions F1_score: 83.70% >>>
+New epoch 45
+epoch Train loss 64.2151577845
+Epoch Train Accuracy 0.92093524637
+Test Loss:  0.673884
+test accuracy : 0.815605
+(2717,)
+tf_rnn_8_next_level_predictions F1_score: 83.67% >>>
+New epoch 46
+epoch Train loss 62.4925633371
+Epoch Train Accuracy 0.923669062501
+Test Loss:  0.677587
+test accuracy : 0.815605
+(2717,)
+tf_rnn_8_next_level_predictions F1_score: 83.68% >>>
+New epoch 47
+epoch Train loss 63.4965358451
+Epoch Train Accuracy 0.922086328482
+Test Loss:  0.676544
+test accuracy : 0.815974
+(2717,)
+tf_rnn_8_next_level_predictions F1_score: 83.69% >>>
+New epoch 48
+epoch Train loss 63.6059760116
+Epoch Train Accuracy 0.922589925339
+Test Loss:  0.675784
+test accuracy : 0.816342
+(2717,)
+tf_rnn_8_next_level_predictions F1_score: 83.74% >>>
+New epoch 49
+epoch Train loss 60.9676681235
+Epoch Train Accuracy 0.928848918822
+Test Loss:  0.674666
+test accuracy : 0.816342
+(2717,)
+tf_rnn_8_next_level_predictions F1_score: 83.67% >>>
+
+[0.71439087, 0.73905045, 0.77953625, 0.78137654, 0.77070296, 0.78358483, 0.78763342, 0.79094589, 0.78800148, 0.80971658, 0.80714023, 0.79941112, 0.80493194, 0.80382776, 0.80088335, 0.81339711, 0.80898046, 0.80934852, 0.80603606, 0.80677217, 0.80714023, 0.80787635, 0.81118882, 0.81229299, 0.81781375, 0.8152374, 0.81155688, 0.81118882, 0.81486934, 0.81560546, 0.81707764, 0.81854987, 0.81413323, 0.81302905, 0.8152374, 0.81597352, 0.81597352, 0.81376517, 0.81818181, 0.81634158, 0.81818181, 0.81634158, 0.81597352, 0.81707764, 0.81634158, 0.81560546, 0.81560546, 0.81597352, 0.81634158, 0.81634158]
+
+
+
+------------------------------------------------------------------------------
+batch size 10
+
+(2717, 12)
+[1 2 4 0 0 0 0 0 0 0 0 0]
+2018-01-27 22:00:07.520667: I tensorflow/core/platform/cpu_feature_guard.cc:137] Your CPU supports instructions that this TensorFlow binary was not compiled to use: SSE4.1 SSE4.2 AVX AVX2 FMA
+New epoch 0
+epoch Train loss 431.567022383
+Epoch Train Accuracy 0.540000002295
+Test Loss:  0.893615
+test accuracy : 0.714759
+(2717,)
+tf_rnn_8_next_level_predictions F1_score: 74.59% >>>
+New epoch 1
+epoch Train loss 259.619252682
+Epoch Train Accuracy 0.703669069053
+Test Loss:  0.78107
+test accuracy : 0.754877
+(2717,)
+tf_rnn_8_next_level_predictions F1_score: 78.26% >>>
+New epoch 2
+epoch Train loss 221.321039289
+Epoch Train Accuracy 0.742949641223
+Test Loss:  0.661057
+test accuracy : 0.794626
+(2717,)
+tf_rnn_8_next_level_predictions F1_score: 81.11% >>>
+New epoch 3
+epoch Train loss 192.652798623
+Epoch Train Accuracy 0.774604314523
+Test Loss:  0.700404
+test accuracy : 0.776592
+(2717,)
+tf_rnn_8_next_level_predictions F1_score: 80.47% >>>
+New epoch 4
+epoch Train loss 178.06022656
+Epoch Train Accuracy 0.791438844135
+Test Loss:  0.63209
+test accuracy : 0.794994
+(2717,)
+tf_rnn_8_next_level_predictions F1_score: 81.60% >>>
+New epoch 5
+epoch Train loss 160.662678435
+Epoch Train Accuracy 0.811798556889
+Test Loss:  0.680051
+test accuracy : 0.77696
+(2717,)
+tf_rnn_8_next_level_predictions F1_score: 80.83% >>>
+New epoch 6
+epoch Train loss 146.92388013
+Epoch Train Accuracy 0.823309346283
+Test Loss:  0.620548
+test accuracy : 0.804564
+(2717,)
+tf_rnn_8_next_level_predictions F1_score: 82.39% >>>
+New epoch 7
+epoch Train loss 135.654311404
+Epoch Train Accuracy 0.837913663696
+Test Loss:  0.639601
+test accuracy : 0.794258
+(2717,)
+tf_rnn_8_next_level_predictions F1_score: 81.71% >>>
+New epoch 8
+epoch Train loss 125.688784689
+Epoch Train Accuracy 0.850935245161
+Test Loss:  0.633867
+test accuracy : 0.803092
+(2717,)
+tf_rnn_8_next_level_predictions F1_score: 82.43% >>>
+New epoch 9
+epoch Train loss 116.883343488
+Epoch Train Accuracy 0.858848916755
+Test Loss:  0.595019
+test accuracy : 0.814501
+(2717,)
+tf_rnn_8_next_level_predictions F1_score: 83.13% >>>
+New epoch 10
+epoch Train loss 108.828717589
+Epoch Train Accuracy 0.868561145213
+Test Loss:  0.67451
+test accuracy : 0.789474
+(2717,)
+tf_rnn_8_next_level_predictions F1_score: 81.62% >>>
+New epoch 11
+epoch Train loss 102.519623652
+Epoch Train Accuracy 0.875179849726
+Test Loss:  0.65773
+test accuracy : 0.802356
+(2717,)
+tf_rnn_8_next_level_predictions F1_score: 82.63% >>>
+New epoch 12
+epoch Train loss 97.6844647378
+Epoch Train Accuracy 0.880863304618
+Test Loss:  0.682459
+test accuracy : 0.794626
+(2717,)
+tf_rnn_8_next_level_predictions F1_score: 82.19% >>>
+New epoch 13
+epoch Train loss 95.3628493547
+Epoch Train Accuracy 0.884964023563
+Test Loss:  0.679483
+test accuracy : 0.796835
+(2717,)
+tf_rnn_8_next_level_predictions F1_score: 82.34% >>>
+New epoch 14
+epoch Train loss 89.3060023114
+Epoch Train Accuracy 0.89258992286
+Test Loss:  0.67651
+test accuracy : 0.798307
+(2717,)
+tf_rnn_8_next_level_predictions F1_score: 82.38% >>>
+New epoch 15
+epoch Train loss 87.3009690791
+Epoch Train Accuracy 0.896402874439
+Test Loss:  0.672103
+test accuracy : 0.799411
+(2717,)
+tf_rnn_8_next_level_predictions F1_score: 82.27% >>>
+New epoch 16
+epoch Train loss 83.6938501745
+Epoch Train Accuracy 0.899640282924
+Test Loss:  0.638494
+test accuracy : 0.814501
+(2717,)
+tf_rnn_8_next_level_predictions F1_score: 83.47% >>>
+New epoch 17
+epoch Train loss 82.0604397058
+Epoch Train Accuracy 0.900863305913
+Test Loss:  0.653901
+test accuracy : 0.808244
+(2717,)
+tf_rnn_8_next_level_predictions F1_score: 83.21% >>>
+New epoch 18
+epoch Train loss 78.9031478912
+Epoch Train Accuracy 0.903453232787
+Test Loss:  0.6792
+test accuracy : 0.799779
+(2717,)
+tf_rnn_8_next_level_predictions F1_score: 82.43% >>>
+New epoch 19
+epoch Train loss 75.6834496632
+Epoch Train Accuracy 0.906115104826
+Test Loss:  0.682527
+test accuracy : 0.799779
+(2717,)
+tf_rnn_8_next_level_predictions F1_score: 82.68% >>>
+New epoch 20
+epoch Train loss 75.1489602104
+Epoch Train Accuracy 0.91007193923
+Test Loss:  0.69595
+test accuracy : 0.800515
+(2717,)
+tf_rnn_8_next_level_predictions F1_score: 82.78% >>>
+New epoch 21
+epoch Train loss 72.7763611004
+Epoch Train Accuracy 0.910359707453
+Test Loss:  0.686277
+test accuracy : 0.802724
+(2717,)
+tf_rnn_8_next_level_predictions F1_score: 82.85% >>>
+New epoch 22
+epoch Train loss 72.2118313015
+Epoch Train Accuracy 0.909856112098
+Test Loss:  0.686032
+test accuracy : 0.801987
+(2717,)
+tf_rnn_8_next_level_predictions F1_score: 82.71% >>>
+New epoch 23
+epoch Train loss 71.2609515712
+Epoch Train Accuracy 0.913741003481
+Test Loss:  0.672952
+test accuracy : 0.807876
+(2717,)
+tf_rnn_8_next_level_predictions F1_score: 83.08% >>>
+New epoch 24
+epoch Train loss 70.6539418399
+Epoch Train Accuracy 0.91446042897
+Test Loss:  0.68822
+test accuracy : 0.800147
+(2717,)
+tf_rnn_8_next_level_predictions F1_score: 82.54% >>>
+New epoch 25
+epoch Train loss 68.0738933012
+Epoch Train Accuracy 0.916690643528
+Test Loss:  0.684046
+test accuracy : 0.80346
+(2717,)
+tf_rnn_8_next_level_predictions F1_score: 82.86% >>>
+New epoch 26
+epoch Train loss 66.4224872813
+Epoch Train Accuracy 0.91827337819
+Test Loss:  0.669636
+test accuracy : 0.807876
+(2717,)
+tf_rnn_8_next_level_predictions F1_score: 83.09% >>>
+New epoch 27
+epoch Train loss 67.450753279
+Epoch Train Accuracy 0.917553953558
+Test Loss:  0.679523
+test accuracy : 0.806772
+(2717,)
+tf_rnn_8_next_level_predictions F1_score: 83.06% >>>
+New epoch 28
+epoch Train loss 66.5417636335
+Epoch Train Accuracy 0.919856112424
+Test Loss:  0.683279
+test accuracy : 0.806772
+(2717,)
+tf_rnn_8_next_level_predictions F1_score: 83.15% >>>
+New epoch 29
+epoch Train loss 66.2453321144
+Epoch Train Accuracy 0.921079133269
+Test Loss:  0.687392
+test accuracy : 0.806404
+(2717,)
+tf_rnn_8_next_level_predictions F1_score: 83.03% >>>
+New epoch 30
+epoch Train loss 64.6544161811
+Epoch Train Accuracy 0.920503595321
+Test Loss:  0.668519
+test accuracy : 0.812661
+(2717,)
+tf_rnn_8_next_level_predictions F1_score: 83.39% >>>
+New epoch 31
+epoch Train loss 64.7053826377
+Epoch Train Accuracy 0.921438844727
+Test Loss:  0.679715
+test accuracy : 0.80714
+(2717,)
+tf_rnn_8_next_level_predictions F1_score: 83.10% >>>
+New epoch 32
+epoch Train loss 65.3150002472
+Epoch Train Accuracy 0.918633091578
+Test Loss:  0.690246
+test accuracy : 0.806036
+(2717,)
+tf_rnn_8_next_level_predictions F1_score: 83.07% >>>
+New epoch 33
+epoch Train loss 65.3901912645
+Epoch Train Accuracy 0.920143880218
+Test Loss:  0.687258
+test accuracy : 0.80898
+(2717,)
+tf_rnn_8_next_level_predictions F1_score: 83.22% >>>
+New epoch 34
+epoch Train loss 63.539806217
+Epoch Train Accuracy 0.924388488205
+Test Loss:  0.686274
+test accuracy : 0.80714
+(2717,)
+tf_rnn_8_next_level_predictions F1_score: 83.14% >>>
+New epoch 35
+epoch Train loss 63.8238408491
+Epoch Train Accuracy 0.923093521981
+Test Loss:  0.694379
+test accuracy : 0.804932
+(2717,)
+tf_rnn_8_next_level_predictions F1_score: 83.00% >>>
+New epoch 36
+epoch Train loss 61.9587975144
+Epoch Train Accuracy 0.925467621294
+Test Loss:  0.680542
+test accuracy : 0.809349
+(2717,)
+tf_rnn_8_next_level_predictions F1_score: 83.14% >>>
+New epoch 37
+epoch Train loss 64.5910998434
+Epoch Train Accuracy 0.92179855833
+Test Loss:  0.677428
+test accuracy : 0.811557
+(2717,)
+tf_rnn_8_next_level_predictions F1_score: 83.31% >>>
+New epoch 38
+epoch Train loss 62.3119139075
+Epoch Train Accuracy 0.92568345057
+Test Loss:  0.684072
+test accuracy : 0.807508
+(2717,)
+tf_rnn_8_next_level_predictions F1_score: 83.09% >>>
+New epoch 39
+epoch Train loss 60.9966494516
+Epoch Train Accuracy 0.927194241997
+Test Loss:  0.680533
+test accuracy : 0.811189
+(2717,)
+tf_rnn_8_next_level_predictions F1_score: 83.46% >>>
+New epoch 40
+epoch Train loss 60.2270909026
+Epoch Train Accuracy 0.927050357028
+Test Loss:  0.680335
+test accuracy : 0.811189
+(2717,)
+tf_rnn_8_next_level_predictions F1_score: 83.38% >>>
+New epoch 41
+epoch Train loss 62.2213168964
+Epoch Train Accuracy 0.923021577674
+Test Loss:  0.680133
+test accuracy : 0.812293
+(2717,)
+tf_rnn_8_next_level_predictions F1_score: 83.49% >>>
+New epoch 42
+epoch Train loss 61.683767274
+Epoch Train Accuracy 0.924964024652
+Test Loss:  0.682428
+test accuracy : 0.810453
+(2717,)
+tf_rnn_8_next_level_predictions F1_score: 83.30% >>>
+New epoch 43
+epoch Train loss 60.1722227298
+Epoch Train Accuracy 0.927122298119
+Test Loss:  0.683796
+test accuracy : 0.810453
+(2717,)
+tf_rnn_8_next_level_predictions F1_score: 83.36% >>>
+New epoch 44
+epoch Train loss 63.2678273506
+Epoch Train Accuracy 0.924892084418
+Test Loss:  0.683128
+test accuracy : 0.811189
+(2717,)
+tf_rnn_8_next_level_predictions F1_score: 83.49% >>>
+New epoch 45
+epoch Train loss 60.7710653171
+Epoch Train Accuracy 0.92561150755
+Test Loss:  0.685085
+test accuracy : 0.811557
+(2717,)
+tf_rnn_8_next_level_predictions F1_score: 83.46% >>>
+New epoch 46
+epoch Train loss 61.9429444
+Epoch Train Accuracy 0.924388485418
+Test Loss:  0.686037
+test accuracy : 0.811189
+(2717,)
+tf_rnn_8_next_level_predictions F1_score: 83.49% >>>
+New epoch 47
+epoch Train loss 60.6620540991
+Epoch Train Accuracy 0.926762587947
+Test Loss:  0.684499
+test accuracy : 0.811557
+(2717,)
+tf_rnn_8_next_level_predictions F1_score: 83.49% >>>
+New epoch 48
+epoch Train loss 60.2093415707
+Epoch Train Accuracy 0.926043163744
+Test Loss:  0.685471
+test accuracy : 0.811189
+(2717,)
+tf_rnn_8_next_level_predictions F1_score: 83.47% >>>
+New epoch 49
+epoch Train loss 60.3366655409
+Epoch Train Accuracy 0.927553954956
+Test Loss:  0.684031
+test accuracy : 0.810821
+(2717,)
+tf_rnn_8_next_level_predictions F1_score: 83.46% >>>
+
+[0.71475893, 0.75487667, 0.79462641, 0.77659184, 0.79499447, 0.7769599, 0.80456388, 0.79425836, 0.80309165, 0.81450129, 0.78947371, 0.80235553, 0.79462641, 0.79683477, 0.79830694, 0.79941112, 0.81450129, 0.80824441, 0.79977918, 0.79977918, 0.80051529, 0.80272359, 0.80198747, 0.80787635, 0.80014724, 0.8034597, 0.80787635, 0.80677217, 0.80677217, 0.80640411, 0.81266105, 0.80714023, 0.80603606, 0.80898046, 0.80714023, 0.80493194, 0.80934852, 0.81155688, 0.80750829, 0.81118882, 0.81118882, 0.81229299, 0.8104527, 0.8104527, 0.81118882, 0.81155688, 0.81118882, 0.81155688, 0.81118882, 0.81082076]

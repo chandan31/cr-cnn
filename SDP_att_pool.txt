@@ -1,0 +1,611 @@
+2018-02-01 23:45:46.823528: I tensorflow/core/platform/cpu_feature_guard.cc:137] Your CPU supports instructions that this TensorFlow binary was not compiled to use: SSE4.1 SSE4.2 AVX AVX2 FMA
+New epoch 0
+epoch loss 381.597599506
+Epoch Accuracy 0.570575542266
+Test Loss:  0.842844
+test accuracy : 0.730585
+(2717,)
+SDP_att_pool_predictions F1_score: 76.75% >>>
+New epoch 1
+epoch loss 237.548214853
+Epoch Accuracy 0.725539570446
+Test Loss:  0.736004
+test accuracy : 0.761502
+(2717,)
+SDP_att_pool_predictions F1_score: 79.00% >>>
+New epoch 2
+epoch loss 199.97145322
+Epoch Accuracy 0.766618701837
+Test Loss:  0.644399
+test accuracy : 0.800147
+(2717,)
+SDP_att_pool_predictions F1_score: 81.94% >>>
+New epoch 3
+epoch loss 171.340812638
+Epoch Accuracy 0.790935248351
+Test Loss:  0.762551
+test accuracy : 0.7523
+(2717,)
+SDP_att_pool_predictions F1_score: 79.32% >>>
+New epoch 4
+epoch loss 147.399758115
+Epoch Accuracy 0.823165461743
+Test Loss:  0.664296
+test accuracy : 0.793154
+(2717,)
+SDP_att_pool_predictions F1_score: 81.95% >>>
+New epoch 5
+epoch loss 130.310132205
+Epoch Accuracy 0.841654671825
+Test Loss:  0.665757
+test accuracy : 0.798675
+(2717,)
+SDP_att_pool_predictions F1_score: 81.97% >>>
+New epoch 6
+epoch loss 111.231744781
+Epoch Accuracy 0.863093518954
+Test Loss:  0.657159
+test accuracy : 0.801987
+(2717,)
+SDP_att_pool_predictions F1_score: 82.20% >>>
+New epoch 7
+epoch loss 98.6813519299
+Epoch Accuracy 0.878345320122
+Test Loss:  0.697223
+test accuracy : 0.804932
+(2717,)
+SDP_att_pool_predictions F1_score: 82.95% >>>
+New epoch 8
+epoch loss 86.5050308704
+Epoch Accuracy 0.892446038534
+Test Loss:  0.658778
+test accuracy : 0.81671
+(2717,)
+SDP_att_pool_predictions F1_score: 83.51% >>>
+New epoch 9
+epoch loss 77.9578629397
+Epoch Accuracy 0.903956832431
+Test Loss:  0.763869
+test accuracy : 0.788738
+(2717,)
+SDP_att_pool_predictions F1_score: 81.82% >>>
+New epoch 10
+epoch loss 69.6806496307
+Epoch Accuracy 0.913597120012
+Test Loss:  0.705716
+test accuracy : 0.810453
+(2717,)
+SDP_att_pool_predictions F1_score: 82.98% >>>
+New epoch 11
+epoch loss 61.7842666171
+Epoch Accuracy 0.92208632741
+Test Loss:  0.752522
+test accuracy : 0.805668
+(2717,)
+SDP_att_pool_predictions F1_score: 82.79% >>>
+New epoch 12
+epoch loss 56.6897876598
+Epoch Accuracy 0.929136687903
+Test Loss:  0.793841
+test accuracy : 0.796467
+(2717,)
+SDP_att_pool_predictions F1_score: 82.40% >>>
+New epoch 13
+epoch loss 50.2863811255
+Epoch Accuracy 0.937985609761
+Test Loss:  0.775813
+test accuracy : 0.799779
+(2717,)
+SDP_att_pool_predictions F1_score: 82.14% >>>
+New epoch 14
+epoch loss 44.1934024282
+Epoch Accuracy 0.943812947908
+Test Loss:  0.768165
+test accuracy : 0.814501
+(2717,)
+SDP_att_pool_predictions F1_score: 83.46% >>>
+New epoch 15
+epoch loss 40.3267969508
+Epoch Accuracy 0.950071939676
+Test Loss:  0.855395
+test accuracy : 0.799411
+(2717,)
+SDP_att_pool_predictions F1_score: 82.38% >>>
+New epoch 16
+epoch loss 38.9022498615
+Epoch Accuracy 0.951870501899
+Test Loss:  0.817969
+test accuracy : 0.813397
+(2717,)
+SDP_att_pool_predictions F1_score: 83.30% >>>
+New epoch 17
+epoch loss 35.1038104389
+Epoch Accuracy 0.956258992926
+Test Loss:  0.833563
+test accuracy : 0.808612
+(2717,)
+SDP_att_pool_predictions F1_score: 82.99% >>>
+New epoch 18
+epoch loss 34.6132906862
+Epoch Accuracy 0.958129493667
+Test Loss:  0.816529
+test accuracy : 0.812661
+(2717,)
+SDP_att_pool_predictions F1_score: 83.19% >>>
+New epoch 19
+epoch loss 30.319184606
+Epoch Accuracy 0.964028777407
+Test Loss:  0.83287
+test accuracy : 0.810453
+(2717,)
+SDP_att_pool_predictions F1_score: 83.23% >>>
+New epoch 20
+epoch loss 29.8898487166
+Epoch Accuracy 0.963021581765
+Test Loss:  0.875944
+test accuracy : 0.810453
+(2717,)
+SDP_att_pool_predictions F1_score: 83.32% >>>
+New epoch 21
+epoch loss 28.8777911607
+Epoch Accuracy 0.963309351918
+Test Loss:  0.866984
+test accuracy : 0.811557
+(2717,)
+SDP_att_pool_predictions F1_score: 83.23% >>>
+New epoch 22
+epoch loss 25.0512126153
+Epoch Accuracy 0.969064747687
+Test Loss:  0.868266
+test accuracy : 0.817814
+(2717,)
+SDP_att_pool_predictions F1_score: 83.80% >>>
+New epoch 23
+epoch loss 25.4477817742
+Epoch Accuracy 0.969568346902
+Test Loss:  0.913824
+test accuracy : 0.807508
+(2717,)
+SDP_att_pool_predictions F1_score: 82.97% >>>
+New epoch 24
+epoch loss 24.9535035221
+Epoch Accuracy 0.967553957118
+Test Loss:  0.895885
+test accuracy : 0.814133
+(2717,)
+SDP_att_pool_predictions F1_score: 83.41% >>>
+New epoch 25
+epoch loss 22.7488557929
+Epoch Accuracy 0.973165468775
+Test Loss:  0.917368
+test accuracy : 0.806772
+(2717,)
+SDP_att_pool_predictions F1_score: 82.73% >>>
+New epoch 26
+epoch loss 21.7981846426
+Epoch Accuracy 0.974028778591
+Test Loss:  0.903737
+test accuracy : 0.808244
+(2717,)
+SDP_att_pool_predictions F1_score: 82.82% >>>
+New epoch 27
+epoch loss 20.4094454171
+Epoch Accuracy 0.974172662917
+Test Loss:  0.926009
+test accuracy : 0.810085
+(2717,)
+SDP_att_pool_predictions F1_score: 83.19% >>>
+New epoch 28
+epoch loss 19.6843071142
+Epoch Accuracy 0.975107915967
+Test Loss:  0.942737
+test accuracy : 0.808244
+(2717,)
+SDP_att_pool_predictions F1_score: 83.13% >>>
+New epoch 29
+epoch loss 20.1981231472
+Epoch Accuracy 0.976043167946
+Test Loss:  0.933981
+test accuracy : 0.80714
+(2717,)
+SDP_att_pool_predictions F1_score: 83.04% >>>
+New epoch 30
+epoch loss 18.6234805426
+Epoch Accuracy 0.978273383791
+Test Loss:  0.909206
+test accuracy : 0.811925
+(2717,)
+SDP_att_pool_predictions F1_score: 83.35% >>>
+New epoch 31
+epoch loss 18.4860160439
+Epoch Accuracy 0.978489211352
+Test Loss:  0.925352
+test accuracy : 0.813029
+(2717,)
+SDP_att_pool_predictions F1_score: 83.45% >>>
+New epoch 32
+epoch loss 17.9570672754
+Epoch Accuracy 0.978705038698
+Test Loss:  0.97788
+test accuracy : 0.813765
+(2717,)
+SDP_att_pool_predictions F1_score: 83.36% >>>
+New epoch 33
+epoch loss 16.5580062447
+Epoch Accuracy 0.979712232626
+Test Loss:  0.944732
+test accuracy : 0.812293
+(2717,)
+SDP_att_pool_predictions F1_score: 83.21% >>>
+New epoch 34
+epoch loss 16.8176767165
+Epoch Accuracy 0.980431657901
+Test Loss:  0.96306
+test accuracy : 0.811189
+(2717,)
+SDP_att_pool_predictions F1_score: 83.35% >>>
+New epoch 35
+epoch loss 16.5093525914
+Epoch Accuracy 0.978417271118
+Test Loss:  0.968902
+test accuracy : 0.808612
+(2717,)
+SDP_att_pool_predictions F1_score: 82.99% >>>
+New epoch 36
+epoch loss 16.1127002337
+Epoch Accuracy 0.981510794849
+Test Loss:  0.957968
+test accuracy : 0.814501
+(2717,)
+SDP_att_pool_predictions F1_score: 83.56% >>>
+New epoch 37
+epoch loss 14.8689995389
+Epoch Accuracy 0.982158277318
+Test Loss:  0.979536
+test accuracy : 0.810085
+(2717,)
+SDP_att_pool_predictions F1_score: 83.15% >>>
+New epoch 38
+epoch loss 13.4721195037
+Epoch Accuracy 0.984172666459
+Test Loss:  0.971613
+test accuracy : 0.813397
+(2717,)
+SDP_att_pool_predictions F1_score: 83.45% >>>
+New epoch 39
+epoch loss 13.8660924546
+Epoch Accuracy 0.984532379632
+Test Loss:  0.963532
+test accuracy : 0.812293
+(2717,)
+SDP_att_pool_predictions F1_score: 83.31% >>>
+New epoch 40
+epoch loss 14.3091036631
+Epoch Accuracy 0.982302162073
+Test Loss:  0.992363
+test accuracy : 0.808244
+(2717,)
+SDP_att_pool_predictions F1_score: 83.06% >>>
+New epoch 41
+epoch loss 13.7190820826
+Epoch Accuracy 0.98359712701
+Test Loss:  0.990282
+test accuracy : 0.810453
+(2717,)
+SDP_att_pool_predictions F1_score: 83.34% >>>
+New epoch 42
+epoch loss 14.1870229896
+Epoch Accuracy 0.983309356643
+Test Loss:  0.985402
+test accuracy : 0.811189
+(2717,)
+SDP_att_pool_predictions F1_score: 83.42% >>>
+New epoch 43
+epoch loss 13.6644532834
+Epoch Accuracy 0.984676262672
+Test Loss:  0.972922
+test accuracy : 0.811925
+(2717,)
+SDP_att_pool_predictions F1_score: 83.32% >>>
+New epoch 44
+epoch loss 13.1371001839
+Epoch Accuracy 0.984100723438
+Test Loss:  0.972436
+test accuracy : 0.813029
+(2717,)
+SDP_att_pool_predictions F1_score: 83.49% >>>
+New epoch 45
+epoch loss 12.3733767979
+Epoch Accuracy 0.986258995833
+Test Loss:  0.993171
+test accuracy : 0.810085
+(2717,)
+SDP_att_pool_predictions F1_score: 83.33% >>>
+New epoch 46
+epoch loss 12.1149824634
+Epoch Accuracy 0.986115112794
+Test Loss:  0.997082
+test accuracy : 0.80898
+(2717,)
+SDP_att_pool_predictions F1_score: 83.23% >>>
+New epoch 47
+epoch loss 12.4691517242
+Epoch Accuracy 0.98575539962
+Test Loss:  0.97292
+test accuracy : 0.813765
+(2717,)
+SDP_att_pool_predictions F1_score: 83.46% >>>
+New epoch 48
+epoch loss 11.925467096
+Epoch Accuracy 0.986330939068
+Test Loss:  0.99533
+test accuracy : 0.811189
+(2717,)
+SDP_att_pool_predictions F1_score: 83.34% >>>
+New epoch 49
+epoch loss 12.0799453973
+Epoch Accuracy 0.98568345617
+Test Loss:  0.973483
+test accuracy : 0.814501
+(2717,)
+SDP_att_pool_predictions F1_score: 83.57% >>>
+New epoch 50
+epoch loss 12.5731265415
+Epoch Accuracy 0.984676262672
+Test Loss:  0.986493
+test accuracy : 0.811557
+(2717,)
+SDP_att_pool_predictions F1_score: 83.35% >>>
+New epoch 51
+epoch loss 12.7640668782
+Epoch Accuracy 0.985395687518
+Test Loss:  0.991042
+test accuracy : 0.813029
+(2717,)
+SDP_att_pool_predictions F1_score: 83.50% >>>
+New epoch 52
+epoch loss 11.679129838
+Epoch Accuracy 0.987050365201
+Test Loss:  0.990639
+test accuracy : 0.812661
+(2717,)
+SDP_att_pool_predictions F1_score: 83.40% >>>
+New epoch 53
+epoch loss 12.5265549906
+Epoch Accuracy 0.9851798606
+Test Loss:  0.993961
+test accuracy : 0.813397
+(2717,)
+SDP_att_pool_predictions F1_score: 83.52% >>>
+New epoch 54
+epoch loss 12.7843457523
+Epoch Accuracy 0.985827343284
+Test Loss:  0.991966
+test accuracy : 0.811925
+(2717,)
+SDP_att_pool_predictions F1_score: 83.40% >>>
+New epoch 55
+epoch loss 11.8611058421
+Epoch Accuracy 0.986258996262
+Test Loss:  0.991532
+test accuracy : 0.810821
+(2717,)
+SDP_att_pool_predictions F1_score: 83.32% >>>
+New epoch 56
+epoch loss 11.9490997472
+Epoch Accuracy 0.985683457886
+Test Loss:  0.993209
+test accuracy : 0.810821
+(2717,)
+SDP_att_pool_predictions F1_score: 83.30% >>>
+New epoch 57
+epoch loss 12.0851728939
+Epoch Accuracy 0.986187053456
+Test Loss:  0.999419
+test accuracy : 0.809349
+(2717,)
+SDP_att_pool_predictions F1_score: 83.26% >>>
+New epoch 58
+epoch loss 11.7387335375
+Epoch Accuracy 0.986330938854
+Test Loss:  0.99955
+test accuracy : 0.810821
+(2717,)
+SDP_att_pool_predictions F1_score: 83.30% >>>
+New epoch 59
+epoch loss 10.7452186579
+Epoch Accuracy 0.98798561718
+Test Loss:  0.986928
+test accuracy : 0.812293
+(2717,)
+SDP_att_pool_predictions F1_score: 83.39% >>>
+New epoch 60
+epoch loss 12.1259026858
+Epoch Accuracy 0.985827341569
+Test Loss:  0.997195
+test accuracy : 0.810453
+(2717,)
+SDP_att_pool_predictions F1_score: 83.27% >>>
+New epoch 61
+epoch loss 11.8814302904
+Epoch Accuracy 0.986546765343
+Test Loss:  0.990888
+test accuracy : 0.810821
+(2717,)
+SDP_att_pool_predictions F1_score: 83.22% >>>
+New epoch 62
+epoch loss 11.0588231833
+Epoch Accuracy 0.987697845955
+Test Loss:  0.993787
+test accuracy : 0.812293
+(2717,)
+SDP_att_pool_predictions F1_score: 83.39% >>>
+New epoch 63
+epoch loss 11.5279510892
+Epoch Accuracy 0.987050362843
+Test Loss:  0.996328
+test accuracy : 0.810453
+(2717,)
+SDP_att_pool_predictions F1_score: 83.30% >>>
+New epoch 64
+epoch loss 12.0953543941
+Epoch Accuracy 0.986474824466
+Test Loss:  0.994662
+test accuracy : 0.810821
+(2717,)
+SDP_att_pool_predictions F1_score: 83.31% >>>
+New epoch 65
+epoch loss 10.8575436585
+Epoch Accuracy 0.98812949979
+Test Loss:  0.997604
+test accuracy : 0.810453
+(2717,)
+SDP_att_pool_predictions F1_score: 83.28% >>>
+New epoch 66
+epoch loss 11.2508828458
+Epoch Accuracy 0.987194249313
+Test Loss:  0.994606
+test accuracy : 0.811557
+(2717,)
+SDP_att_pool_predictions F1_score: 83.36% >>>
+New epoch 67
+epoch loss 11.7506630593
+Epoch Accuracy 0.986043170416
+Test Loss:  0.993547
+test accuracy : 0.812293
+(2717,)
+SDP_att_pool_predictions F1_score: 83.40% >>>
+New epoch 68
+epoch loss 11.1924355435
+Epoch Accuracy 0.98683453571
+Test Loss:  0.991571
+test accuracy : 0.812293
+(2717,)
+SDP_att_pool_predictions F1_score: 83.39% >>>
+New epoch 69
+epoch loss 10.9859382517
+Epoch Accuracy 0.987338133424
+Test Loss:  0.993382
+test accuracy : 0.810453
+(2717,)
+SDP_att_pool_predictions F1_score: 83.23% >>>
+New epoch 70
+epoch loss 10.8567306784
+Epoch Accuracy 0.98769784574
+Test Loss:  0.995096
+test accuracy : 0.810085
+(2717,)
+SDP_att_pool_predictions F1_score: 83.22% >>>
+New epoch 71
+epoch loss 11.9980694936
+Epoch Accuracy 0.986978421108
+Test Loss:  0.995897
+test accuracy : 0.810085
+(2717,)
+SDP_att_pool_predictions F1_score: 83.25% >>>
+New epoch 72
+epoch loss 11.2416103417
+Epoch Accuracy 0.986618708149
+Test Loss:  0.996314
+test accuracy : 0.811189
+(2717,)
+SDP_att_pool_predictions F1_score: 83.32% >>>
+New epoch 73
+epoch loss 10.7296169375
+Epoch Accuracy 0.989136695219
+Test Loss:  0.995481
+test accuracy : 0.811189
+(2717,)
+SDP_att_pool_predictions F1_score: 83.31% >>>
+New epoch 74
+epoch loss 11.792198228
+Epoch Accuracy 0.986258996048
+Test Loss:  0.995897
+test accuracy : 0.811189
+(2717,)
+SDP_att_pool_predictions F1_score: 83.31% >>>
+New epoch 75
+epoch loss 11.1595403343
+Epoch Accuracy 0.987266190832
+Test Loss:  0.996149
+test accuracy : 0.811189
+(2717,)
+SDP_att_pool_predictions F1_score: 83.32% >>>
+New epoch 76
+epoch loss 11.3512685038
+Epoch Accuracy 0.987266190404
+Test Loss:  0.995541
+test accuracy : 0.811189
+(2717,)
+SDP_att_pool_predictions F1_score: 83.30% >>>
+New epoch 77
+epoch loss 11.2983373769
+Epoch Accuracy 0.987913671586
+Test Loss:  0.996474
+test accuracy : 0.810821
+(2717,)
+SDP_att_pool_predictions F1_score: 83.26% >>>
+New epoch 78
+epoch loss 11.9573701359
+Epoch Accuracy 0.986115112365
+Test Loss:  0.996357
+test accuracy : 0.810821
+(2717,)
+SDP_att_pool_predictions F1_score: 83.28% >>>
+New epoch 79
+epoch loss 11.2653683824
+Epoch Accuracy 0.987338133424
+Test Loss:  0.995932
+test accuracy : 0.810821
+(2717,)
+SDP_att_pool_predictions F1_score: 83.29% >>>
+New epoch 80
+epoch loss 12.3167533986
+Epoch Accuracy 0.985971228682
+Test Loss:  0.995012
+test accuracy : 0.810821
+(2717,)
+SDP_att_pool_predictions F1_score: 83.25% >>>
+New epoch 81
+epoch loss 11.5244795559
+Epoch Accuracy 0.987338133853
+Test Loss:  0.994674
+test accuracy : 0.810821
+(2717,)
+SDP_att_pool_predictions F1_score: 83.25% >>>
+New epoch 82
+epoch loss 11.2163505713
+Epoch Accuracy 0.986402880802
+Test Loss:  0.994926
+test accuracy : 0.811189
+(2717,)
+SDP_att_pool_predictions F1_score: 83.30% >>>
+New epoch 83
+epoch loss 11.182504415
+Epoch Accuracy 0.988201443883
+Test Loss:  0.995235
+test accuracy : 0.810821
+(2717,)
+SDP_att_pool_predictions F1_score: 83.26% >>>
+New epoch 84
+epoch loss 11.3677093009
+Epoch Accuracy 0.986978420465
+Test Loss:  0.99489
+test accuracy : 0.811189
+(2717,)
+SDP_att_pool_predictions F1_score: 83.30% >>>
+New epoch 85
+epoch loss 11.6008648872
+Epoch Accuracy 0.985683457242
+Test Loss:  0.995228
+test accuracy : 0.811189
+(2717,)
+SDP_att_pool_predictions F1_score: 83.30% >>>
+New epoch 86
+epoch loss 12.3020186592
+Epoch Accuracy 0.984748204835
+Test Loss:  0.995358
+test accuracy : 0.811189
+(2717,)
+SDP_att_pool_predictions F1_score: 83.31% >>>
+[0.73058522, 0.76150167, 0.80014724, 0.75230032, 0.79315424, 0.798675, 0.80198747, 0.80493194, 0.81670958, 0.7887376, 0.8104527, 0.805668, 0.79646671, 0.79977918, 0.81450129, 0.79941112, 0.81339711, 0.80861247, 0.81266105, 0.8104527, 0.8104527, 0.81155688, 0.81781375, 0.80750829, 0.81413323, 0.80677217, 0.80824441, 0.81008464, 0.80824441, 0.80714023, 0.81192493, 0.81302905, 0.81376517, 0.81229299, 0.81118882, 0.80861247, 0.81450129, 0.81008464, 0.81339711, 0.81229299, 0.80824441, 0.8104527, 0.81118882, 0.81192493, 0.81302905, 0.81008464, 0.80898046, 0.81376517, 0.81118882, 0.81450129, 0.81155688, 0.81302905, 0.81266105, 0.81339711, 0.81192493, 0.81082076, 0.81082076, 0.80934852, 0.81082076, 0.81229299, 0.8104527, 0.81082076, 0.81229299, 0.8104527, 0.81082076, 0.8104527, 0.81155688, 0.81229299, 0.81229299, 0.8104527, 0.81008464, 0.81008464, 0.81118882, 0.81118882, 0.81118882, 0.81118882, 0.81118882, 0.81082076, 0.81082076, 0.81082076, 0.81082076, 0.81082076, 0.81118882, 0.81082076, 0.81118882, 0.81118882, 0.81118882]
