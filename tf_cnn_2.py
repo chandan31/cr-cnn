@@ -28,11 +28,6 @@ import numpy as np
 import cPickle  # @UnusedImport
 import struct
 
-
-
-
-
-
 ##############################
 # hyper_param
 #print 'Hello! Anybody in there?'
@@ -112,17 +107,11 @@ gr_dic['paddd'] = 0
 Model: LSTM with first  layer of size 128  
 '''
 
-num_epochs = 100
+num_epochs = 200
 truncated_backprop_length = 12
 state_size = 200
 num_classes = 19
 batch_size = 50
-
-
-
-
-
-
 
 
 
@@ -167,31 +156,34 @@ input_backward = tf.nn.embedding_lookup(Wordvec_embedings, batchX_placeholder_re
 
 sliced = tf.slice(input_forward, [0, 0, 0], [batch_size, truncated_backprop_length - 1, 200] )
 #print (sliced)
+SDP = tf.concat([sliced, input_backward], 1)
 
-print (input_backward)
+print(SDP)
 
 
-nb_filter = 500
+nb_filter = 1000
 
-expanded_in = tf.expand_dims(input_forward, axis=3)
+expanded_in = tf.expand_dims(SDP, axis=3)
+
 #print(expanded_in)
+
 filter_shape = [3, 200, nb_filter]
 
 W1 = tf.Variable(tf.truncated_normal(filter_shape, stddev=0.1), name="W1")
 
 b1 = tf.Variable(tf.constant(0.1, shape=[nb_filter]), name="b1")
-output_cnv1 = tf.nn.conv1d(value=input_forward, filters=W1, stride=1, padding='SAME')
+output_cnv1 = tf.nn.conv1d(value=SDP, filters=W1, stride=1, padding='SAME')
 
 
 h1 = tf.tanh(tf.nn.bias_add(output_cnv1, b1), name="Hyperbolic")
 
-h1 = tf.expand_dims(h1,axis=1)
+h1 = tf.expand_dims(h1, axis=1)
 
         # Max-pooling over the outputs
 
 pooled1 = tf.nn.max_pool(
             h1,
-            ksize=[1, 1, 12, 1],
+            ksize=[1, 1, 23, 1],
             strides=[1, 1, 1, 1],
             padding='VALID',
             name="pool")
@@ -199,37 +191,6 @@ pooled1 = tf.nn.max_pool(
 pooled1 = tf.squeeze(pooled1)
 
 print(pooled1)
-
-expanded_in = tf.expand_dims(input_backward, axis=3)
-#print(expanded_in)
-filter_shape = [3,200,nb_filter]
-
-W2 = tf.Variable(tf.truncated_normal(filter_shape, stddev=0.1), name="W2")
-
-b2 = tf.Variable(tf.constant(0.1, shape=[nb_filter]), name="b2")
-output_cnv2 = tf.nn.conv1d(value=input_backward, filters=W2, stride=1, padding='SAME')
-
-
-h2 = tf.tanh(tf.nn.bias_add(output_cnv2, b2), name="Hyperbolic")
-
-h2 = tf.expand_dims(h2, axis=1)
-
-        # Max-pooling over the outputs
-
-pooled2 = tf.nn.max_pool(
-            h2,
-            ksize=[1, 1, 12, 1],
-            strides=[1, 1, 1, 1],
-            padding='VALID',
-            name="pool1")
-
-pooled2 = tf.squeeze(pooled2)
-
-
-
-pooled = tf.concat([pooled1, pooled2], 1)
-#print(pooled)
-
 
 W2 = tf.Variable(np.random.rand(1000, num_classes),dtype=tf.float32)
 b2 = tf.Variable(np.zeros((1,num_classes)), dtype=tf.float32)
@@ -255,7 +216,7 @@ for w in regularized:
 #print(regularized_loss)
 #print(after_dropout)
 
-logits = tf.matmul(pooled, W2) + b2
+logits = tf.matmul(pooled1, W2) + b2
 print(logits)
 
 predictions = tf.nn.softmax(logits)
@@ -266,7 +227,6 @@ train_step = tf.train.AdamOptimizer(learning_rate=learning_rate).minimize(cost)
 # define op to calculate F-1 score on test data 
 
 correct_pred = tf.equal(tf.argmax(predictions,1), tf.argmax(batchY_placeholder,1))
-predicted_labels = tf.argmax(predictions,1)
 accuracy = tf.reduce_mean(tf.cast(correct_pred, tf.float32))
 
 
@@ -622,33 +582,6 @@ def load_POS_GR_Wnet_test(train_b, train_e, valid_b, valid_e, test_b, test_e):
 
 
 
-##########################################################################################################################################33
-#       For Precision calculation
-###################################################################################################33
-
-
-max_prec, max_rec, max_acc, max_f1 = 0,0,0,0
-
-def getPrecision(pred_test, yTest, targetLabel):
-    #Precision for non-vague
-    
-    targetLabelCount = 0
-    correctTargetLabelCount = 0
-    
-    for idx in range(pred_test.shape[0]):
-        if pred_test[idx] == targetLabel:
-            targetLabelCount += 1
-            
-            if pred_test[idx] == yTest[idx]:
-                correctTargetLabelCount += 1
-    
-    if correctTargetLabelCount == 0:
-        return 0
-    
-    return float(correctTargetLabelCount) / targetLabelCount
-
-
-
 
 with tf.Session() as sess:
     
@@ -676,7 +609,10 @@ with tf.Session() as sess:
 
         shuffled_y = y_train[shuffled_indices]
         epoch_loss = 0
+        # Better alternative ??
+        # Do I need namescope ?? nope 
         num_batches = 278
+        #print('test label unique', np.unique(np.argmax(y_test, 1))) working fine 19 labels 
 
         print("New epoch", epoch_idx)
 
@@ -716,13 +652,8 @@ with tf.Session() as sess:
         test_batches = 54
         test_accuracy = 0
         total_test_preds = np.zeros(shape=(1, 19))
-        
-        x_test_left[0] = x_test_left[-1]
-        x_test_right[0] = x_test_right[-1]
-
         last_test = y_test[-1]
         y_test[0] = last_test
-        p_labels = np.array([])
         for batch_idx in range(test_batches):
             start_idx = batch_idx * batch_size
             end_idx = start_idx + batch_size
@@ -732,8 +663,8 @@ with tf.Session() as sess:
             test_batchY = y_test[start_idx:end_idx]
             
             #print(test)
-            test_predictions, _accuracy, _correct_pred, _predicted_labels  = sess.run(
-                    [predictions, accuracy, correct_pred, predicted_labels],
+            test_predictions, _accuracy  = sess.run(
+                    [predictions, accuracy],
                     feed_dict={
                         batchX_placeholder: test_batchX_left,
                         batchX_placeholder_rev: test_batchX_right,
@@ -751,54 +682,32 @@ with tf.Session() as sess:
             #print(total_test_preds.shape)
             
             test_accuracy +=  _accuracy
-            
-            p_labels = np.concatenate((p_labels,_predicted_labels), axis=0)
-            #p_labels.append(_predicted_labels)
-            
+            #print('Accuracy batch', _accuracy)
 
         
         print('test accuracy :', test_accuracy/test_batches)
         accuracies.append(test_accuracy/test_batches)
-        
         #print(total_test_preds)
         # So I have the Predictions on all test data. Now I need to calcultae classwise TP and TN FN etc 
         # true positives 
 
         total_test_preds = np.array(total_test_preds)
-        
-        #print('Shape of Predcited labels', p_labels)
-        #exit()
         y_test_m = y_test[:2700]
-        
         total_test_preds_m = total_test_preds[1:]
-        
-        yTest = np.argmax(y_test_m,1)
+        #print('test label unique in modified test set', np.unique(np.argmax(y_test_m, 1)))
+        #print('Total Predistions',total_test_preds_m.shape)
+        #print('Y test shape', y_test_m.shape)
 
-        f1Sum = 0
-        f1Count = 0
-        
-        #print(yTest)
-        #print(p_labels)
-
-        for targetLabel in range(0, 18):        
-            prec = getPrecision(p_labels, yTest, targetLabel)
-            recall = getPrecision(yTest, p_labels, targetLabel)
-            #print('Target Label', targetLabel)
-            #print('Precision', prec)
-            #print('Recall', recall)
-            f1 = 0 if (prec+recall) == 0 else 2*prec*recall/(prec+recall)
-            f1Sum += f1
-            f1Count +=1    
-        
-        
-        macroF1 = f1Sum / float(f1Count)    
-        max_f1 = max(max_f1, macroF1)
-        print("Non-other Macro-Averaged F1: %.4f (max: %.4f)\n" % (macroF1, max_f1))
-        
-        
         c1 = np.argmax(y_test_m, 1)
         c2 = np.argmax(total_test_preds_m, 1)
+        #c1_new = c1.reshape(2700,1)
+        #c2_new = c2.reshape(2700,1)
         
+        #print('c1', c1_new.shape)
+        #print('c2', c2_new.shape)
+        #print('Unique C1:',np.unique(c1_new).shape)
+        #print('Unique C2:',np.unique(c2_new).shape)
+
         confus_matrix = confusion_matrix(c1, c2) # labels=[0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18])
         
         True_positive = np.zeros(10)

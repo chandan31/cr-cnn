@@ -1,0 +1,644 @@
+# coding=utf-8
+'''
+@author: ***  Chandan Pandey
+Trying to apply Bi LSTM rather than 
+'''
+from __future__ import print_function, division
+import numpy as np
+import tensorflow as tf
+import matplotlib.pyplot as plt
+import sys
+from sklearn.metrics import confusion_matrix 
+# To import All the relavant files :D 
+sys.path.append('../data/')
+sys.path.append('../util/')
+sys.path.append('../Nets/')
+sys.path.append('../nn/')
+from tensorflow.contrib import learn
+import gzip
+import os
+import sys
+if (sys.version_info > (3, 0)):
+    import pickle as pkl
+else: #Python 2.7 imports
+    import cPickle as pkl
+
+from SemEval2010 import load_rev_direc_samples_test, load_rev_direc_labels_test,\
+    load_rev_valid_aug18class_samples_train, load_rev_valid_aug18class_labels_train, \
+    load_wrd_vec_dic_v2, lst_2_dic, load_emd_lst_v2, WordNet_44_categories, \
+    POS_15_categories, GR_19_categories
+from file_io import get_curr_file_name_no_pfix
+import os
+import numpy as np
+import cPickle  # @UnusedImport
+import struct
+
+##############################
+# hyper_param
+num_out = 19   # No of outputs
+num_hid = 100  # Final Hidden layer size 
+
+emb_self  = 200   # its a four layer DRNN whats self ?
+emb_rec_1 = 200
+emb_rec_2 = 200
+emb_rec_3 = 200
+emb_rec_4 = 200
+
+pos_self  = 50
+pos_rec_1 = 50
+pos_rec_2 = 50
+pos_rec_3 = 50
+pos_rec_4 = 50
+
+wn_self  = 50
+wn_rec_1 = 50
+wn_rec_2 = 50
+wn_rec_3 = 50
+wn_rec_4 = 50
+
+gr_self  = 50
+gr_rec_1 = 25
+gr_rec_2 = 50
+gr_rec_3 = 50
+gr_rec_4 = 50
+
+##############################
+# Load data
+dir1 = "../Nets"
+dir2 = "/" + get_curr_file_name_no_pfix()
+dir3 = "/" + "e" + str(emb_self) + "_" + "h" + str(emb_rec_1) + \
+       "_POSe" + str(pos_self) + "_WNe" + str(wn_self) + \
+       "_GRe" + str(gr_self) + "_Hid" + str(num_hid)
+
+path_raw_data = dir1 + "/"
+path_train = dir1 + dir2 + dir3 + "/train/"
+path_valid = dir1 + dir2 + dir3 + "/valid/"
+path_test  = dir1 + dir2 + dir3 + "/test/"
+path_join  = dir1 + dir2 + dir3 + "/join/"
+
+file_train = "sem_train_8000.txt"
+file_test = "sem_test_2717.txt"
+    
+
+print("Load raw dataset")
+f = gzip.open('./sem-raw-SDP_100.pkl.gz', 'rb')
+data = pkl.load(f)
+f.close()
+'''
+'Embeddings': Embeddings, 'word_dict': vocab_dic, 'Emb_list': emb_lst, 
+        'train_raw': train_set_aug, 'test_raw': test_set,
+        'x_train_left': x_train_left, 'x_train_right': x_train_right,
+        'x_test_left': x_test_left, 'x_test_right': x_test_right,
+        'POS_X_train_f': POS_X_train_f, 'POS_X_train_r':POS_X_train_r, 
+        'Wnet_X_train_f': Wnet_X_train_f, 'Wnet_X_train_r':Wnet_X_train_r, 
+        'GR_X_train_f': GR_X_train_f, 'GR_X_train_r': GR_X_train_r,
+        'POS_X_test_f': POS_X_test_f, 'POS_X_test_r': POS_X_test_r, 
+        'Wnet_X_test_f': Wnet_X_test_f, 'Wnet_X_test_r':Wnet_X_test_r, 
+        'GR_X_test_f': GR_X_test_f, 'GR_X_test_r': GR_X_test_r
+'''
+
+vocab_dic  = data['word_dict']
+Embeddings = data['Embeddings']
+
+train_raw, train_pos1, train_pos2 = data['train_raw']
+test_raw, test_pos1, test_pos2 = data['test_raw']
+
+x_train_left = data['x_train_left'] 
+x_train_right = data['x_train_right']
+
+x_test_left = data['x_test_left'] 
+x_test_right = data['x_test_right']
+
+GR_X_train_f = data['GR_X_train_f']
+GR_X_train_r = data['GR_X_train_r']
+
+GR_X_test_f = data['GR_X_test_f']
+GR_X_test_r = data['GR_X_test_r']
+
+y_train = data['y_train']
+y_test = data['y_test']
+wn_num  = 10
+pos_num = 15
+gr_num  = 19
+
+
+gr_embeddings = np.random.uniform(-0.05, 0.05, (20, 25))
+
+wn_embeddings = np.random.uniform(-0.05, 0.05, (45, 25))
+pos_embeddings = np.random.uniform(-0.05, 0.05, (16, 25))
+
+position_embeddings = np.random.uniform(-0.25, 0.25, (64,25))
+
+##############################
+'''
+Model: LSTM with first  layer of size 128  
+'''
+
+num_epochs = 120
+truncated_backprop_length = 12
+state_size = 100
+num_classes = 19
+batch_size = 50  # Original 50 gave 84.35 F-1 without validation, 60 size does not help much
+
+SGD_lrate1 = [0.55, 0.54, 0.536, 0.53, 0.525, 0.521, 0.53, 0.516, 0.51, 0.50, 0.48, 0.477, 0.460, 0.445, 0.433, 0.428, 0.420, 0.39, 0.36, 0.348, 0.32, 0.31, 
+                0.3, 0.287, 0.27, 0.243, 0.2187, 0.19683, 0.177147, 0.3, 0.27, 0.268, 0.265, 0.26, 0.22, 0.21, 0.17,
+                0.159432, 0.143489, 0.12914, 0.116226, 0.104604, 0.0941432, 0.0847288, 0.076256, 0.0686304, 0.0617673, 0.0555906, 
+                0.0500315, 0.0450284, 0.0405255, 0.036473, 0.0328257, 0.0295431, 0.0265888, 0.0239299, 0.0215369, 0.0193832, 
+                0.0174449, 0.0157004, 0.0141304, 0.0127173, 0.0114456, 0.010301, 0.00927094, 0.00834385, 0.00750946, 0.00675852, 0.00608266, 
+                0.0054744, 0.00492696, 0.00443426, 0.0039, 0.00343426, 0.00253426, 0.00213426, 0.00194, 0.00188, 0.00186, 0.00178, 0.00160, 0.00151, 
+                0.0014, 0.0013, 0.0011, 0.001, 0.0009
+                ]
+
+SGD_lrate2 = [0.812,0.795,0.775,0.754, 0.732, 0.72, 0.714, 0.694, 0.673,0.6543,0.63,0.612,0.593,0.57,0.55, 0.54, 0.536, 0.53, 0.525, 0.521, 0.53, 0.516, 0.51, 0.50, 0.48, 0.477, 0.460, 0.445, 0.433, 0.428, 0.420, 0.39, 0.36, 0.348, 0.32, 0.31, 
+                0.3, 0.287, 0.27, 0.243, 0.2187, 0.19683, 0.177147, 0.3, 0.27, 0.268, 0.265, 0.26, 0.22, 0.21, 0.17,
+                0.159432, 0.143489, 0.12914, 0.116226, 0.104604, 0.0941432, 0.0847288, 0.076256, 0.0686304, 0.0617673, 0.0555906, 
+                0.0500315, 0.0450284, 0.0405255, 0.036473, 0.0328257, 0.0295431, 0.0265888, 0.0239299, 0.0215369, 0.0193832, 
+                0.0174449, 0.0157004, 0.0141304, 0.0127173, 0.0114456, 0.010301, 0.00927094, 0.00834385, 0.00750946, 0.00675852, 0.00608266, 
+                0.0054744, 0.00492696, 0.00443426, 0.0039, 0.00343426, 0.00253426, 0.00213426, 0.00194, 0.00188, 0.00186, 0.00178, 0.00160, 0.00151, 
+                0.0014, 0.0013, 0.0011, 0.001, 0.0009
+                ]
+
+
+SGD_lrate4 = [0.812,0.795,0.775,0.754, 0.732, 0.72, 0.714, 0.694, 0.673,0.6543,0.63,0.612,0.593,0.57,
+                0.55, 0.54, 0.536, 0.53, 0.525, 0.521, 0.53, 0.516, 0.51, 0.50, 0.48, 0.477, 0.460, 0.445, 0.433, 0.428, 0.420, 0.39, 0.36, 0.348, 0.32, 0.31, 
+                0.3, 0.287, 0.27, 0.243, 0.00443426, 0.0039, 0.00343426, 0.00253426, 0.00213426, 0.00194, 0.00188, 0.00186, 0.00178, 0.00160, 0.00151, 
+                0.0014, 0.0013, 0.0011, 0.001, 0.0009, 0.2187, 0.19683, 0.177147, 0.3, 0.27, 0.268, 0.265, 0.26, 0.22, 0.21, 0.17,
+                0.159432, 0.143489, 0.12914, 0.116226, 0.104604, 0.0941432, 0.0847288, 0.076256, 0.0686304, 0.0617673, 0.0555906, 
+                0.0500315, 0.0450284, 0.0405255, 0.036473, 0.0328257, 0.0295431, 0.0265888, 0.0239299, 0.0215369, 0.0193832, 
+                0.0174449, 0.0157004, 0.0141304, 0.0127173, 0.0114456, 0.010301, 0.00927094, 0.00834385, 0.00750946, 0.00675852, 0.00608266, 
+                0.0054744, 0.00492696, 0.00443426, 0.0039, 0.00343426, 0.00253426, 0.00213426, 0.00194, 0.00188, 0.00186, 0.00178, 0.00160, 0.00151, 
+                0.0014, 0.0013, 0.0011, 0.001, 0.0009
+                ]
+
+
+
+SGD_lrate = [0.39, 0.36, 0.348, 0.32, 0.31, 0.3, 0.287, 0.27, 0.243, 0.2187, 0.19683, 0.177147, 0.159432, 0.143489, 0.12914, 0.116226, 0.104604, 0.0941432, 0.0847288, 0.076256, 0.0686304, 0.0617673, 0.0555906, 
+                0.0500315, 0.0450284, 0.0405255, 0.036473, 0.0328257, 0.0295431, 0.0265888, 0.0239299, 0.0215369, 0.0193832, 
+                0.0174449, 0.0157004, 0.0141304, 0.0127173, 0.0114456, 0.010301, 0.00927094, 0.00834385, 0.00750946, 0.00675852, 0.00608266, 
+                0.0054744, 0.00492696, 0.00443426, 0.0039, 0.00343426, 0.00253426]
+
+
+
+batchX_placeholder = tf.placeholder(tf.int32, [None, truncated_backprop_length])
+batchX_placeholder_rev = tf.placeholder(tf.int32, [None, truncated_backprop_length])
+
+raw_x_palceholder = tf.placeholder(tf.int32, [None, 97])
+raw_pos1_palceholder = tf.placeholder(tf.int32, [None, 97])
+raw_pos2_palceholder = tf.placeholder(tf.int32, [None, 97])
+
+batchY_placeholder = tf.placeholder(tf.int32, [None, num_classes]) # perhaps I am right ??
+keep_probability = tf.placeholder(tf.float32)
+keep_probability2 = tf.placeholder(tf.float32)
+keep_probability3 = tf.placeholder(tf.float32)
+
+l_rate = tf.placeholder(tf.float32)
+
+#batchX_placeholder_POS = tf.placeholder(tf.int32, [None, truncated_backprop_length])
+#batchX_placeholder_POS_rev = tf.placeholder(tf.int32, [None, truncated_backprop_length])
+
+#batchX_placeholder_WNET = tf.placeholder(tf.int32, [None, truncated_backprop_length])
+#batchX_placeholder_WNET_rev = tf.placeholder(tf.int32, [None, truncated_backprop_length])
+
+batchX_placeholder_GR = tf.placeholder(tf.int32, [None, truncated_backprop_length])
+batchX_placeholder_GR_rev = tf.placeholder(tf.int32, [None, truncated_backprop_length])
+
+
+
+Wordvec_embedings = tf.get_variable(name="Wordvec_embediings", shape=Embeddings.shape, initializer=tf.constant_initializer(Embeddings), trainable=True)
+#POS_embeddings = tf.get_variable(name="POS_embeddings", shape=pos_embeddings.shape, initializer=tf.constant_initializer(pos_embeddings), trainable=True)
+#Wnet_Embeddings = tf.get_variable(name="Wnet_embeddings", shape=wn_embeddings.shape, initializer=tf.constant_initializer(wn_embeddings), trainable=True)
+GRel_Embeddings = tf.get_variable(name="GRel_Embeddings", shape=gr_embeddings.shape, initializer=tf.constant_initializer(gr_embeddings), trainable=True)
+Position_Embeddings = tf.get_variable(name="Position_Embeddings", shape=position_embeddings.shape, initializer=tf.constant_initializer(position_embeddings), trainable=True)
+
+
+cell = tf.contrib.rnn.BasicLSTMCell(state_size, state_is_tuple=True)
+cell_b = tf.contrib.rnn.BasicLSTMCell(state_size, state_is_tuple=True)
+cell1 = tf.contrib.rnn.BasicLSTMCell(state_size, state_is_tuple=True)
+cell1_b = tf.contrib.rnn.BasicLSTMCell(state_size, state_is_tuple=True)
+#cell_POS_f = tf.contrib.rnn.BasicLSTMCell(pos_rec_1, state_is_tuple=True)
+#cell_POS_r = tf.contrib.rnn.BasicLSTMCell(pos_rec_1, state_is_tuple=True)
+
+#cell_WNET_f = tf.contrib.rnn.BasicLSTMCell(wn_rec_1, state_is_tuple=True)
+#cell_WNET_r = tf.contrib.rnn.BasicLSTMCell(wn_rec_1, state_is_tuple=True)
+
+cell_GR_f = tf.contrib.rnn.BasicLSTMCell(gr_rec_1, state_is_tuple=True)
+cell_GR_r = tf.contrib.rnn.BasicLSTMCell(gr_rec_1, state_is_tuple=True)
+cell_GR_f_b = tf.contrib.rnn.BasicLSTMCell(gr_rec_1, state_is_tuple=True)
+cell_GR_r_b = tf.contrib.rnn.BasicLSTMCell(gr_rec_1, state_is_tuple=True)
+
+input_forward = tf.nn.embedding_lookup(Wordvec_embedings, batchX_placeholder)
+input_backward = tf.nn.embedding_lookup(Wordvec_embedings, batchX_placeholder_rev)
+
+raw_word_inputs = tf.nn.embedding_lookup(Wordvec_embedings, raw_x_palceholder)
+
+drop_word_inputs = tf.nn.dropout(raw_word_inputs, keep_probability)
+
+pos1_inputs =  tf.nn.embedding_lookup(Position_Embeddings, raw_pos1_palceholder)
+pos2_inputs =  tf.nn.embedding_lookup(Position_Embeddings, raw_pos2_palceholder)
+#input_POS_forward = tf.nn.embedding_lookup(POS_embeddings, batchX_placeholder_POS)
+#input_POS_backward = tf.nn.embedding_lookup(POS_embeddings, batchX_placeholder_POS_rev)
+
+#input_WNET_forward = tf.nn.embedding_lookup(Wnet_Embeddings, batchX_placeholder_WNET)
+#input_WNET_backward = tf.nn.embedding_lookup(Wnet_Embeddings, batchX_placeholder_WNET_rev)
+
+raw_cnn_inputs = tf.concat([drop_word_inputs, pos1_inputs, pos2_inputs], 2)
+
+input_GR_forward = tf.nn.embedding_lookup(GRel_Embeddings, batchX_placeholder_GR)
+input_GR_backward = tf.nn.embedding_lookup(GRel_Embeddings, batchX_placeholder_GR_rev)
+
+
+
+Embedding_dropout_left = tf.nn.dropout(input_forward, keep_probability)
+Embedding_dropout_right = tf.nn.dropout(input_backward, keep_probability) 
+
+#inputs_forward = [tf.squeeze(input_, [1]) for input_ in tf.split(Embedding_dropout_left, truncated_backprop_length, 1)]
+#inputs_backward = [tf.squeeze(input_, [1]) for input_ in tf.split(Embedding_dropout_right, truncated_backprop_length, 1)]
+
+#inputs_forward_POS = [tf.squeeze(input_, [1]) for input_ in tf.split(input_POS_forward, truncated_backprop_length, 1)]
+#inputs_backward_POS = [tf.squeeze(input_, [1]) for input_ in tf.split(input_POS_backward, truncated_backprop_length, 1)]
+
+#inputs_forward_WNET = [tf.squeeze(input_, [1]) for input_ in tf.split(input_WNET_forward, truncated_backprop_length, 1)]
+#inputs_backward_WNET = [tf.squeeze(input_, [1]) for input_ in tf.split(input_WNET_backward, truncated_backprop_length, 1)]
+
+#inputs_forward_GR = [tf.squeeze(input_, [1]) for input_ in tf.split(input_GR_forward, truncated_backprop_length, 1)]
+#inputs_backward_GR = [tf.squeeze(input_, [1]) for input_ in tf.split(input_GR_backward, truncated_backprop_length, 1)]
+
+outputs_forward, state_forward = tf.nn.bidirectional_dynamic_rnn(cell_fw=cell, cell_bw=cell_b,
+                                            inputs=Embedding_dropout_left, dtype=tf.float32, scope='LSTM1')
+
+outputs_backward, state_backward = tf.nn.bidirectional_dynamic_rnn(cell_fw=cell1, cell_bw=cell1_b,
+                                            inputs=Embedding_dropout_right, dtype=tf.float32, scope='LSTM2')
+
+#outputs_forward, state_forward = tf.nn.static_rnn(cell, inputs_forward, dtype=tf.float32, scope="LSTM1")
+#outputs_backward, state_backward = tf.nn.static_rnn(cell1, inputs_backward, dtype=tf.float32, scope="LSTM2")
+
+#POS_outputs_f, POS_state_f = tf.contrib.rnn.static_rnn(cell_POS_f, inputs_forward_POS, dtype=tf.float32, scope="POS_LSTM1")
+#POS_outputs_r, POS_state_r = tf.contrib.rnn.static_rnn(cell_POS_r, inputs_backward_POS, dtype=tf.float32, scope="POS_LSTM2")
+
+#Wnet_outputs_f, Wnet_state_f = tf.contrib.rnn.static_rnn(cell_WNET_f, inputs_forward_WNET, dtype=tf.float32, scope="WNET_LSTM1")
+#Wnet_outputs_r, Wnet_state_r = tf.contrib.rnn.static_rnn(cell_WNET_r, inputs_backward_WNET, dtype=tf.float32, scope="WNET_LSTM2")
+
+GR_outputs_f, GR_state_f = tf.nn.bidirectional_dynamic_rnn(cell_fw=cell_GR_f, cell_bw=cell_GR_f_b,
+                                            inputs=input_GR_forward, dtype=tf.float32, scope='GR_LSTM1')
+
+GR_outputs_r, GR_state_r = tf.nn.bidirectional_dynamic_rnn(cell_fw=cell_GR_r, cell_bw=cell_GR_r_b,
+                                            inputs=input_GR_backward, dtype=tf.float32, scope='GR_LSTM2')
+
+#GR_outputs_f, GR_state_f = tf.contrib.rnn.static_rnn(cell_GR_f, inputs_forward_GR, dtype=tf.float32, scope="GR_LSTM1")
+#GR_outputs_r, GR_state_r = tf.contrib.rnn.static_rnn(cell_GR_r, inputs_backward_GR, dtype=tf.float32, scope="GR_LSTM2")
+
+outputs_forward = tf.concat([outputs_forward[0], outputs_forward[1]], 2)
+outputs_backward = tf.concat([outputs_backward[0], outputs_backward[1]], 2)
+
+GR_outputs_f = tf.concat([GR_outputs_f[0], GR_outputs_f[1]], 2)
+GR_outputs_r = tf.concat([GR_outputs_r[0], GR_outputs_r[1]], 2)
+
+nb_filter_raw = 500
+
+W_raw = tf.get_variable("Filter_raw", shape=[3, 150, nb_filter_raw],
+           initializer=tf.contrib.layers.xavier_initializer())
+
+#b = tf.Variable(tf.constant(0.1, shape=[nb_filter]), name="b")
+b_raw = tf.get_variable(name="Bias_raw", shape=[nb_filter_raw], initializer=tf.zeros_initializer())
+
+output_cnv_raw = tf.nn.conv1d(value=raw_cnn_inputs, filters=W_raw, stride=1, padding='SAME')
+
+
+h_raw = tf.tanh(tf.nn.bias_add(output_cnv_raw, b_raw), name="Hyperbolic0")
+
+h_raw = tf.expand_dims(h_raw, axis=1)
+
+        # Max-pooling over the outputs
+
+pooled_raw = tf.nn.max_pool(
+            h_raw,
+            ksize=[1, 1, 97, 1],
+            strides=[1, 1, 1, 1],
+            padding='VALID',
+            name="pool_raw")
+
+pooled_raw = tf.squeeze(tf.squeeze(pooled_raw, 1), 1)
+
+#pooled_raw = tf.nn.dropout(pooled_raw, keep_probability3)
+'''
+for i in xrange(0, truncated_backprop_length):
+    outputs_forward[i] = tf.expand_dims(outputs_forward[i], axis=1)
+    outputs_backward[i] = tf.expand_dims(outputs_backward[i], axis=1)
+    
+    #POS_outputs_f[i] = tf.expand_dims(POS_outputs_f[i], axis=1)
+    #POS_outputs_r[i] = tf.expand_dims(POS_outputs_r[i], axis=1)
+    
+    #Wnet_outputs_f[i] = tf.expand_dims(Wnet_outputs_f[i], axis=1)
+    #Wnet_outputs_r[i] = tf.expand_dims(Wnet_outputs_r[i], axis=1)
+    
+    GR_outputs_f[i] = tf.expand_dims(GR_outputs_f[i], axis=1)
+    GR_outputs_r[i] = tf.expand_dims(GR_outputs_r[i], axis=1)
+
+
+forward_tensor_concat = tf.concat([outputs_forward[0], outputs_forward[1]], 1)
+backward_tensor_concat = tf.concat([outputs_backward[0], outputs_backward[1]], 1)
+
+#concat_POS_f = tf.concat([POS_outputs_f[0], POS_outputs_f[1]], 1)
+#concat_POS_r = tf.concat([POS_outputs_r[0], POS_outputs_r[1]], 1)
+
+#concat_Wnet_f = tf.concat([Wnet_outputs_f[0], Wnet_outputs_f[1]], 1)
+#concat_Wnet_r = tf.concat([Wnet_outputs_r[0], Wnet_outputs_r[1]], 1)
+
+concat_GR_f = tf.concat([GR_outputs_f[0], GR_outputs_f[1]], 1)
+concat_GR_r = tf.concat([GR_outputs_r[0], GR_outputs_r[1]], 1)
+
+for i in xrange(2, truncated_backprop_length):
+    forward_tensor_concat = tf.concat([forward_tensor_concat, outputs_forward[i]], 1)
+    backward_tensor_concat = tf.concat([backward_tensor_concat, outputs_backward[i]], 1)
+
+    #concat_POS_f = tf.concat([concat_POS_f, POS_outputs_f[i]], 1)
+    #concat_POS_r = tf.concat([concat_POS_r, POS_outputs_r[i]], 1)
+
+    concat_GR_f = tf.concat([concat_GR_f, GR_outputs_f[i]], 1)
+    concat_GR_r = tf.concat([concat_GR_r, GR_outputs_r[i]], 1)
+
+    #concat_Wnet_f = tf.concat([concat_Wnet_f, Wnet_outputs_f[i]], 1)
+    #concat_Wnet_r = tf.concat([concat_Wnet_r, Wnet_outputs_r[i]], 1)
+
+'''
+#### Concat the ops and apply one cnn only, else do a dependency unit kind of thing or else apply 2 CNNs seperately on 2 channels 
+
+
+forward_concat = tf.concat([outputs_forward, GR_outputs_f], 2)
+backward_concat =  tf.concat([outputs_backward, GR_outputs_r], 2)
+
+nb_filter1 = 300 
+nb_filter2 = 300
+
+W2 = tf.get_variable("Filter_SDP", shape=[5, 250, nb_filter1],
+           initializer=tf.contrib.layers.xavier_initializer())
+
+#b = tf.Variable(tf.constant(0.1, shape=[nb_filter]), name="b")
+b2 = tf.get_variable(name="Bias_SDP", shape=[nb_filter1], initializer=tf.zeros_initializer())
+
+output_cnv1 = tf.nn.conv1d(value=forward_concat, filters=W2, stride=1, padding='SAME')
+
+
+h1 = tf.tanh(tf.nn.bias_add(output_cnv1, b2), name="Hyperbolic1")
+
+h1 = tf.expand_dims(h1, axis=1)
+
+        # Max-pooling over the outputs
+
+pooled1 = tf.nn.max_pool(
+            h1,
+            ksize=[1, 1, 12, 1],
+            strides=[1, 1, 1, 1],
+            padding='VALID',
+            name="pool1")
+
+pooled1 = tf.squeeze(tf.squeeze(pooled1, 1), 1)
+
+
+#W3 = tf.get_variable("Filter_SDP2", shape=[5, 150, nb_filter1],
+#           initializer=tf.contrib.layers.xavier_initializer())
+
+#b = tf.Variable(tf.constant(0.1, shape=[nb_filter]), name="b")
+#b3 = tf.get_variable(name="Bias_SDP2", shape=[nb_filter2], initializer=tf.zeros_initializer())
+
+output_cnv2 = tf.nn.conv1d(value=backward_concat, filters=W2, stride=1, padding='SAME')
+
+
+h2 = tf.tanh(tf.nn.bias_add(output_cnv2, b2), name="Hyperbolic2")
+
+h2 = tf.expand_dims(h2, axis=1)
+
+        # Max-pooling over the outputs
+
+pooled2 = tf.nn.max_pool(
+            h2,
+            ksize=[1, 1, 12, 1],
+            strides=[1, 1, 1, 1],
+            padding='VALID',
+            name="pool2")
+
+pooled2 = tf.squeeze(tf.squeeze(pooled2, 1), 1)
+
+
+W4 = tf.get_variable("W_soft", shape=[1100, num_classes],
+           initializer=tf.contrib.layers.xavier_initializer(), trainable=True)
+
+#b = tf.Variable(tf.constant(0.1, shape=[nb_filter]), name="b")
+b4 = tf.get_variable(name="Bias_Softmax", shape=[num_classes], initializer=tf.zeros_initializer())
+
+#output_conc1 = tf.concat([pooled1, pooled2], 1)
+#output_conc1 = tf.nn.dropout()
+output_conc = tf.concat([pooled1, pooled2, pooled_raw], 1)
+
+output_conc_drop = tf.nn.dropout(output_conc, keep_probability2)
+
+
+######################
+#   Raw Sequence CNN
+######################################
+
+
+
+
+
+'''
+output_dense = tf.layers.dense(output_conc_drop, 100, activation=tf.nn.relu, kernel_initializer=tf.contrib.layers.xavier_initializer(),
+                            bias_initializer=tf.zeros_initializer(), #kernel_regularizer=tf.contrib.layers.l2_regularizer(scale=0.001),
+                            trainable=True
+                        )
+'''
+l = tf.trainable_variables()
+l2_cost = 0.0
+for t in l:
+    print (t.name)
+    l2_cost += tf.nn.l2_loss(t) 
+
+logits = tf.matmul(output_conc_drop, W4) + b4
+predictions = tf.nn.softmax(logits)
+
+
+cost = tf.reduce_mean(tf.nn.softmax_cross_entropy_with_logits(logits=logits, labels=batchY_placeholder))
+#cost = cost + (0.00001)*l2_cost
+#train_step = tf.train.AdamOptimizer(learning_rate=learning_rate).minimize(cost)
+train_step = tf.train.GradientDescentOptimizer(learning_rate=l_rate).minimize(cost)
+
+correct_pred = tf.equal(tf.argmax(predictions,1), tf.argmax(batchY_placeholder,1))
+accuracy = tf.reduce_mean(tf.cast(correct_pred, tf.float32))
+
+
+
+
+
+'''
+x_valid_left = x_train_left[:800]
+x_train_left = x_train_left[800:]
+
+x_valid_right = x_train_right[:800]
+x_train_right = x_train_right[800:]
+
+y_valid = y_train[:800]
+y_train = y_train[800:]
+
+GR_X_valid_f = GR_X_train_f[:800]
+GR_X_train_f = GR_X_train_f[800:]
+GR_X_valid_r = GR_X_train_r[:800]
+GR_X_train_r = GR_X_train_r[800:]
+'''
+
+#print(x_valid_left.shape)
+#print(x_train_left.shape)
+
+with tf.Session() as sess:
+    sess.run(tf.global_variables_initializer())
+    loss_list = []
+    
+    
+
+    accuracies = []
+    valid_accuracies = []
+
+    for epoch_idx in range(len(SGD_lrate4)):
+        
+        # shuffle the training data 
+        shuffled_indices = np.random.permutation(np.arange(len(x_train_left)))
+        shuffled_x_left = x_train_left[shuffled_indices]
+        shuffled_x_right = x_train_right[shuffled_indices]
+        
+        shuffled_raw = train_raw[shuffled_indices]
+        shuffled_pos1 = train_pos1[shuffled_indices]
+        shuffled_pos2 = train_pos2[shuffled_indices]
+        #POS_shuffled_x_f = POS_X_train_f[shuffled_indices]
+        #POS_shuffled_x_r = POS_X_train_r[shuffled_indices]
+        #Wnet_shuffled_x_f = Wnet_X_train_f[shuffled_indices]
+        #Wnet_shuffled_x_r = Wnet_X_train_r[shuffled_indices]
+        
+        GR_shuffled_x_f = GR_X_train_f[shuffled_indices]
+        GR_shuffled_x_r = GR_X_train_r[shuffled_indices]
+        
+        shuffled_y = y_train[shuffled_indices]
+        
+        epoch_loss = 0
+        num_batches = 278
+        
+        lr = SGD_lrate4[epoch_idx]
+        print("New epoch", epoch_idx)
+        print('Learning rate', lr)
+
+        acc = 0.0
+        
+        for batch_idx in range(num_batches):
+            start_idx = batch_idx * batch_size
+            end_idx = start_idx + batch_size
+
+            batchX_left = shuffled_x_left[start_idx:end_idx]
+            batchX_right = shuffled_x_right[start_idx:end_idx]
+            batchY = shuffled_y[start_idx:end_idx]
+            batch_raw = shuffled_raw[start_idx:end_idx]
+            batch_pos1 = shuffled_pos1[start_idx:end_idx]
+            batch_pos2 = shuffled_pos2[start_idx:end_idx]
+            #batchX_POS_f = POS_shuffled_x_f[start_idx:end_idx]
+            #batchX_POS_r = POS_shuffled_x_r[start_idx:end_idx]
+            #batchX_Wnet_f = Wnet_shuffled_x_f[start_idx:end_idx]
+            #batchX_Wnet_r = Wnet_shuffled_x_r[start_idx:end_idx]
+            
+            batchX_GR_f = GR_shuffled_x_f[start_idx:end_idx]
+            batchX_GR_r = GR_shuffled_x_r[start_idx:end_idx]
+                           
+            _predictions, _accuracy, _total_loss, _train_step = sess.run(
+                [ predictions, accuracy, cost, train_step],
+                feed_dict={
+                    batchX_placeholder: batchX_left,
+                    batchX_placeholder_rev: batchX_right,
+                    raw_x_palceholder: batch_raw,
+                    raw_pos1_palceholder: batch_pos1,
+                    raw_pos2_palceholder: batch_pos2,
+                    batchY_placeholder: batchY,
+                    batchX_placeholder_GR: batchX_GR_f,
+                    batchX_placeholder_GR_rev: batchX_GR_r,
+                    keep_probability: 0.5,
+                    keep_probability2:0.5,
+                    keep_probability3:0.7,
+                    l_rate:lr
+                    
+                })
+            
+            epoch_loss += _total_loss
+            acc += _accuracy
+            
+          
+        print("epoch loss", epoch_loss)        
+        print('Epoch Accuracy', acc/num_batches)
+        '''
+        valid_predictions, valid_accuracy, valid_loss  = sess.run(
+                [predictions, accuracy, cost],
+                feed_dict={
+                batchX_placeholder: x_valid_left,
+                batchX_placeholder_rev: x_valid_right,
+                raw_x_palceholder: batch_raw,
+                raw_pos1_palceholder: batch_pos1,
+                raw_pos2_palceholder: batch_pos2,
+                batchY_placeholder: y_valid,
+                keep_probability: 1.0,
+                batchX_placeholder_GR: GR_X_valid_f,
+                batchX_placeholder_GR_rev: GR_X_valid_r,
+                l_rate: 0.001                    
+                }
+            )
+
+        print('Validation Loss: ', valid_loss)        
+        print('Validation accuracy :', valid_accuracy)
+        
+        valid_accuracies.append(valid_accuracy)
+        
+        val_preds = np.argmax(valid_predictions, 1)
+        val_target = np.argmax(y_valid, 1)
+        val_target = np.add(val_target, 1)
+
+        #with open('rec_cnv_3_2_valid_target', 'w') as f:
+        #    for item in val_target:
+        #        f.write("%s\n" % item)
+        #print(val_preds.shape)
+        
+        val_preds = np.add(val_preds, 1)
+        
+        with open('rec_cnv_3_2_valid_predictions', 'w') as f:
+            for item in val_preds:
+                f.write("%s\n" % item)
+        
+        os.system('python torch_eval_valid.py rec_cnv_3_2_valid_predictions valid_targets')
+
+        '''
+        test_predictions, test_accuracy, test_loss  = sess.run(
+                [predictions, accuracy, cost],
+                feed_dict={
+                batchX_placeholder: x_test_left,
+                batchX_placeholder_rev: x_test_right,
+                raw_x_palceholder: test_raw,
+                raw_pos1_palceholder: test_pos1,
+                raw_pos2_palceholder: test_pos2,
+                batchY_placeholder: y_test,
+                keep_probability: 1.0,
+                keep_probability2: 1.0,
+                keep_probability3: 1.0,
+                batchX_placeholder_GR: GR_X_test_f,
+                batchX_placeholder_GR_rev: GR_X_test_r,
+                l_rate: 0.001                    
+                }
+            )
+
+        print('Test Loss: ', test_loss)        
+        print('test accuracy :', test_accuracy)
+        accuracies.append(test_accuracy)
+        target = np.argmax(y_test, 1)
+        preds = np.argmax(test_predictions, 1)
+        print(preds.shape)
+        preds = np.add(preds, 1)
+        with open('rec_cnv_3_2_aug_preds', 'w') as f:
+            for item in preds:
+                f.write("%s\n" % item)
+        os.system('python torch_eval.py rec_cnv_3_2_aug_preds test_target_modified')
+        print('--------------------------------------------')
+        print('\n')
+    print(accuracies)
+    print('\n')    
+    print(valid_accuracies)        

@@ -28,14 +28,8 @@ import numpy as np
 import cPickle  # @UnusedImport
 import struct
 
-
-
-
-
-
 ##############################
 # hyper_param
-#print 'Hello! Anybody in there?'
 num_out = 19   # No of outputs
 num_hid = 100  # Final Hidden layer size 
 
@@ -77,6 +71,47 @@ path_valid = dir1 + dir2 + dir3 + "/valid/"
 path_test  = dir1 + dir2 + dir3 + "/test/"
 path_join  = dir1 + dir2 + dir3 + "/join/"
 
+
+SGD_lrate = [0.39, 0.36, 0.348, 0.32, 0.31, 0.3, 0.287, 0.27, 0.243, 0.2187, 0.19683, 0.177147, 0.159432, 0.143489, 0.12914, 0.116226, 0.104604, 0.0941432, 0.0847288, 0.076256, 0.0686304, 0.0617673, 0.0555906, 
+                0.0500315, 0.0450284, 0.0405255, 0.036473, 0.0328257, 0.0295431, 0.0265888, 0.0239299, 0.0215369, 0.0193832, 
+                0.0174449, 0.0157004, 0.0141304, 0.0127173, 0.0114456, 0.010301, 0.00927094, 0.00834385, 0.00750946, 0.00675852, 0.00608266, 
+                0.0054744, 0.00492696, 0.00443426, 0.0039, 0.00343426, 0.00253426]
+
+SGD_lrate1 = [0.55, 0.54, 0.536, 0.53, 0.525, 0.521, 0.53, 0.516, 0.51, 0.50, 0.48, 0.477, 0.460, 0.445, 0.433, 0.428, 0.420, 0.39, 0.36, 0.348, 0.32, 0.31, 
+                0.3, 0.287, 0.27, 0.243, 0.2187, 0.19683, 0.177147, 0.3, 0.27, 0.268, 0.265, 0.26, 0.22, 0.21, 0.17,
+                0.159432, 0.143489, 0.12914, 0.116226, 0.104604, 0.0941432, 0.0847288, 0.076256, 0.0686304, 0.0617673, 0.0555906, 
+                0.0500315, 0.0450284, 0.0405255, 0.036473, 0.0328257, 0.0295431, 0.0265888, 0.0239299, 0.0215369, 0.0193832, 
+                0.0174449, 0.0157004, 0.0141304, 0.0127173, 0.0114456, 0.010301, 0.00927094, 0.00834385, 0.00750946, 0.00675852, 0.00608266, 
+                0.0054744, 0.00492696, 0.00443426, 0.0039, 0.00343426, 0.00253426, 0.00213426, 0.00194, 0.00188, 0.00186, 0.00178, 0.00160, 0.00151, 
+                0.0014, 0.0013, 0.0011, 0.001, 0.0009
+                ]
+
+
+SGD_lrate3 = [0.812,0.795,0.775,0.754, 0.732, 0.72, 0.714, 0.694, 0.673,0.6543,0.63,0.612,0.593,0.57,
+                0.55, 0.54, 0.536, 0.53, 0.525, 0.521, 0.53, 0.516, 0.51, 0.50, 0.48, 0.477, 0.460, 0.445, 0.433, 0.428, 0.420, 0.39, 0.36, 0.348, 0.32, 0.31, 
+                0.3, 0.287, 0.27, 0.243, 0.2187, 0.19683, 0.177147, 0.3, 0.27, 0.268, 0.265, 0.26, 0.22, 0.21, 0.17,
+                0.159432, 0.143489, 0.12914, 0.116226, 0.104604, 0.0941432, 0.0847288, 0.076256, 0.0686304, 0.0617673, 0.0555906, 
+                0.0500315, 0.0450284, 0.0405255, 0.036473, 0.0328257, 0.0295431, 0.0265888, 0.0239299, 0.0215369, 0.0193832, 
+                0.0174449, 0.0157004, 0.0141304, 0.0127173, 0.0114456, 0.010301, 0.00927094, 0.00834385, 0.00750946, 0.00675852, 0.00608266, 
+                0.0054744, 0.00492696, 0.00443426, 0.0039, 0.00343426, 0.00253426, 0.00213426, 0.00194, 0.00188, 0.00186, 0.00178, 0.00160, 0.00151, 
+                0.0014, 0.0013, 0.0011, 0.001, 0.0009
+                
+                ]
+
+
+SGD_lrate4 = [0.812,0.795,0.775,0.754, 0.732, 0.72, 0.714, 0.694, 0.673,0.6543,0.63,0.612,0.593,0.57,
+                0.55, 0.54, 0.536, 0.53, 0.525, 0.521, 0.53, 0.516, 0.51, 0.50, 0.48, 0.477, 0.460, 0.445, 0.433, 0.428, 0.420, 0.39, 0.36, 0.348, 0.32, 0.31, 
+                0.3, 0.287, 0.27, 0.243, 0.00443426, 0.0039, 0.00343426, 0.00253426, 0.00213426, 0.00194, 0.00188, 0.00186, 0.00178, 0.00160, 0.00151, 
+                0.0014, 0.0013, 0.0011, 0.001, 0.0009, 0.2187, 0.19683, 0.177147, 0.3, 0.27, 0.268, 0.265, 0.26, 0.22, 0.21, 0.17,
+                0.159432, 0.143489, 0.12914, 0.116226, 0.104604, 0.0941432, 0.0847288, 0.076256, 0.0686304, 0.0617673, 0.0555906, 
+                0.0500315, 0.0450284, 0.0405255, 0.036473, 0.0328257, 0.0295431, 0.0265888, 0.0239299, 0.0215369, 0.0193832, 
+                0.0174449, 0.0157004, 0.0141304, 0.0127173, 0.0114456, 0.010301, 0.00927094, 0.00834385, 0.00750946, 0.00675852, 0.00608266, 
+                0.0054744, 0.00492696, 0.00443426, 0.0039, 0.00343426, 0.00253426, 0.00213426, 0.00194, 0.00188, 0.00186, 0.00178, 0.00160, 0.00151, 
+                0.0014, 0.0013, 0.0011, 0.001, 0.0009
+                ]
+
+
+
     
 learning_rate = 0.001
 file_train = "sem_train_8000.txt"
@@ -98,8 +133,8 @@ pos_dic = lst_2_dic(POS_15_categories)
 gr_dic  = lst_2_dic(GR_19_categories)
 
 
-wn_embeddings = np.zeros(shape=(45, 50))
-pos_embeddings = np.zeros(shape=(16, 50))
+wn_embeddings = np.zeros(shape=(45, 25))
+pos_embeddings = np.zeros(shape=(16, 25))
 gr_embeddings = np.zeros(shape=(20,50))
 
 wn_dic['paddd'] = 0
@@ -114,161 +149,103 @@ Model: LSTM with first  layer of size 128
 
 num_epochs = 100
 truncated_backprop_length = 12
-state_size = 200
+state_size = 150
 num_classes = 19
 batch_size = 50
 
 
 
+batchX_placeholder = tf.placeholder(tf.int32, [None, truncated_backprop_length])
+batchX_placeholder_rev = tf.placeholder(tf.int32, [None, truncated_backprop_length])
 
+batchY_placeholder = tf.placeholder(tf.int32, [None, num_classes]) # perhaps I am right ??
 
-
-
-
-
-
-
-# Need to think about the type and shape ?? 
-# How will we actually feed the word indices of the sentence for each training example
-
-batchX_placeholder = tf.placeholder(tf.int32, [batch_size, truncated_backprop_length])
-batchX_placeholder_rev = tf.placeholder(tf.int32, [batch_size, truncated_backprop_length])
-
-batchY_placeholder = tf.placeholder(tf.int32, [batch_size, num_classes]) # perhaps I am right ??
-keep_probability = tf.placeholder(tf.float32)
 l_rate = tf.placeholder(tf.float32)
 
+#batchX_placeholder_POS = tf.placeholder(tf.int32, [None, truncated_backprop_length])
+#batchX_placeholder_POS_rev = tf.placeholder(tf.int32, [None, truncated_backprop_length])
+keep_probability = tf.placeholder(tf.float32)
 
 
-
-# Define Embedding layer 
-#embedding = init_weight([FLAGS.vocab_size, FLAGS.embedding_size], "Embedding")
 Wordvec_embedings = tf.get_variable(name="Wordvec_embediings", shape=Embeddings.shape, initializer=tf.constant_initializer(Embeddings), trainable=True)
+#POS_embeddings = tf.get_variable(name="POS_embeddings", shape=pos_embeddings.shape, initializer=tf.constant_initializer(pos_embeddings), trainable=True)
 
 
-
-
-# softmax weights since we are working on concatenated state hence 2*state_size dimension 
-
-W2 = tf.Variable(np.random.rand(100, num_classes),dtype=tf.float32)
+W2 = tf.Variable(np.random.rand(2*(state_size), num_classes),dtype=tf.float32)
 b2 = tf.Variable(np.zeros((1,num_classes)), dtype=tf.float32)
 
+cell = tf.contrib.rnn.BasicLSTMCell(state_size, state_is_tuple=True)
+cell1 = tf.contrib.rnn.BasicLSTMCell(state_size, state_is_tuple=True)
 
-########################################################################################################
-# Inputs after Embedding Lookup 
-########################################################################################################
+#cell_POS_f = tf.contrib.rnn.BasicLSTMCell(pos_rec_1, state_is_tuple=True)
+#cell_POS_r = tf.contrib.rnn.BasicLSTMCell(pos_rec_1, state_is_tuple=True)
+
+
 input_forward = tf.nn.embedding_lookup(Wordvec_embedings, batchX_placeholder)
 input_backward = tf.nn.embedding_lookup(Wordvec_embedings, batchX_placeholder_rev)
 
+#input_POS_forward = tf.nn.embedding_lookup(POS_embeddings, batchX_placeholder_POS)
+#input_POS_backward = tf.nn.embedding_lookup(POS_embeddings, batchX_placeholder_POS_rev)
 
 
-#Embedding_dropout_left = tf.nn.dropout(input_forward, keep_probability)
-#Embedding_dropout_right = tf.nn.dropout(input_backward, keep_probability) 
+Embedding_dropout_left = tf.nn.dropout(input_forward, keep_probability)
+Embedding_dropout_right = tf.nn.dropout(input_backward, keep_probability)
 
-sliced = tf.slice(input_forward, [0, 0, 0], [batch_size, truncated_backprop_length - 1, 200] )
-#print (sliced)
-
-print (input_backward)
+#POS_dropout_left = tf.nn.dropout(input_POS_forward, keep_probability)
+#POS_dropout_right = tf.nn.dropout(input_POS_backward, keep_probability)
 
 
-nb_filter = 500
-
-expanded_in = tf.expand_dims(input_forward, axis=3)
-#print(expanded_in)
-filter_shape = [3, 200, nb_filter]
-
-W1 = tf.Variable(tf.truncated_normal(filter_shape, stddev=0.1), name="W1")
-
-b1 = tf.Variable(tf.constant(0.1, shape=[nb_filter]), name="b1")
-output_cnv1 = tf.nn.conv1d(value=input_forward, filters=W1, stride=1, padding='SAME')
-
-
-h1 = tf.tanh(tf.nn.bias_add(output_cnv1, b1), name="Hyperbolic")
-
-h1 = tf.expand_dims(h1,axis=1)
-
-        # Max-pooling over the outputs
-
-pooled1 = tf.nn.max_pool(
-            h1,
-            ksize=[1, 1, 12, 1],
-            strides=[1, 1, 1, 1],
-            padding='VALID',
-            name="pool")
-
-pooled1 = tf.squeeze(pooled1)
-
-print(pooled1)
-
-expanded_in = tf.expand_dims(input_backward, axis=3)
-#print(expanded_in)
-filter_shape = [3,200,nb_filter]
-
-W2 = tf.Variable(tf.truncated_normal(filter_shape, stddev=0.1), name="W2")
-
-b2 = tf.Variable(tf.constant(0.1, shape=[nb_filter]), name="b2")
-output_cnv2 = tf.nn.conv1d(value=input_backward, filters=W2, stride=1, padding='SAME')
-
-
-h2 = tf.tanh(tf.nn.bias_add(output_cnv2, b2), name="Hyperbolic")
-
-h2 = tf.expand_dims(h2, axis=1)
-
-        # Max-pooling over the outputs
-
-pooled2 = tf.nn.max_pool(
-            h2,
-            ksize=[1, 1, 12, 1],
-            strides=[1, 1, 1, 1],
-            padding='VALID',
-            name="pool1")
-
-pooled2 = tf.squeeze(pooled2)
+inputs_forward = [tf.squeeze(input_, [1]) for input_ in tf.split(Embedding_dropout_left, truncated_backprop_length, 1)]
+inputs_backward = [tf.squeeze(input_, [1]) for input_ in tf.split(Embedding_dropout_right, truncated_backprop_length, 1)]
 
 
 
-pooled = tf.concat([pooled1, pooled2], 1)
-#print(pooled)
+outputs_forward, state_forward = tf.contrib.rnn.static_rnn(cell, inputs_forward, dtype=tf.float32, scope="LSTM1")
+outputs_backward, state_backward = tf.contrib.rnn.static_rnn(cell1, inputs_backward, dtype=tf.float32, scope="LSTM2")
 
 
-W2 = tf.Variable(np.random.rand(1000, num_classes),dtype=tf.float32)
-b2 = tf.Variable(np.zeros((1,num_classes)), dtype=tf.float32)
+####################################################### 
+# MAXPOOLING Over time                                #
+#######################################################
+
+# Concatenate all the tensors to form a single tensor of form 50 * 15 * state_size
+
+for i in xrange(0, truncated_backprop_length):
+    outputs_forward[i] = tf.expand_dims(outputs_forward[i], axis=1)
+    outputs_backward[i] = tf.expand_dims(outputs_backward[i], axis=1)
+    
+
+
+forward_tensor_concat = tf.concat([outputs_forward[0], outputs_forward[1]], 1)
+backward_tensor_concat = tf.concat([outputs_backward[0], outputs_backward[1]], 1)
+
+
+for i in xrange(2, truncated_backprop_length):
+    forward_tensor_concat = tf.concat([forward_tensor_concat, outputs_forward[i]], 1)
+    backward_tensor_concat = tf.concat([backward_tensor_concat, outputs_backward[i]], 1)
+
+    
 
 
 
-'''
-train_v = tf.trainable_variables()
+max_pooled_forward = tf.reduce_max(forward_tensor_concat, 1)
+max_pooled_backward = tf.reduce_max(backward_tensor_concat, 1)
 
-regularized = []
-w = 6
-lambda_l2 = 1e-3
 
-while w <23:
-    regularized.append(train_v[w])
-    w = w + 2
-regularized_loss = 0.0
-for w in regularized:
-    #print(w)
-    regularized_loss = regularized_loss + lambda_l2 * tf.nn.l2_loss(w)
-'''
+output_conc = tf.concat([max_pooled_forward, max_pooled_backward], 1)
 
-#print(regularized_loss)
-#print(after_dropout)
 
-logits = tf.matmul(pooled, W2) + b2
-print(logits)
-
+logits = tf.matmul(output_conc, W2) + b2
 predictions = tf.nn.softmax(logits)
-
-cost = tf.reduce_mean(tf.nn.softmax_cross_entropy_with_logits(logits=predictions, labels=batchY_placeholder))
-train_step = tf.train.AdamOptimizer(learning_rate=learning_rate).minimize(cost)
 
 # define op to calculate F-1 score on test data 
 
 correct_pred = tf.equal(tf.argmax(predictions,1), tf.argmax(batchY_placeholder,1))
-predicted_labels = tf.argmax(predictions,1)
 accuracy = tf.reduce_mean(tf.cast(correct_pred, tf.float32))
 
+cost = tf.reduce_mean(tf.nn.softmax_cross_entropy_with_logits(logits=logits, labels=batchY_placeholder))
+#train_step = tf.train.AdamOptimizer(learning_rate=learning_rate).minimize(cost)
+train_step = tf.train.GradientDescentOptimizer(learning_rate=l_rate).minimize(cost)
 
 #####################################################################
 '''
@@ -394,6 +371,10 @@ def load_POS_GR_Wnet_train(train_b, train_e, valid_b, valid_e, test_b, test_e):
     
     SPTs_train[2668] = [['palm-19'], ['palm-19', 'of-20', 'hand-22'], ['palm'], ['hand', 'of', 'palm'], ['palm'], ['hand', 'of', 'palm'], ['NN'], ['NN', 'IN', 'NN'], [], ['pobj', 'prep'], ['B-noun.body'], ['B-noun.body', '0', 'B-noun.body']]
     
+    # print("pos_dic:", pos_dic)
+    # print("wn_dic:", wn_dic)
+    # print("gr_dic:", gr_dic)
+    # exit(1)
     for i in xrange(train_b, train_e):
         SPT = SPTs_train[i]
         # convert SPT[4]  and SPT[5] into word indices 
@@ -620,63 +601,68 @@ def load_POS_GR_Wnet_test(train_b, train_e, valid_b, valid_e, test_b, test_e):
 
     return POS_batchX_test_f, POS_batchX_test_r, Wnet_batchX_test_f, Wnet_batchX_test_r, GR_batchX_test_f, GR_batchX_test_r    
 
+#################################################################################################################################
+#
+x_forward, x_backward, y_train, x_test_f, x_test_r, y_test = build_SDPs_RNNs(train_b, train_e, valid_b, valid_e, test_b, test_e)
+POS_X_train_f, POS_X_train_r, Wnet_X_train_f, Wnet_X_train_r, GR_X_train_f,GR_X_train_r = load_POS_GR_Wnet_train(train_b, train_e, valid_b, valid_e, test_b, test_e)
+POS_X_test_f, POS_X_test_r, Wnet_X_test_f, Wnet_X_test_r, GR_X_test_f, GR_X_test_r  =  load_POS_GR_Wnet_test(train_b, train_e, valid_b, valid_e, test_b, test_e)   
+
+x_train_left = np.array(x_forward)
+x_train_right = np.array(x_backward)
+x_test_left = np.array(x_test_f)
+x_test_right = np.array(x_test_r)
 
 
-##########################################################################################################################################33
-#       For Precision calculation
-###################################################################################################33
+
+x_valid_left = x_train_left[13113:]
+x_train_left = x_train_left[:13113]
+
+x_valid_right = x_train_right[13113:]
+x_train_right = x_train_right[:13113]
+
+y_valid = y_train[13113:]
+y_train = y_train[:13113]
+
+GR_X_valid_f = GR_X_train_f[13113:]
+GR_X_train_f = GR_X_train_f[:13113]
+GR_X_valid_r = GR_X_train_r[13113:]
+GR_X_train_r = GR_X_train_r[:13113]
+
+POS_X_valid_f = POS_X_train_f[13113:]
+POS_X_train_f = POS_X_train_f[:13113]
+POS_X_valid_r = POS_X_train_r[13113:]
+POS_X_train_r = POS_X_train_r[:13113]
 
 
-max_prec, max_rec, max_acc, max_f1 = 0,0,0,0
-
-def getPrecision(pred_test, yTest, targetLabel):
-    #Precision for non-vague
-    
-    targetLabelCount = 0
-    correctTargetLabelCount = 0
-    
-    for idx in range(pred_test.shape[0]):
-        if pred_test[idx] == targetLabel:
-            targetLabelCount += 1
-            
-            if pred_test[idx] == yTest[idx]:
-                correctTargetLabelCount += 1
-    
-    if correctTargetLabelCount == 0:
-        return 0
-    
-    return float(correctTargetLabelCount) / targetLabelCount
+Wnet_X_valid_f = Wnet_X_train_f[13113:]
+Wnet_X_train_f = Wnet_X_train_f[:13113]
+Wnet_X_valid_r = Wnet_X_train_r[13113:]
+Wnet_X_train_r = Wnet_X_train_r[:13113]
 
 
+saver = tf.train.Saver(max_to_keep=10000)
 
 
 with tf.Session() as sess:
-    
     sess.run(tf.global_variables_initializer())
-    
     loss_list = []
-    
-
-    accuracies = []
-    for epoch_idx in range(num_epochs):
-        x_forward, x_backward, y_train, x_test_f, x_test_r, y_test = build_SDPs_RNNs(train_b, train_e, valid_b, valid_e, test_b, test_e)
         
-        x_train_left = np.array(x_forward)
-        x_train_right = np.array(x_backward)
-        x_test_left = np.array(x_test_f)
-        x_test_right = np.array(x_test_r)
-
-         
-        # shuffle the training data 
-        shuffled_indices = np.random.permutation(np.arange(len(x_forward)))
+    accuracies = []
+    valid_accuracies = []
+    for epoch_idx in range(len(SGD_lrate4)):
+                
+        shuffled_indices = np.random.permutation(np.arange(len(x_train_left)))
         shuffled_x_left = x_train_left[shuffled_indices]
         shuffled_x_right = x_train_right[shuffled_indices]
+        POS_shuffled_x_f = POS_X_train_f[shuffled_indices]
+        POS_shuffled_x_r = POS_X_train_r[shuffled_indices]
         
-
-
         shuffled_y = y_train[shuffled_indices]
-        epoch_loss = 0
-        num_batches = 278
+        epoch_loss = 0.0
+        epoch_acc = 0.0
+        num_batches = 62
+        
+        lrate = SGD_lrate4[epoch_idx]
 
         print("New epoch", epoch_idx)
 
@@ -686,166 +672,96 @@ with tf.Session() as sess:
             batchX_left = shuffled_x_left[start_idx:end_idx]
             batchX_right = shuffled_x_right[start_idx:end_idx]
             batchY = shuffled_y[start_idx:end_idx]
-          
+            #batchX_POS_f = POS_shuffled_x_f[start_idx:end_idx]
+            #batchX_POS_r = POS_shuffled_x_r[start_idx:end_idx]
+            
                                    
-            _total_loss, _train_step, _predictions = sess.run(
-                [cost, train_step, predictions],
+            _total_loss, _train_step, _predictions, _accuracy = sess.run(
+                [cost, train_step, predictions, accuracy],
                 feed_dict={
                     batchX_placeholder: batchX_left,
                     batchX_placeholder_rev: batchX_right,
                     batchY_placeholder: batchY,
                     keep_probability: 0.5,
-                    l_rate: 0.002                    
-
-                })
-            #print('batch label unique', np.unique(np.argmax(batchY, 1))) 19 labels fine 
-
+                    l_rate: lrate
+                }
+            )
             
             epoch_loss += _total_loss
+            epoch_acc += _accuracy
 
             loss_list.append(_total_loss)
 
-            if batch_idx%10 == 0:
-                print("Step",batch_idx, "Batch loss", _total_loss)
-        print("epoch loss", epoch_loss)        
-
-
-
-
-
-        test_batches = 54
-        test_accuracy = 0
-        total_test_preds = np.zeros(shape=(1, 19))
         
-        x_test_left[0] = x_test_left[-1]
-        x_test_right[0] = x_test_right[-1]
+        print("epoch Train loss", epoch_loss)        
+        print('Epoch Train Accuracy', epoch_acc/num_batches)
 
-        last_test = y_test[-1]
-        y_test[0] = last_test
-        p_labels = np.array([])
-        for batch_idx in range(test_batches):
-            start_idx = batch_idx * batch_size
-            end_idx = start_idx + batch_size
 
-            test_batchX_left = x_test_left[start_idx:end_idx]
-            test_batchX_right = x_test_right[start_idx:end_idx]
-            test_batchY = y_test[start_idx:end_idx]
-            
-            #print(test)
-            test_predictions, _accuracy, _correct_pred, _predicted_labels  = sess.run(
-                    [predictions, accuracy, correct_pred, predicted_labels],
-                    feed_dict={
-                        batchX_placeholder: test_batchX_left,
-                        batchX_placeholder_rev: test_batchX_right,
-                        batchY_placeholder: test_batchY,
-                        keep_probability: 1.0,
-                        l_rate: 0.002
+        valid_predictions, valid_accuracy, valid_loss  = sess.run(
+                [predictions, accuracy, cost],
+                feed_dict={
+                batchX_placeholder: x_valid_left,
+                batchX_placeholder_rev: x_valid_right,
+                batchY_placeholder: y_valid,
+                keep_probability: 1.0,
+                l_rate: 0.001                    
+                }
+            )
 
-                    })
+        print('Validation Loss: ', valid_loss)        
+        print('Validation accuracy :', valid_accuracy)
+        
+        valid_accuracies.append(valid_accuracy)
+        
+        val_preds = np.argmax(valid_predictions, 1)
+        val_target = np.argmax(y_valid, 1)
+        val_target = np.add(val_target, 1)
 
-            #total_test_preds.append(test_predictions)
-            test_predictions = np.array(test_predictions)
-            #print('test label unique', np.unique(np.argmax(test_batchY, 1)))
-            #print(test_predictions.shape)
-            total_test_preds = np.concatenate((total_test_preds, test_predictions) , axis=0)
-            #print(total_test_preds.shape)
-            
-            test_accuracy +=  _accuracy
-            
-            p_labels = np.concatenate((p_labels,_predicted_labels), axis=0)
-            #p_labels.append(_predicted_labels)
-            
+        #with open('rec_cnv_3_2_valid_target', 'w') as f:
+        #    for item in val_target:
+        #        f.write("%s\n" % item)
+        #print(val_preds.shape)
+        
+        val_preds = np.add(val_preds, 1)
+        
+        with open('maxpool_POS_valid_predictions', 'w') as f:
+            for item in val_preds:
+                f.write("%s\n" % item)
+        
+        os.system('python torch_eval_valid.py maxpool_POS_valid_predictions valid_targets %d'%epoch_idx)
 
-        
-        print('test accuracy :', test_accuracy/test_batches)
-        accuracies.append(test_accuracy/test_batches)
-        
-        #print(total_test_preds)
-        # So I have the Predictions on all test data. Now I need to calcultae classwise TP and TN FN etc 
-        # true positives 
 
-        total_test_preds = np.array(total_test_preds)
-        
-        #print('Shape of Predcited labels', p_labels)
-        #exit()
-        y_test_m = y_test[:2700]
-        
-        total_test_preds_m = total_test_preds[1:]
-        
-        yTest = np.argmax(y_test_m,1)
 
-        f1Sum = 0
-        f1Count = 0
-        
-        #print(yTest)
-        #print(p_labels)
+        test_predictions, test_accuracy, test_loss  = sess.run(
+            [predictions, accuracy, cost],
+            feed_dict={
+                
+                batchX_placeholder: x_test_left,
+                batchX_placeholder_rev: x_test_right,
+                batchY_placeholder: y_test,
+                keep_probability: 1.0,
+                l_rate: .001        
+            }
+        )
 
-        for targetLabel in range(0, 18):        
-            prec = getPrecision(p_labels, yTest, targetLabel)
-            recall = getPrecision(yTest, p_labels, targetLabel)
-            #print('Target Label', targetLabel)
-            #print('Precision', prec)
-            #print('Recall', recall)
-            f1 = 0 if (prec+recall) == 0 else 2*prec*recall/(prec+recall)
-            f1Sum += f1
-            f1Count +=1    
-        
-        
-        macroF1 = f1Sum / float(f1Count)    
-        max_f1 = max(max_f1, macroF1)
-        print("Non-other Macro-Averaged F1: %.4f (max: %.4f)\n" % (macroF1, max_f1))
-        
-        
-        c1 = np.argmax(y_test_m, 1)
-        c2 = np.argmax(total_test_preds_m, 1)
-        
-        confus_matrix = confusion_matrix(c1, c2) # labels=[0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18])
-        
-        True_positive = np.zeros(10)
-        xdir = np.zeros(9)
+        model_path = './save/maxpool_POS_valid/model.ckpt' + str(epoch_idx)
+        print(model_path)
+        saver.save(sess,model_path)
 
-        
-        row_sum = np.sum(confus_matrix, axis=1)
-        column_sum = np.sum(confus_matrix, axis=0)
-
-        
-
-        print(confus_matrix)    
-        # calculating the wrong directions 
-        for j in xrange(0, 9):
-            True_positive[j] = confus_matrix[2*j][2*j] + confus_matrix[2*j+1][2*j+1]
-            if True_positive[j] == 0.0:
-                True_positive[j] = 1e-6
-            xdir[j] = confus_matrix[2*j][2*j+1] + confus_matrix[2*j+1][2*j]    
-            
-        True_positive[9] = confus_matrix[18][18]    
-
-               
-            
-        # calculate F-1 score  
-        # Precision first 
-        Precision_m = np.zeros(10)
-        Recall_m = np.zeros(10)
-        F1_score = np.zeros(10)
-        for i in xrange(0, 9):
-            Precision_m[i] = (True_positive[i]) / (column_sum[2*i] + column_sum[2*i + 1] + xdir[i])
-            Recall_m[i] = (True_positive[i]) / (row_sum[2*i] + row_sum[2*i + 1])
-        
-        Precision_m[9] = True_positive[9]/column_sum[18]
-        Recall_m[9] = True_positive[9]/row_sum[18]
-
-        Macro_F1 = 0.0
-        for i in xrange(0, 10):
-            F1_score[i] = (2 * (Precision_m[i] * Recall_m[i])) / (Precision_m[i] + Recall_m[i])
-            Macro_F1 += F1_score[i]
-
-        print('Macro F-1 excluding Other', (Macro_F1 - F1_score[9])/9.0)
-        print('Macro F-1 including Other', (Macro_F1)/10.0)
-            
-        
+        print('Test Loss: ', test_loss)        
+        print('test accuracy :', test_accuracy)
+        accuracies.append(test_accuracy)
+        target = np.argmax(y_test, 1)
+        preds = np.argmax(test_predictions, 1)
+        print(preds.shape)
+        preds = np.add(preds, 1)
+        with open('maxpool_POS_test_predictions', 'w') as f:
+            for item in preds:
+                f.write("%s\n" % item)
+        #with open('tf_rnn_cpoy6_copy_targets', 'w') as f:
+        #    for item in target:
+        #        f.write("%s\n" % item)        
+        os.system('python torch_eval.py maxpool_POS_test_predictions test_target_modified %d'%epoch_idx)
     print(accuracies)    
-            
-
-               
-
-
+           
+    
